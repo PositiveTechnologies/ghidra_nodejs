@@ -5,8 +5,8 @@
 GHIDRA plugin to parse, disassemble and decompile NodeJS Bytenode (JSC) binaries.
 
 ## Supported NodeJS versions:
-- v8.16.0 (x64)
-- v8.16.0 (x86)
+- v8.16.0 (x64) (V8 version: 6.2.414.77)
+- v8.16.0 (x86) (V8 version: 6.2.414.77)
 
 ## Build instructions
 
