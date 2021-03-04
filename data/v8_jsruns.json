@@ -1,0 +1,1114 @@
+[
+	{
+		"Name": "CLOSURE_INDEX",
+		"Type": "Field"
+	},
+	{
+		"Name": "PREVIOUS_INDEX",
+		"Type": "Field"
+	},
+	{
+		"Name": "EXTENSION_INDEX",
+		"Type": "Field"
+	},
+	{
+		"Name": "NATIVE_CONTEXT_INDEX",
+		"Type": "Field"
+	},
+    {
+        "Name": "global_proxy_object",
+        "Type": "JSObject"
+    },
+    {
+        "Name": "embedder_data",
+        "Type": "FixedArray"
+    },
+    {
+        "Name": "accessor_property_descriptor_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "allow_code_gen_from_strings",
+        "Type": "Object"
+    },
+    {
+        "Name": "array_buffer_fun",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "array_buffer_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "array_buffer_noinit_fun",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "array_function",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "async_from_sync_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "async_function_await_reject_shared_fun",
+        "Type": "SharedFunctionInfo"
+    },
+    {
+        "Name": "async_function_await_resolve_shared_fun",
+        "Type": "SharedFunctionInfo"
+    },
+    {
+        "Name": "async_function_constructor",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "async_generator_function_function",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "async_iterator_value_unwrap_shared_fun",
+        "Type": "SharedFunctionInfo"
+    },
+    {
+        "Name": "async_generator_await_reject_shared_fun",
+        "Type": "SharedFunctionInfo"
+    },
+    {
+        "Name": "async_generator_await_resolve_shared_fun",
+        "Type": "SharedFunctionInfo"
+    },
+    {
+        "Name": "async_generator_yield_resolve_shared_fun",
+        "Type": "SharedFunctionInfo"
+    },
+    {
+        "Name": "async_generator_return_resolve_shared_fun",
+        "Type": "SharedFunctionInfo"
+    },
+    {
+        "Name": "async_generator_return_closed_resolve_shared_fun",
+        "Type": "SharedFunctionInfo"
+    },
+    {
+        "Name": "async_generator_return_closed_reject_shared_fun",
+        "Type": "SharedFunctionInfo"
+    },
+    {
+        "Name": "atomics_object",
+        "Type": "JSObject"
+    },
+    {
+        "Name": "boolean_function",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "bound_function_with_constructor_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "bound_function_without_constructor_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "call_as_constructor_delegate",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "call_as_function_delegate",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "callsite_function",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "context_extension_function",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "data_property_descriptor_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "data_view_fun",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "date_function",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "debug_context_id",
+        "Type": "Object"
+    },
+    {
+        "Name": "error_message_for_code_gen_from_strings",
+        "Type": "Object"
+    },
+    {
+        "Name": "errors_thrown",
+        "Type": "Smi"
+    },
+    {
+        "Name": "extras_binding_object",
+        "Type": "JSObject"
+    },
+    {
+        "Name": "extras_utils_object",
+        "Type": "Object"
+    },
+    {
+        "Name": "fast_aliased_arguments_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "fast_template_instantiations_cache",
+        "Type": "FixedArray"
+    },
+    {
+        "Name": "float32_array_fun",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "float64_array_fun",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "function_function",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "generator_function_function",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "generator_object_prototype_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "async_generator_object_prototype_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "initial_array_iterator_prototype",
+        "Type": "JSObject"
+    },
+    {
+        "Name": "initial_array_iterator_prototype_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "initial_array_prototype",
+        "Type": "JSObject"
+    },
+    {
+        "Name": "initial_error_prototype",
+        "Type": "JSObject"
+    },
+    {
+        "Name": "initial_generator_prototype",
+        "Type": "JSObject"
+    },
+    {
+        "Name": "initial_async_generator_prototype",
+        "Type": "JSObject"
+    },
+    {
+        "Name": "initial_iterator_prototype",
+        "Type": "JSObject"
+    },
+    {
+        "Name": "initial_object_prototype",
+        "Type": "JSObject"
+    },
+    {
+        "Name": "int16_array_fun",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "int32_array_fun",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "int8_array_fun",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "internal_array_function",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "iterator_result_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "intl_date_time_format_function",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "intl_number_format_function",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "intl_collator_function",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "intl_plural_rules_function",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "intl_v8_break_iterator_function",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "js_array_fast_smi_elements_map_index",
+        "Type": "Map"
+    },
+    {
+        "Name": "js_array_fast_holey_smi_elements_map_index",
+        "Type": "Map"
+    },
+    {
+        "Name": "js_array_fast_elements_map_index",
+        "Type": "Map"
+    },
+    {
+        "Name": "js_array_fast_holey_elements_map_index",
+        "Type": "Map"
+    },
+    {
+        "Name": "js_array_fast_double_elements_map_index",
+        "Type": "Map"
+    },
+    {
+        "Name": "js_array_fast_holey_double_elements_map_index",
+        "Type": "Map"
+    },
+    {
+        "Name": "js_map_fun",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "js_map_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "js_module_namespace_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "js_set_fun",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "js_set_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "js_weak_map_fun",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "js_weak_set_fun",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "map_cache",
+        "Type": "Object"
+    },
+    {
+        "Name": "map_key_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "map_key_value_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "map_value_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "math_random_index",
+        "Type": "Smi"
+    },
+    {
+        "Name": "math_random_cache",
+        "Type": "Object"
+    },
+    {
+        "Name": "message_listeners",
+        "Type": "TemplateList"
+    },
+    {
+        "Name": "natives_utils_object",
+        "Type": "Object"
+    },
+    {
+        "Name": "normalized_map_cache",
+        "Type": "Object"
+    },
+    {
+        "Name": "number_function",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "object_function",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "object_function_prototype_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "opaque_reference_function",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "proxy_callable_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "proxy_constructor_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "proxy_function",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "proxy_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "promise_get_capabilities_executor_shared_fun",
+        "Type": "SharedFunctionInfo"
+    },
+    {
+        "Name": "promise_resolve_shared_fun",
+        "Type": "SharedFunctionInfo"
+    },
+    {
+        "Name": "promise_reject_shared_fun",
+        "Type": "SharedFunctionInfo"
+    },
+    {
+        "Name": "promise_then_finally_shared_fun",
+        "Type": "SharedFunctionInfo"
+    },
+    {
+        "Name": "promise_catch_finally_shared_fun",
+        "Type": "SharedFunctionInfo"
+    },
+    {
+        "Name": "promise_value_thunk_finally_shared_fun",
+        "Type": "SharedFunctionInfo"
+    },
+    {
+        "Name": "promise_thrower_finally_shared_fun",
+        "Type": "SharedFunctionInfo"
+    },
+    {
+        "Name": "promise_all_resolve_element_shared_fun",
+        "Type": "SharedFunctionInfo"
+    },
+    {
+        "Name": "promise_prototype_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "regexp_exec_function",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "regexp_function",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "regexp_last_match_info",
+        "Type": "RegExpMatchInfo"
+    },
+    {
+        "Name": "regexp_internal_match_info",
+        "Type": "RegExpMatchInfo"
+    },
+    {
+        "Name": "regexp_prototype_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "regexp_result_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "script_context_table",
+        "Type": "ScriptContextTable"
+    },
+    {
+        "Name": "script_function",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "security_token",
+        "Type": "Object"
+    },
+    {
+        "Name": "self_weak_cell",
+        "Type": "WeakCell"
+    },
+    {
+        "Name": "set_value_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "set_key_value_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "shared_array_buffer_fun",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "sloppy_arguments_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "slow_aliased_arguments_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "strict_arguments_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "slow_object_with_null_prototype_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "slow_object_with_object_prototype_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "slow_template_instantiations_cache",
+        "Type": "UnseededNumberDictionary"
+    },
+    {
+        "Name": "sloppy_function_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "sloppy_function_with_name_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "sloppy_function_without_prototype_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "sloppy_function_with_readonly_prototype_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "strict_function_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "strict_function_with_name_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "strict_function_with_readonly_prototype_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "strict_function_without_prototype_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "method_with_name_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "method_with_home_object_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "method_with_name_and_home_object_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "async_function_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "async_function_with_name_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "async_function_with_home_object_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "async_function_with_name_and_home_object_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "generator_function_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "generator_function_with_name_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "generator_function_with_home_object_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "generator_function_with_name_and_home_object_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "async_generator_function_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "async_generator_function_with_name_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "async_generator_function_with_home_object_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "async_generator_function_with_name_and_home_object_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "class_function_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "string_function",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "string_function_prototype_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "string_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "symbol_function",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "native_function_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "wasm_instance_constructor",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "wasm_memory_constructor",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "wasm_module_constructor",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "wasm_table_constructor",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "typed_array_function",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "typed_array_prototype",
+        "Type": "JSObject"
+    },
+    {
+        "Name": "uint16_array_fun",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "uint32_array_fun",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "uint8_array_fun",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "uint8_clamped_array_fun",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "async_function_await_caught",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "async_function_await_uncaught",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "async_function_promise_create",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "async_function_promise_release",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "is_arraylike",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "generator_next_internal",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "get_template_call_site",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "make_error",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "make_range_error",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "make_syntax_error",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "make_type_error",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "make_uri_error",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "object_create",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "object_define_properties",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "object_define_property",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "object_freeze",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "object_get_prototype_of",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "object_is_extensible",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "object_is_frozen",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "object_is_sealed",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "object_keys",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "regexp_internal_match",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "reflect_apply",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "reflect_construct",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "reflect_define_property",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "reflect_delete_property",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "spread_arguments",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "spread_iterable",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "typed_array_construct_by_array_buffer",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "typed_array_construct_by_array_like",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "typed_array_construct_by_length",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "math_floor",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "math_pow",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "new_promise_capability",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "promise_internal_constructor",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "promise_internal_reject",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "is_promise",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "promise_resolve",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "promise_then",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "promise_handle",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "promise_handle_reject",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "async_generator_await_caught",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "async_generator_await_uncaught",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "array_concat",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "array_pop",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "array_push",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "array_shift",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "array_splice",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "array_slice",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "array_unshift",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "array_entries_iterator",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "array_for_each_iterator",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "array_keys_iterator",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "array_values_iterator",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "derived_get_trap",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "error_function",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "error_to_string",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "eval_error_function",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "global_eval_fun",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "global_proxy_function",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "map_delete",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "map_get",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "map_has",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "map_set",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "function_has_instance",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "object_value_of",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "object_to_string",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "promise_catch",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "promise_function",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "range_error_function",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "reference_error_function",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "set_add",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "set_delete",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "set_has",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "syntax_error_function",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "type_error_function",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "uri_error_function",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "wasm_compile_error_function",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "wasm_link_error_function",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "wasm_runtime_error_function",
+        "Type": "JSFunction"
+    },
+    {
+        "Name": "typed_array_key_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "fast_array_key_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "array_key_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "uint8_array_key_value_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "int8_array_key_value_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "uint16_array_key_value_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "int16_array_key_value_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "uint32_array_key_value_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "int32_array_key_value_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "float32_array_key_value_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "float64_array_key_value_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "uint8_clamped_array_key_value_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "fast_smi_array_key_value_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "fast_holey_smi_array_key_value_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "fast_array_key_value_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "fast_holey_array_key_value_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "fast_double_array_key_value_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "fast_holey_double_array_key_value_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "array_key_value_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "uint8_array_value_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "int8_array_value_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "uint16_array_value_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "int16_array_value_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "uint32_array_value_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "int32_array_value_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "float32_array_value_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "float64_array_value_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "uint8_clamped_array_value_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "fast_smi_array_value_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "fast_holey_smi_array_value_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "fast_array_value_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "fast_holey_array_value_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "fast_double_array_value_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "fast_holey_double_array_value_iterator_map",
+        "Type": "Map"
+    },
+    {
+        "Name": "array_value_iterator_map",
+        "Type": "Map"
+    }
+]

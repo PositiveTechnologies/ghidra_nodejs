@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compiler_spec>
+	<data_organization>
+		<absolute_max_alignment value="0" />
+		<machine_alignment value="1" />
+		<default_alignment value="1" />
+		<default_pointer_alignment value="4" />
+		<pointer_size value="4" />
+		<wchar_size value="2" />
+		<short_size value="2" />
+		<integer_size value="4" />
+		<long_size value="4" />
+		<long_long_size value="8" />
+		<float_size value="4" />
+		<double_size value="8" />
+		<long_double_size value="8" />
+		<size_alignment_map>
+			<entry size="1" alignment="1" />
+			<entry size="2" alignment="2" />
+			<entry size="4" alignment="4" />
+			<entry size="8" alignment="8" />
+		</size_alignment_map>
+	</data_organization>
+	<global>
+		<range space="ram" />
+		<range space="register" first="0x2000" last="0x2fff"/>
+	</global>
+
+	<stackpointer register="sp" space="ram"/>
+	<default_proto>
+		<prototype name="__stdcall" extrapop="0" stackshift="0">
+			<input>
+				<pentry minsize="1" maxsize="500" align="4" extension="inttype">
+					<addr offset="0x14000" space="register"/>
+				</pentry>
+			</input>
+			<output>
+				<pentry minsize="1" maxsize="4">
+					<register name="acc"/>
+				</pentry>
+			</output>
+			<unaffected>
+				<register name="sp"/>
+			</unaffected>
+		</prototype>
+	</default_proto>
+	<callotherfixup targetop="CallVariadicCallOther">
+		<pcode dynamic="true">
+			<input name="cpool_index_invokeintrinsic"/>
+			<input name="receiver"/>
+		</pcode>
+	</callotherfixup>
+	<callotherfixup targetop="InvokeIntrinsicCallOther">
+		<pcode dynamic="true">
+			<input name="cpool_index_invokeintrinsic"/>
+			<input name="receiver"/>
+		</pcode>
+	</callotherfixup>
+	<callotherfixup targetop="CallRuntimeCallOther">
+		<pcode dynamic="true">			
+			<input name="outsize"/>
+		</pcode>
+	</callotherfixup>
+	<callotherfixup targetop="JSCallNCallOther">
+		<pcode dynamic="true">
+			<input name="argcount"/>
+			<input name="receiver"/>
+		</pcode>
+	</callotherfixup>
+	<callotherfixup targetop="ConstructCallOther">
+		<pcode dynamic="true"></pcode>
+	</callotherfixup>
+	<callotherfixup targetop="ThrowCallOther">
+		<pcode dynamic="true">
+			<input name="condition"/>
+			<input name="runtimeid"/>
+		</pcode>
+	</callotherfixup>
+	<callotherfixup targetop="CallJSRuntimeCallOther">
+		<pcode dynamic="true"></pcode>
+	</callotherfixup>
+	<callotherfixup targetop="StaDataPropertyInLiteralCallOther">
+		<pcode dynamic="true"></pcode>
+	</callotherfixup>
+</compiler_spec>

@@ -1,0 +1,605 @@
+#===========================================================
+#              WIDE INSTRUCTIONS
+#===========================================================
+define token w_padding(8)
+	w_Pad = (0,7)
+;
+define token w_operand(16)
+	w_kImm = (0,15) signed dec
+	w_kIdx = (0,15)
+	w_kIdx_2 = (0,15)
+	w_kUImm = (0,15)
+	w_kIntrinsicId = (0,15)
+;
+define token dr_operand(32)
+	w_kRuntimeId = (0,31)
+;
+
+w_dest: rel is w_kUImm [ rel = inst_start + w_kUImm; ] {
+  export *[ram]:4 rel;
+}
+w_destloop: rel is w_kUImm [ rel = inst_start - w_kUImm; ] {
+  export *[ram]:4 rel;
+}
+w_rangeSrc: {  is kReg; w_Pad; w_kUImm  [ offStart = kReg; counter =  w_kUImm;] {range_size = w_kUImm;  export kReg;}
+w_pair: {  is kReg; w_Pad  [offStart = kReg; counter = 2; ] {range_size = 2 ; export kReg; }
+w_triple: {   is kReg; w_Pad  [offStart = kReg; counter = 3;] { range_size = 3; export kReg; }
+
+w_src: kReg is kReg; w_Pad {export kReg;}
+w_dst: kReg is kReg; w_Pad {export kReg;}
+w_object: kReg is kReg; w_Pad {export kReg;}
+w_key: kReg is kReg; w_Pad {export kReg;}
+w_spcontext: kReg is kReg; w_Pad {export kReg;}
+w_name: kReg is kReg; w_Pad {export kReg;}
+w_callable: kReg is kReg; w_Pad {export kReg;}
+w_receiver: kReg is kReg; w_Pad {export kReg;}
+w_arg1: kReg is kReg; w_Pad {export kReg;}
+w_arg2: kReg is kReg; w_Pad {export kReg;}
+w_constructor: kReg is kReg; w_Pad {export kReg;}
+w_exception: kReg is kReg; w_Pad {export kReg;}
+w_index: kReg is kReg; w_Pad {export kReg;}
+w_cache_length: kReg is kReg; w_Pad {export kReg;}
+
+
+:LdaZero.Wide is wide = 0; op = 0x2 {
+	acc = 0;
+}
+:LdaSmi.Wide [w_kImm] is wide = 0; op = 0x3; w_kImm {
+	acc = w_kImm;
+}
+:LdaUndefined.Wide is wide = 0; op = 0x4  {
+	acc = Undefined;
+}
+:LdaNull.Wide is wide = 0; op = 0x5  {
+	acc = Null;
+}
+:LdaTheHole.Wide is wide = 0; op = 0x6 {
+	acc = TheHole;
+}
+:LdaTrue.Wide is wide = 0; op = 0x7 {
+	acc = True;
+}
+:LdaFalse.Wide is wide = 0; op = 0x8 {
+	acc = False;
+}
+:LdaConstant.Wide [w_kIdx] is wide = 0; op = 0x9; w_kIdx {
+	cp:8 = cpool(0,inst_start,w_kIdx, $(CP_CONSTANTS));
+	acc = GetConstant(cp);
+}
+
+:LdaGlobal.Wide [w_kIdx], [w_kIdx_2] is wide = 0; op = 0xa; w_kIdx; w_kIdx_2 {
+	cp:4 = cpool(0,inst_start, w_kIdx, $(CP_CONSTANTS));
+	acc = GetGlobal(cp);
+}
+:LdaGlobalInsideTypeof.Wide [w_kIdx], [w_kIdx_2] is wide = 0; op = 0xb; w_kIdx; w_kIdx_2 {
+		acc = LdaGlobalInsideTypeof(w_kIdx:4);
+}
+:StaGlobalSloppy.Wide [w_kIdx], [w_kIdx_2] is wide = 0; op = 0xc; w_kIdx; w_kIdx_2 {
+	cp:4 = cpool(0,inst_start, w_kIdx, $(CP_CONSTANTS));
+	SetGlobalValue(cp, acc);
+}
+:StaGlobalStrict.Wide [w_kIdx], [w_kIdx_2] is wide = 0; op = 0xd; w_kIdx; w_kIdx_2 {
+	cp:4 = cpool(0,inst_start, w_kIdx, $(CP_CONSTANTS));
+	SetGlobalValue(cp, acc);
+}
+:PushContext.Wide w_spcontext is wide = 0; op = 0xe; w_spcontext {
+	w_spcontext = _context;
+	_context = acc;
+}
+:PopContext.Wide w_spcontext is wide = 0; op = 0xf; w_spcontext  {
+	_context = w_spcontext;
+}
+
+:LdaContextSlot.Wide w_spcontext, [w_kIdx], [w_kUImm] is wide = 0; op = 0x10; w_spcontext; w_kIdx; w_kUImm {
+	acc = cpool(0,inst_start, w_kIdx, $(CP_CONTEXTTYPE));
+}
+
+:LdaImmutableContextSlot.Wide w_spcontext, [w_kIdx], [w_kUImm] is wide = 0; op = 0x11; w_spcontext; w_kIdx; w_kUImm {
+	acc = cpool(0,inst_start, w_kIdx, $(CP_CONTEXTTYPE));
+}
+:LdaCurrentContextSlot.Wide [w_kIdx] is wide = 0; op = 0x12; w_kIdx {
+	acc = cpool(0,inst_start, w_kIdx, $(CP_CONTEXTTYPE));
+}
+:LdaImmutableCurrentContextSlot.Wide [w_kIdx] is wide = 0; op = 0x13; w_kIdx {
+	acc = cpool(0,inst_start, w_kIdx, $(CP_CONTEXTTYPE));
+}
+
+:StaContextSlot.Wide w_spcontext, [w_kIdx], [w_kUImm] is wide = 0; op = 0x14; w_spcontext; w_kIdx; w_kUImm {
+	cp:4 = cpool(0,inst_start, w_kIdx, $(CP_CONTEXTTYPE));
+	*:4 cp = acc;
+}
+:StaCurrentContextSlot.Wide [w_kIdx] is wide = 0; op = 0x15; w_kIdx {
+	cp:4 = cpool(0,inst_start, w_kIdx, $(CP_CONTEXTTYPE));
+	*:4 cp = acc;
+}
+:LdaLookupSlot.Wide [w_kIdx] is wide = 0; op = 0x16; w_kIdx {
+	acc = LdaLookupSlot(w_kIdx:4);
+}
+:LdaLookupContextSlot.Wide [w_kIdx], [w_kIdx_2], [w_kUImm] is wide = 0; op = 0x17; w_kIdx; w_kIdx_2; w_kUImm {
+	acc = LdaLookupContextSlot(w_kIdx:4, w_kIdx_2:4, w_kUImm:4);
+}
+:LdaLookupGlobalSlot.Wide [w_kIdx], [w_kIdx_2], [w_kUImm] is wide = 0; op = 0x18; w_kIdx; w_kIdx_2; w_kUImm {
+	acc = LdaLookupGlobalSlot(w_kIdx:4, w_kIdx_2:4, w_kUImm:4);
+}
+:LdaLookupSlotInsideTypeof.Wide [w_kIdx] is wide = 0; op = 0x19; w_kIdx {
+	acc = LdaLookupSlotInsideTypeof(w_kIdx:4);
+}
+:LdaLookupContextSlotInsideTypeof.Wide [w_kIdx], [w_kIdx_2], [w_kUImm] is wide = 0; op = 0x1a; w_kIdx; w_kIdx_2; w_kUImm {
+	acc = LdaLookupContextSlotInsideTypeof(w_kIdx:4, w_kIdx_2:4, w_kUImm:4);
+}
+:LdaLookupGlobalSlotInsideTypeof.Wide [w_kIdx], [w_kIdx_2], [w_kUImm] is wide = 0; op = 0x1b; w_kIdx; w_kIdx_2; w_kUImm {
+	acc = LdaLookupGlobalSlotInsideTypeof(w_kIdx:4, w_kIdx_2:4, w_kUImm:4);
+}
+:StaLookupSlot.Wide [w_kIdx], kFlag8 is wide = 0; op = 0x1c; w_kIdx; kFlag8 {
+	StaLookupSlot(acc, w_kIdx:4, kFlag8:4);
+}
+:Ldar.Wide w_src is wide = 0; op = 0x1d; w_src {
+	acc = w_src;
+}
+:Star.Wide w_dst is wide = 0; op = 0x1e; w_dst {
+	w_dst = acc;
+}
+:Mov.Wide w_src, w_dst is wide = 0; op = 0x1f; w_src; w_dst {
+	w_dst = w_src;
+}
+:LdaNamedProperty.Wide w_object, [w_kIdx], [w_kIdx_2] is wide = 0; op = 0x20; w_object; w_kIdx; w_kIdx_2 {
+	cp:4 = cpool(0,inst_start, w_kIdx, $(CP_CONSTANTS));
+	acc = LdaNamedProperty(w_object, cp);
+}
+:LdaKeyedProperty.Wide w_object, [w_kIdx] is wide = 0; op = 0x21; w_object; w_kIdx {
+	acc = LdaKeyedProperty(_context, w_object, acc);
+}
+:LdaModuleVariable.Wide [w_kImm], [w_kUImm] is wide = 0; op = 0x22; w_kImm; w_kUImm {
+	acc = LdaModuleVariable(w_kImm:4, w_kUImm:4);
+}
+:StaModuleVariable.Wide [w_kImm], [w_kUImm] is wide = 0; op = 0x23; w_kImm; w_kUImm {
+	StaModuleVariable(acc, w_kImm:4, w_kUImm:4);
+}
+:StaNamedPropertySloppy.Wide w_object, [w_kIdx], [w_kIdx_2] is wide = 0; op = 0x24; w_object; w_kIdx; w_kIdx_2 {
+	cp:4 = cpool(0,inst_start,w_kIdx, $(CP_CONSTANTS));
+	val:4 = GetNamedProperty(w_object, cp);
+	StaNamedProperty(_context, val, acc, 0:4);
+}
+:StaNamedPropertyStrict.Wide w_object, [w_kIdx], [w_kIdx_2] is wide = 0; op = 0x25; w_object; w_kIdx; w_kIdx_2 {
+	cp:4 = cpool(0,inst_start,w_kIdx, $(CP_CONSTANTS));
+ 	val:4 = GetNamedProperty(w_object, cp);
+	StaNamedProperty(_context, val, acc, 1:4);
+}
+:StaNamedOwnProperty.Wide w_object, [w_kIdx], [w_kIdx_2] is wide = 0; op = 0x26; w_object; w_kIdx; w_kIdx_2 {
+	cp:4 = cpool(0,inst_start,w_kIdx, $(CP_CONSTANTS));
+	val:4 = GetNamedProperty(w_object, cp);
+	StaNamedProperty(_context, val, acc, 2:4);
+}
+:StaKeyedPropertySloppy.Wide w_object, w_key, [w_kIdx] is wide = 0; op = 0x27; w_object; w_key; w_kIdx {
+	val:4 = GetKeyedProperty(w_object, w_key);
+	StaKeyedProperty(_context, val, acc, 0:4);
+}
+:StaKeyedPropertyStrict.Wide w_object, w_key, [w_kIdx] is wide = 0; op = 0x28; w_object; w_key; w_kIdx {
+	val:4 = GetKeyedProperty(w_object, w_key);
+	StaKeyedProperty(_context, val, acc, 1:4);
+}
+:StaDataPropertyInLiteral.Wide w_object, w_name, kFlag8, [w_kIdx] is wide = 0; op = 0x29; w_object; w_name; kFlag8; w_kIdx {
+	StaDataPropertyInLiteralCallOther();
+}
+:CollectTypeProfile.Wide [w_kImm] is wide = 0; op = 0x2a; w_kImm {
+	CollectTypeProfile(w_kImm:4, acc);
+}
+:Add.Wide w_src, [w_kIdx] is wide = 0; op = 0x2b; w_src; w_kIdx {
+	acc = w_src + acc;
+}
+:Sub.Wide w_src, [w_kIdx] is wide = 0; op = 0x2c; w_src; w_kIdx {
+	acc = w_src - acc;
+}
+:Mul.Wide w_src, [w_kIdx] is wide = 0; op = 0x2d; w_src; w_kIdx {
+	acc = w_src * acc;
+}
+:Div.Wide w_src, [w_kIdx] is wide = 0; op = 0x2e; w_src; w_kIdx {
+	acc = w_src / acc;
+}
+:Mod.Wide w_src, [w_kIdx] is wide = 0; op = 0x2f; w_src; w_kIdx {
+	acc = w_src % acc;
+}
+:BitwiseOr.Wide w_src, [w_kIdx] is wide = 0; op = 0x30; w_src; w_kIdx {
+	acc = w_src | acc;
+}
+:BitwiseXor.Wide w_src, [w_kIdx] is wide = 0; op = 0x31; w_src; w_kIdx  {
+	acc = w_src ^ acc;
+}
+:BitwiseAnd.Wide w_src, [w_kIdx] is wide = 0; op = 0x32; w_src; w_kIdx  {
+	acc = w_src & acc;
+}
+:ShiftLeft.Wide w_src, [w_kIdx] is wide = 0; op = 0x33; w_src; w_kIdx  {
+	acc = w_src << (acc & 0x1F);
+}
+:ShiftRight.Wide w_src, [w_kIdx] is wide = 0; op = 0x34; w_src; w_kIdx {
+	acc = w_src s>> (acc & 0x1F);
+}
+:ShiftRightLogical.Wide w_src, [w_kIdx] is wide = 0; op = 0x35; w_src; w_kIdx  {
+	acc = w_src >> (acc & 0x1F);
+}
+:AddSmi.Wide [w_kImm], [w_kIdx] is wide = 0; op = 0x36; w_kImm; w_kIdx {
+	acc = acc + w_kImm;
+}
+:SubSmi.Wide [w_kImm], [w_kIdx] is wide = 0; op = 0x37; w_kImm; w_kIdx {
+	acc = acc - w_kImm;
+}
+:MulSmi.Wide [w_kImm], [w_kIdx] is wide = 0; op = 0x38; w_kImm; w_kIdx {
+	acc = acc * w_kImm;
+}
+:DivSmi.Wide [w_kImm], [w_kIdx] is wide = 0; op = 0x39; w_kImm; w_kIdx {
+	acc = acc / w_kImm;
+}
+:ModSmi.Wide [w_kImm], [w_kIdx] is wide = 0; op = 0x3a; w_kImm; w_kIdx {
+	acc = acc % w_kImm;
+}
+:BitwiseOrSmi.Wide [w_kImm], [w_kIdx] is wide = 0; op = 0x3b; w_kImm; w_kIdx {
+	acc = acc | w_kImm;
+}
+:BitwiseXorSmi.Wide [w_kImm], [w_kIdx] is wide = 0; op = 0x3c; w_kImm; w_kIdx {
+	acc = acc ^ w_kImm;
+}
+:BitwiseAndSmi.Wide [w_kImm], [w_kIdx] is wide = 0; op = 0x3d; w_kImm; w_kIdx {
+	acc = acc & w_kImm;
+}
+:ShiftLeftSmi.Wide [w_kImm], [w_kIdx] is wide = 0; op = 0x3e; w_kImm; w_kIdx {
+	acc = acc << (w_kImm & 0x1F);
+}
+:ShiftRightSmi.Wide [w_kImm], [w_kIdx] is wide = 0; op = 0x3f; w_kImm; w_kIdx {
+	acc = acc s>> (w_kImm & 0x1F);
+}
+:ShiftRightLogicalSmi.Wide [w_kImm], [w_kIdx] is wide = 0; op = 0x40; w_kImm; w_kIdx {
+	acc = acc >> (w_kImm & 0x1F);
+}
+:Inc.Wide [w_kIdx] is wide = 0; op = 0x41; w_kIdx {
+	acc = acc + 1;
+}
+:Dec.Wide [w_kIdx] is wide = 0; op = 0x42; w_kIdx {
+	acc = acc - 1;
+}
+:ToBooleanLogicalNot.Wide is wide = 0; op = 0x43 {
+	acc= ~(ToBoolean(acc));
+}
+:LogicalNot.Wide is wide = 0; op = 0x44 {
+	acc= ~(acc);
+}
+:TypeOf.Wide is wide = 0; op = 0x45 {
+	acc = TypeOf(acc);
+}
+:DeletePropertyStrict.Wide w_object is wide = 0; op = 0x46; w_object {
+	acc = DeletePropertyStrict(w_object);
+}
+:DeletePropertySloppy.Wide w_object is wide = 0; op = 0x47; w_object {
+	acc = DeletePropertySloppy(w_object);
+}
+:GetSuperConstructor.Wide w_object is wide = 0; op = 0x48; w_object {
+	w_object = GetSuperConstructor(acc, _context);
+}
+:CallAnyReceiver.Wide w_callable, w_rangeSrc^rangeDst, [w_kIdx] is wide = 0; op = 0x49; w_callable; w_rangeSrc; rangeDst; w_kIdx {
+	CallVariadicCallOther($(PROPERTYTYPE):4, $(RECV_ARG):4);
+}
+:CallProperty.Wide w_callable, w_rangeSrc^rangeDst, [w_kIdx] is wide = 0; op = 0x4a; w_callable; w_rangeSrc; rangeDst; w_kIdx {
+	CallVariadicCallOther($(PROPERTYTYPE):4, $(RECV_ARG):4);
+}
+:CallProperty0.Wide w_callable, w_receiver, [w_kIdx] is wide = 0; op = 0x4b; w_callable; w_receiver; w_kIdx {
+	JSCallNCallOther(0:4, $(RECV_ARG):4);
+}
+:CallProperty1.Wide w_callable, w_receiver, w_arg1, [w_kIdx] is wide = 0; op = 0x4c; w_callable; w_receiver; w_arg1; w_kIdx {
+	JSCallNCallOther(1:4, $(RECV_ARG):4);
+}
+:CallProperty2.Wide w_callable, w_receiver, w_arg1, w_arg2, [w_kIdx] is wide = 0; op = 0x4d; w_callable; w_receiver; w_arg1; w_arg2; w_kIdx {
+	JSCallNCallOther(2:4, $(RECV_ARG):4);
+}
+:CallUndefinedReceiver.Wide w_callable, w_rangeSrc^rangeDst, [w_kIdx] is wide = 0; op = 0x4e; w_callable; w_rangeSrc; rangeDst; w_kIdx {
+	CallVariadicCallOther($(PROPERTYTYPE):4, $(RECV_UNDEF):4);
+}
+:CallUndefinedReceiver0.Wide w_callable, [w_kIdx] is wide = 0; op = 0x4f; w_callable; w_kIdx {
+	JSCallNCallOther(0:4, $(RECV_UNDEF):4);
+}
+:CallUndefinedReceiver1.Wide w_callable, w_arg1, [w_kIdx] is wide = 0; op = 0x50; w_callable; w_arg1; w_kIdx {
+	JSCallNCallOther(1:4, $(RECV_UNDEF):4);
+}
+:CallUndefinedReceiver2.Wide w_callable, w_arg1, w_arg2, [w_kIdx] is wide = 0; op = 0x51; w_callable; w_arg1; w_arg2; w_kIdx {
+	JSCallNCallOther(2:4, $(RECV_UNDEF):4);
+}
+:CallWithSpread.Wide w_callable, w_rangeSrc^rangeDst, [w_kIdx] is wide = 0; op = 0x52; w_callable; w_rangeSrc; rangeDst; w_kIdx {
+	#The final argument is always a spread.
+	CallVariadicCallOther($(PROPERTYTYPE):4, $(RECV_ARG):4);
+}
+:CallRuntime.Wide [w_kRuntimeId], w_rangeSrc^rangeDst is wide = 0; op = 0x53; w_kRuntimeId; w_rangeSrc; rangeDst {
+	CallRuntimeCallOther($(RUNTIMETYPE):4, $(RECV_UNDEF):4);
+}
+#Returns the result in <first_return> and <first_return + 1>, acc write?
+:CallRuntimeForPair.Wide w_kRuntimeId, w_rangeSrc^rangeDst, w_pair^rangeDstStub is wide = 0; op = 0x54; w_kRuntimeId; w_rangeSrc; rangeDst; w_pair; rangeDstStub {
+	CallRuntimeForPair(w_kRuntimeId:4, w_rangeSrc, range_size, w_pair);
+}
+:CallJSRuntime.Wide [w_kIdx], w_rangeSrc^rangeDst is wide = 0; op = 0x55; w_kIdx; w_rangeSrc; rangeDst {
+	acc = GetJSRuntime(w_kIdx:4);
+	CallJSRuntimeCallOther();	
+}
+:InvokeIntrinsic.Wide [w_kIntrinsicId], w_rangeSrc^rangeDst is wide = 0; op = 0x56; w_kIntrinsicId; w_rangeSrc; rangeDst {
+	InvokeIntrinsicCallOther($(INTRINSICTYPE):4, $(RECV_UNDEF):4);
+}
+:Construct.Wide w_constructor, w_rangeSrc^rangeDst, [w_kIdx] is wide = 0; op = 0x57; w_constructor; w_rangeSrc; rangeDst; w_kIdx {
+	ConstructCallOther();
+}
+:ConstructWithSpread.Wide w_constructor, w_rangeSrc^rangeDst, [w_kIdx] is wide = 0; op = 0x58; w_constructor; w_rangeSrc; rangeDst; w_kIdx {
+	acc = ConstructWithSpread(w_constructor:4, w_rangeSrc:4, range_size);
+}
+:TestEqual.Wide w_src, [w_kIdx] is wide = 0; op = 0x59; w_src; w_kIdx {
+	if (w_src == acc) goto <true>;
+	acc =False;
+	goto inst_next;
+	<true>
+	acc=True;
+}
+:TestEqualStrict.Wide w_src, [w_kIdx] is wide = 0; op = 0x5a; w_src; w_kIdx {
+	acc = TestEqualStrict(acc,w_src);
+}
+:TestLessThan.Wide w_src, [w_kIdx] is wide = 0; op = 0x5b; w_src; w_kIdx {
+	if (w_src s< acc) goto <true>;
+	acc =False;
+	goto inst_next;
+	<true>
+	acc=True;
+}
+:TestGreaterThan.Wide w_src, [w_kIdx] is wide = 0; op = 0x5c; w_src; w_kIdx {
+	if (w_src s> acc) goto <true>;
+	acc =False;
+	goto inst_next;
+	<true>
+	acc=True;
+}
+:TestLessThanOrEqual.Wide w_src, [w_kIdx] is wide = 0; op = 0x5d; w_src; w_kIdx {
+	if (w_src s<= acc) goto <true>;
+	acc =False;
+	goto inst_next;
+	<true>
+	acc=True;
+}
+:TestGreaterThanOrEqual.Wide w_src, [w_kIdx] is wide = 0; op = 0x5e; w_src; w_kIdx {
+	if (w_src s>= acc) goto <true>;
+	acc =False;
+	goto inst_next;
+	<true>
+	acc=True;
+}
+:TestEqualStrictNoFeedback.Wide w_src is wide = 0; op = 0x5f; w_src {
+	# no feedback
+	acc = TestEqualStrict(acc,w_src);
+}
+:TestInstanceOf.Wide w_src is wide = 0; op = 0x60; w_src {
+	acc = InstanceOf(w_src, acc, _context);
+}
+:TestIn.Wide w_src is wide = 0; op = 0x61; w_src {
+	acc = HasProperty(w_src, acc, _context,0:4);
+}
+:TestUndetectable.Wide is wide = 0; op = 0x62 {
+	acc = TestUndetectable(acc);
+}
+:TestNull.Wide is wide = 0; op = 0x63 {
+	acc = TestEqualStrict(acc,Null);
+}
+:TestUndefined.Wide is wide = 0; op = 0x64 {
+	acc = TestEqualStrict(acc,Undefined);
+}
+:TestTypeOf.Wide kFlag8 is wide = 0; op = 0x65; kFlag8 {
+	tp:4 = TypeOf(acc);
+	lit:4 = cpool(0,inst_start,kFlag8, $(CP_LITERALTYPE));
+	if (tp == lit) goto <true>;
+	acc =False;
+	goto inst_next;
+	<true>
+	acc=True;
+}
+:ToName.Wide w_dst is wide = 0; op = 0x66; w_dst {
+	w_dst = ToName(acc, _context);
+}
+:ToNumber.Wide w_dst, [w_kIdx] is wide = 0; op = 0x67; w_dst; w_kIdx {
+	w_dst = ToNumber(acc);
+}
+:ToObject.Wide w_dst is wide = 0; op = 0x68; w_dst {
+	w_dst = ToObject(acc);
+}
+:CreateRegExpLiteral.Wide [w_kIdx], [w_kIdx_2], kFlag8 is wide = 0; op = 0x69; w_kIdx; w_kIdx_2; kFlag8 {
+	acc = CreateRegExpLiteral(w_kIdx:4, w_kIdx_2:4, kFlag8:4);
+}
+:CreateArrayLiteral.Wide [w_kIdx], [w_kIdx_2], kFlag8 is wide = 0; op = 0x6a; w_kIdx; w_kIdx_2; kFlag8 {
+	literal_index:4 = w_kIdx_2;
+	acc = CreateArrayLiteral(_context, _closure, literal_index, w_kIdx:4, kFlag8:4);
+}
+#TODO REDO NOW both
+:CreateEmptyArrayLiteral.Wide [w_kIdx] is wide = 0; op = 0x6b; w_kIdx {
+	literal_index:4 = w_kIdx;
+	acc = CreateObjectLiteral(_context, _closure, literal_index);
+}
+:CreateObjectLiteral.Wide [w_kIdx], [w_kIdx_2], kFlag8, w_dst is wide = 0; op = 0x6c; w_kIdx; w_kIdx_2; kFlag8; w_dst {
+	literal_index:4 = w_kIdx_2;
+	cp:4 = cpool(0,inst_start,w_kIdx, $(CP_CONSTANTS));
+	w_dst = CreateObjectLiteral(_context, _closure, cp, literal_index, kFlag8:4);
+}
+:CreateEmptyObjectLiteral.Wide is wide = 0; op = 0x6d {
+	acc = CreateEmptyObjectLiteral(_context);
+}
+:CreateClosure.Wide [w_kIdx], [w_kIdx_2], kFlag8 is wide = 0; op = 0x6e; w_kIdx; w_kIdx_2; kFlag8 {
+	cp:4 = cpool(0,inst_start, w_kIdx, $(CP_CONSTANTS));
+	acc = CreateClosure(_context, cp, w_kIdx_2:4, kFlag8:4);
+}
+:CreateBlockContext.Wide [w_kIdx] is wide = 0; op = 0x6f; w_kIdx {
+	cp:4 = cpool(0,inst_start,w_kIdx, $(CP_CONSTANTS));
+	acc = CreateBlockContext(_context, _closure, cp);
+}
+:CreateCatchContext.Wide w_exception, [w_kIdx], [w_kIdx_2] is wide = 0; op = 0x70; w_exception; w_kIdx; w_kIdx_2 {
+	closure:4 = acc;
+	ex:4 = cpool(0,inst_start,w_kIdx_2, $(CP_CONSTANTS));
+	cp:4 = cpool(0,inst_start,w_kIdx, $(CP_CONSTANTS));
+	acc = CreateCatchContext(_context, closure, w_exception, cp, ex);
+}
+:CreateFunctionContext.Wide [w_kUImm] is wide = 0; op = 0x71; w_kUImm {
+	acc = CreateFunctionContext(_context, _closure, w_kUImm:4);
+}
+:CreateEvalContext.Wide [w_kUImm] is wide = 0; op = 0x72; w_kUImm {
+	acc = CreateEvalContext(w_kUImm:4);
+}
+:CreateWithContext.Wide w_object, [w_kIdx] is wide = 0; op = 0x73; w_object; w_kIdx {
+	acc = CreateWithContext(acc, w_object, w_kIdx:4);
+}
+:CreateMappedArguments.Wide is wide = 0; op = 0x74 {
+	acc = CreateMappedArguments();
+}
+:CreateUnmappedArguments.Wide is wide = 0; op = 0x75 {
+	acc = CreateUnmappedArguments();
+}
+:CreateRestParameter.Wide is wide = 0; op = 0x76 {
+	acc = CreateRestParameter();
+}
+:JumpLoop.Wide [w_destloop], [w_kImm] is wide = 0; op = 0x77; w_destloop; w_kImm {
+	CheckOSRLevel(w_kImm:4);
+	goto w_destloop;
+}
+:Jump.Wide [w_dest] is wide = 0; op = 0x78; w_dest {
+	goto w_dest;
+}
+:JumpConstant.Wide [w_kIdx] is wide = 0; op = 0x79; w_kIdx {
+	tmp:4 = cpool(0, inst_start,w_kIdx, $(CP_SMI));
+	addr:4 =  inst_start + tmp;
+	goto [addr];
+}
+:JumpIfNullConstant.Wide [w_kIdx] is wide = 0; op = 0x7a; w_kIdx {
+	if (acc != Null) goto inst_next;
+	tmp:4 = cpool(0, inst_start,w_kIdx, $(CP_SMI));
+	addr:4 = inst_start + tmp;
+	goto [addr];
+}
+:JumpIfNotNullConstant.Wide [w_kIdx] is wide = 0; op = 0x7b; w_kIdx {
+	if (acc == Null) goto inst_next;
+	tmp:4 = cpool(0, inst_start,w_kIdx, $(CP_SMI));
+	addr:4 = inst_start + tmp;
+	goto [addr];
+}
+:JumpIfUndefinedConstant.Wide [w_kIdx] is wide = 0; op = 0x7c; w_kIdx {
+	if (acc != Undefined)  goto inst_next;
+	tmp:4 = cpool(0, inst_start,w_kIdx, $(CP_SMI));
+	addr:4 = inst_start + tmp;
+	goto [addr];
+}
+:JumpIfNotUndefinedConstant.Wide [w_kIdx] is wide = 0; op = 0x7d; w_kIdx {
+	if (acc == Undefined) goto inst_next;
+	tmp:4 = cpool(0, inst_start,w_kIdx, $(CP_SMI));
+	addr:4 = inst_start + tmp;
+	goto [addr];
+}
+:JumpIfTrueConstant.Wide [w_kIdx] is wide = 0; op = 0x7e; w_kIdx {
+	if (acc != True) goto inst_next;
+	tmp:4 = cpool(0, inst_start,w_kIdx, $(CP_SMI));
+	addr:4 = inst_start + tmp;
+	goto [addr];
+}
+:JumpIfFalseConstant.Wide [w_kIdx] is wide = 0; op = 0x7f; w_kIdx {
+	if (acc != False) goto inst_next;
+	tmp:4 = cpool(0, inst_start,w_kIdx, $(CP_SMI));
+	addr:4 = inst_start + tmp;
+	goto [addr];
+}
+:JumpIfJSReceiverConstant.Wide [w_kIdx] is wide = 0; op = 0x80; w_kIdx {
+	if (acc != JSReceiver) goto inst_next;
+	tmp:4 = cpool(0, inst_start,w_kIdx, $(CP_SMI));
+	addr:4 = inst_start + tmp;
+	goto [addr];
+}
+:JumpIfToBooleanTrueConstant.Wide [w_kIdx] is wide = 0; op = 0x81; w_kIdx {
+	if (ToBoolean(acc) != True) goto inst_next;
+	tmp:4 = cpool(0, inst_start,w_kIdx, $(CP_SMI));
+	addr:4 = inst_start + tmp;
+	goto [addr];
+}
+:JumpIfToBooleanFalseConstant.Wide [w_kIdx] is wide = 0; op = 0x82; w_kIdx {
+	if (ToBoolean(acc) != False) goto inst_next;
+	tmp:4 = cpool(0, inst_start,w_kIdx, $(CP_SMI));
+	addr:4 = inst_start + tmp;
+	goto [addr];
+}
+:JumpIfToBooleanTrue.Wide [w_dest] is wide = 0; op = 0x83; w_dest {
+	if ( ToBoolean(acc) == True) goto w_dest;
+}
+:JumpIfToBooleanFalse.Wide [w_dest] is wide = 0; op = 0x84; w_dest {
+	if ( ToBoolean(acc) == False) goto w_dest;
+}
+:JumpIfTrue.Wide [w_dest] is wide = 0; op = 0x85; w_dest {
+	if (acc == True) goto w_dest;
+}
+:JumpIfFalse.Wide [w_dest] is wide = 0; op = 0x86; w_dest {
+	if (acc == False) goto w_dest;
+}
+:JumpIfNull.Wide [w_dest] is wide = 0; op = 0x87; w_dest {
+	if (acc == Null) goto w_dest;
+}
+:JumpIfNotNull.Wide [w_dest] is wide = 0; op = 0x88; w_dest {
+	if (acc != Null) goto w_dest;
+}
+:JumpIfUndefined.Wide [w_dest] is wide = 0; op = 0x89; w_dest {
+	if (acc == Undefined) goto w_dest;
+}
+:JumpIfNotUndefined.Wide [w_dest] is wide = 0; op = 0x8a; w_dest {
+	if (acc != Undefined) goto w_dest;
+}
+
+:JumpIfJSReceiver.Wide w_dest is wide = 0; op = 0x8b; w_dest {
+	if (acc == JSReceiver) goto w_dest;
+}
+:SwitchOnSmiNoFeedback.Wide [w_kIdx], [w_kUImm], [w_kImm] is wide = 0; op = 0x8c; w_kIdx; w_kUImm; w_kImm {
+  SwitchOnSmiNoFeedback(cpool(0:4, inst_start,0, 0:4));
+}
+
+:ForInPrepare.Wide w_receiver, w_triple^rangeDst is wide = 0; op = 0x8d; w_receiver; w_triple; rangeDst {
+	ForInPrepare(w_receiver, w_triple, 3:4);
+}
+:ForInContinue.Wide w_index, w_cache_length is wide = 0; op = 0x8e; w_index; w_cache_length {
+	acc = ForInContinue(w_index, w_cache_length);
+}
+:ForInNext.Wide w_receiver, w_index, w_pair^rangeDst, [w_kIdx] is wide = 0; op = 0x8f; w_receiver; w_index; w_pair; rangeDst; w_kIdx {
+	acc = ForInNext(w_receiver, w_index, w_pair, 2:4);
+}
+:ForInStep.Wide w_index is wide = 0; op = 0x90; w_index {
+	acc = ForInStep(w_index);
+}
+:StackCheck.Wide is wide = 0; op = 0x91 {
+	StackCheck();
+}
+:SetPendingMessage.Wide is wide = 0; op = 0x92 {
+	acc = SetPendingMessage(acc);
+}
+:Throw.Wide is wide = 0; op = 0x93 {
+	ThrowCallOther($(TC_UNCONDITIONAL):4, 238:4);
+}
+:ReThrow.Wide is wide = 0; op = 0x94 {
+	ThrowCallOther($(TC_UNCONDITIONAL):4, 235:4);
+}
+:Return.Wide is wide = 0; op = 0x95 {
+	return [acc];
+}
+:ThrowReferenceErrorIfHole.Wide [w_kIdx] is wide = 0; op = 0x96; w_kIdx {
+	ThrowCallOther($(TC_NOTTHEHOLE):4, 257:4);
+}
+:ThrowSuperNotCalledIfHole.Wide is wide = 0; op = 0x97 {
+	ThrowCallOther($(TC_NOTTHEHOLE):4, 47:4);
+}
+:ThrowSuperAlreadyCalledIfNotHole.Wide is wide = 0; op = 0x98 {
+	ThrowCallOther($(TC_THEHOLE):4, 46:4);
+}
+:RestoreGeneratorState.Wide w_src is wide = 0; op = 0x99; w_src {
+	acc = GetGeneratorState(w_src);
+	SetGeneratorExecuting(w_src);
+}
+:SuspendGenerator.Wide w_dst, w_rangeSrc^rangeDst, [w_kUImm] is wide = 0; op = 0x9a; w_dst; w_rangeSrc; rangeDst; w_kUImm {
+	SuspendGenerator(w_dst, w_rangeSrc, range_size, _context, w_kUImm:4);
+}
+:RestoreGeneratorRegisters.Wide w_src, w_rangeSrc^rangeDst is wide = 0; op = 0x9b; w_src; w_rangeSrc; rangeDst {
+	RestoreGeneratorRegisters(w_src, w_rangeSrc, range_size);
+}
+
+:IncBlockCounter.Wide [w_kIdx] is wide = 0; op = 0xa6; w_kIdx {
+	IncBlockCounter(w_kIdx:4);
+}
+:Illegal.Wide is wide = 0; op = 0xa7 {Illegal();}
+# was not presented in our version, only for switch purposes
+:Nop.Wide is wide = 0; op = 0xa8 {}

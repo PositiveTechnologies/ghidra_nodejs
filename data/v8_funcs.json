@@ -1,0 +1,6287 @@
+[
+    {
+		"Name": "kForInPrepare",
+		"Args": [
+			{
+				"Name": "receiver",
+				"Type": "JSReceiver"
+			}
+		]
+    },
+    {
+        "Name": "kLoadLookupSlotForCall",
+        "Args": [
+            {
+                "Name": "name",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kElementsTransitionAndStoreIC_Miss",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "Object"
+            },
+            {
+                    "Name": "key",
+                "Type": "Object"
+            },
+            {
+                "Name": "value",
+                "Type": "Object"
+            },
+            {
+                "Name": "map",
+                "Type": "Map"
+            },
+            {
+                "Name": "slot",
+                "Type": "Smi"
+            },
+            {
+                "Name": "vector",
+                "Type": "FeedbackVector"
+            }
+        ]
+    },
+    {
+        "Name": "kKeyedLoadIC_Miss",
+        "Args": [
+            {
+                "Name": "receiver",
+                "Type": "Object"
+            },
+            {
+                    "Name": "key",
+                "Type": "Object"
+            },
+            {
+                "Name": "slot",
+                "Type": "Smi"
+            },
+            {
+                "Name": "feedback_vector",
+                "Type": "FeedbackVector"
+            }
+        ]
+    },
+    {
+        "Name": "kKeyedStoreIC_Miss",
+        "Args": [
+            {
+                "Name": "value",
+                "Type": "Object"
+            },
+            {
+                "Name": "slot",
+                "Type": "Smi"
+            },
+            {
+                "Name": "feedback_vector",
+                "Type": "FeedbackVector"
+            },
+            {
+                "Name": "receiver",
+                "Type": "Object"
+            },
+            {
+                    "Name": "key",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kKeyedStoreIC_Slow",
+        "Args": [
+            {
+                "Name": "value",
+                "Type": "Object"
+            },
+            {
+                "Name": "slot",
+                "Type": "Smi"
+            },
+            {
+                "Name": "feedback_vector",
+                "Type": "FeedbackVector"
+            },
+            {
+                "Name": "object",
+                "Type": "Object"
+            },
+            {
+                    "Name": "key",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kLoadElementWithInterceptor",
+        "Args": [
+            {
+                "Name": "receiver",
+                "Type": "JSObject"
+            },
+            {
+                "Name": "index",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kLoadGlobalIC_Miss",
+        "Args": [
+            {
+                "Name": "name",
+                "Type": "String"
+            },
+            {
+                "Name": "slot",
+                "Type": "Smi"
+            },
+            {
+                "Name": "vector",
+                "Type": "FeedbackVector"
+            }
+        ]
+    },
+    {
+        "Name": "kLoadGlobalIC_Slow",
+        "Args": [
+            {
+                "Name": "name",
+                "Type": "String"
+            },
+            {
+                "Name": "slot",
+                "Type": "Smi"
+            },
+            {
+                "Name": "vector",
+                "Type": "FeedbackVector"
+            }
+        ]
+    },
+    {
+        "Name": "kLoadIC_Miss",
+        "Args": [
+            {
+                "Name": "receiver",
+                "Type": "Object"
+            },
+            {
+                    "Name": "key",
+                "Type": "Name"
+            },
+            {
+                "Name": "slot",
+                "Type": "Smi"
+            },
+            {
+                "Name": "vector",
+                "Type": "FeedbackVector"
+            }
+        ]
+    },
+    {
+        "Name": "kLoadPropertyWithInterceptor",
+        "Args": [
+            {
+                "Name": "name",
+                "Type": "Name"
+            },
+            {
+                "Name": "receiver",
+                "Type": "Object"
+            },
+            {
+                "Name": "holder",
+                "Type": "JSObject"
+            },
+            {
+                "Name": "slot",
+                "Type": "Smi"
+            },
+            {
+                "Name": "vector",
+                "Type": "FeedbackVector"
+            }
+        ]
+    },
+    {
+        "Name": "kStoreCallbackProperty",
+        "Args": [
+            {
+                "Name": "receiver",
+                "Type": "JSObject"
+            },
+            {
+                "Name": "holder",
+                "Type": "JSObject"
+            },
+            {
+                "Name": "callbacl_or_cell",
+                "Type": "HeapObject"
+            },
+            {
+                "Name": "name",
+                "Type": "Name"
+            },
+            {
+                "Name": "value",
+                "Type": "Object"
+            },
+            {
+                "Name": "language_mode",
+                "Type": "LanguageMode"
+            }
+        ]
+    },
+    {
+        "Name": "kStoreIC_Miss",
+        "Args": [
+            {
+                "Name": "value",
+                "Type": "Object"
+            },
+            {
+                "Name": "slot",
+                "Type": "Smi"
+            },
+            {
+                "Name": "vector",
+                "Type": "FeedbackVector"
+            },
+            {
+                "Name": "receiver",
+                "Type": "Object"
+            },
+            {
+                    "Name": "key",
+                "Type": "Name"
+            }
+        ]
+    },
+    {
+        "Name": "kStorePropertyWithInterceptor",
+        "Args": [
+            {
+                "Name": "value",
+                "Type": "Object"
+            },
+            {
+                "Name": "slot",
+                "Type": "Smi"
+            },
+            {
+                "Name": "vector",
+                "Type": "FeedbackVector"
+            },
+            {
+                "Name": "receiver",
+                "Type": "JSObject"
+            },
+            {
+                "Name": "name",
+                "Type": "Name"
+            }
+        ]
+    },
+    {
+        "Name": "kUnreachable",
+        "Args": []
+    },
+    {
+        "Name": "kTransitionElementsKind",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "JSObject"
+            },
+            {
+                "Name": "to_map",
+                "Type": "Map"
+            }
+        ]
+    },
+    {
+        "Name": "kRemoveArrayHoles",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "JSReceiver"
+            },
+            {
+                "Name": "limit",
+                "Type": "Uint32"
+            }
+        ]
+    },
+    {
+        "Name": "kMoveArrayContents",
+        "Args": [
+            {
+                "Name": "from",
+                "Type": "JSArray"
+            },
+            {
+                "Name": "to",
+                "Type": "JSArray"
+            }
+        ]
+    },
+    {
+        "Name": "kEstimateNumberOfElements",
+        "Args": [
+            {
+                "Name": "array",
+                "Type": "JSArray"
+            }
+        ]
+    },
+    {
+        "Name": "kGetArrayKeys",
+        "Args": [
+            {
+                "Name": "array",
+                "Type": "JSObject"
+            },
+            {
+                "Name": "length",
+                "Type": "Uint32"
+            }
+        ]
+    },
+    {
+        "Name": "kNewArray",
+        "Args": [
+            {
+                "Name": "constructor",
+                "Type": "JSFunction"
+            },
+            {
+                "Name": "new_target",
+                "Type": "JSReceiver"
+            },
+            {
+                "Name": "type_info",
+                "Type": "HeapObject"
+            },
+			{
+				"Name": "..."
+			}
+        ]
+    },
+    {
+        "Name": "kFunctionBind",
+        "Args": [
+            {
+                "Name": "incoming",
+                "Type": "Arguments*"
+            },
+            {
+                "Name": "..."
+            }
+        ]
+    },
+    {
+        "Name": "kNormalizeElements",
+        "Args": [
+            {
+                "Name": "array",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kGrowArrayElements",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "JSObject"
+            },
+            {
+                    "Name": "key",
+                "Type": "Int32"
+            }
+        ]
+    },
+    {
+        "Name": "kHasComplexElements",
+        "Args": [
+            {
+                "Name": "array",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kIsArray",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kArrayIsArray",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kArraySpeciesConstructor",
+        "Args": [
+            {
+                "Name": "original_array",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kArrayIncludes_Slow",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "Object*"
+            },
+            {
+                "Name": "search_element",
+                "Type": "Object"
+            },
+            {
+                "Name": "from_index",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kArrayIndexOf",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "Object*"
+            },
+            {
+                "Name": "search_element",
+                "Type": "Object"
+            },
+            {
+                "Name": "from_index",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kSpreadIterablePrepare",
+        "Args": [
+            {
+                "Name": "spread",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kThrowNotIntegerSharedTypedArrayError",
+        "Args": [
+            {
+                "Name": "value",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kThrowNotInt32SharedTypedArrayError",
+        "Args": [
+            {
+                "Name": "value",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kThrowInvalidAtomicAccessIndexError",
+        "Args": []
+    },
+    {
+        "Name": "kAtomicsExchange",
+        "Args": [
+            {
+                "Name": "sta",
+                "Type": "JSTypedArray"
+            },
+            {
+                "Name": "index",
+                "Type": "Long"
+            },
+            {
+                "Name": "value",
+                "Type": "Number"
+            }
+        ]
+    },
+    {
+        "Name": "kAtomicsCompareExchange",
+        "Args": [
+            {
+                "Name": "sta",
+                "Type": "JSTypedArray"
+            },
+            {
+                "Name": "index",
+                "Type": "Long"
+            },
+            {
+                "Name": "oldobj",
+                "Type": "Number"
+            },
+            {
+                "Name": "newobj",
+                "Type": "Number"
+            }
+        ]
+    },
+    {
+        "Name": "kAtomicsAdd",
+        "Args": [
+            {
+                "Name": "sta",
+                "Type": "JSTypedArray"
+            },
+            {
+                "Name": "index",
+                "Type": "Long"
+            },
+            {
+                "Name": "value",
+                "Type": "Number"
+            }
+        ]
+    },
+    {
+        "Name": "kAtomicsSub",
+        "Args": [
+            {
+                "Name": "sta",
+                "Type": "JSTypedArray"
+            },
+            {
+                "Name": "index",
+                "Type": "Long"
+            },
+            {
+                "Name": "value",
+                "Type": "Number"
+            }
+        ]
+    },
+    {
+        "Name": "kAtomicsAnd",
+        "Args": [
+            {
+                "Name": "sta",
+                "Type": "JSTypedArray"
+            },
+            {
+                "Name": "index",
+                "Type": "Long"
+            },
+            {
+                "Name": "value",
+                "Type": "Number"
+            }
+        ]
+    },
+    {
+        "Name": "kAtomicsOr",
+        "Args": [
+            {
+                "Name": "sta",
+                "Type": "JSTypedArray"
+            },
+            {
+                "Name": "index",
+                "Type": "Long"
+            },
+            {
+                "Name": "value",
+                "Type": "Number"
+            }
+        ]
+    },
+    {
+        "Name": "kAtomicsXor",
+        "Args": [
+            {
+                "Name": "sta",
+                "Type": "JSTypedArray"
+            },
+            {
+                "Name": "index",
+                "Type": "Long"
+            },
+            {
+                "Name": "value",
+                "Type": "Number"
+            }
+        ]
+    },
+    {
+        "Name": "kAtomicsNumWaitersForTesting",
+        "Args": [
+            {
+                "Name": "sta",
+                "Type": "JSTypedArray"
+            },
+            {
+                "Name": "index",
+                "Type": "Long"
+            }
+        ]
+    },
+    {
+        "Name": "kSetAllowAtomicsWait",
+        "Args": [
+            {
+                "Name": "set",
+                "Type": "Boolean"
+            }
+        ]
+    },
+    {
+        "Name": "kThrowUnsupportedSuperError",
+        "Args": []
+    },
+    {
+        "Name": "kThrowConstructorNonCallableError",
+        "Args": [
+            {
+                "Name": "constructor",
+                "Type": "JSFunction"
+            }
+        ]
+    },
+    {
+        "Name": "kThrowStaticPrototypeError",
+        "Args": []
+    },
+    {
+        "Name": "kThrowSuperAlreadyCalledError",
+        "Args": []
+    },
+    {
+        "Name": "kThrowSuperNotCalled",
+        "Args": []
+    },
+    {
+        "Name": "kThrowNotSuperConstructor",
+        "Args": [
+            {
+                "Name": "constructor",
+                "Type": "Object"
+            },
+            {
+                "Name": "function",
+                "Type": "JSFunction"
+            }
+        ]
+    },
+    {
+        "Name": "kHomeObjectSymbol",
+        "Args": []
+    },
+    {
+        "Name": "kDefineClass",
+        "Args": [
+            {
+                "Name": "super_class",
+                "Type": "Object"
+            },
+            {
+                "Name": "constructor",
+                "Type": "JSFunction"
+            },
+            {
+                "Name": "start_position",
+                "Type": "Smi"
+            },
+            {
+                "Name": "end_position",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kInstallClassNameAccessor",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kInstallClassNameAccessorWithCheck",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kLoadFromSuper",
+        "Args": [
+            {
+                "Name": "receiver",
+                "Type": "Object"
+            },
+            {
+                "Name": "home_object",
+                "Type": "JSObject"
+            },
+            {
+                "Name": "name",
+                "Type": "Name"
+            }
+        ]
+    },
+    {
+        "Name": "kLoadKeyedFromSuper",
+        "Args": [
+            {
+                "Name": "receiver",
+                "Type": "Object"
+            },
+            {
+                "Name": "home_object",
+                "Type": "JSObject"
+            },
+            {
+                    "Name": "key",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kStoreToSuper_Strict",
+        "Args": [
+            {
+                "Name": "receiver",
+                "Type": "Object"
+            },
+            {
+                "Name": "home_object",
+                "Type": "JSObject"
+            },
+            {
+                "Name": "name",
+                "Type": "Name"
+            },
+            {
+                "Name": "value",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kStoreToSuper_Sloppy",
+        "Args": [
+            {
+                "Name": "receiver",
+                "Type": "Object"
+            },
+            {
+                "Name": "home_object",
+                "Type": "JSObject"
+            },
+            {
+                "Name": "name",
+                "Type": "Name"
+            },
+            {
+                "Name": "value",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kStoreKeyedToSuper_Strict",
+        "Args": [
+            {
+                "Name": "receiver",
+                "Type": "Object"
+            },
+            {
+                "Name": "home_object",
+                "Type": "JSObject"
+            },
+            {
+                    "Name": "key",
+                "Type": "Object"
+            },
+            {
+                "Name": "value",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kStoreKeyedToSuper_Sloppy",
+        "Args": [
+            {
+                "Name": "receiver",
+                "Type": "Object"
+            },
+            {
+                "Name": "home_object",
+                "Type": "JSObject"
+            },
+            {
+                    "Name": "key",
+                "Type": "Object"
+            },
+            {
+                "Name": "value",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kGetSuperConstructor",
+        "Args": [
+            {
+                "Name": "active_function",
+                "Type": "JSFunction"
+            }
+        ]
+    },
+    {
+        "Name": "kTheHole",
+        "Args": []
+    },
+    {
+        "Name": "kGenericHash",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kGetExistingHash",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kSetGrow",
+        "Args": [
+            {
+                "Name": "holder",
+                "Type": "JSSet"
+            }
+        ]
+    },
+    {
+        "Name": "kSetShrink",
+        "Args": [
+            {
+                "Name": "holder",
+                "Type": "JSSet"
+            }
+        ]
+    },
+    {
+        "Name": "kSetIteratorClone",
+        "Args": [
+            {
+                "Name": "holder",
+                "Type": "JSSetIterator"
+            }
+        ]
+    },
+    {
+        "Name": "kMapShrink",
+        "Args": [
+            {
+                "Name": "holder",
+                "Type": "JSMap"
+            }
+        ]
+    },
+    {
+        "Name": "kMapGrow",
+        "Args": [
+            {
+                "Name": "holder",
+                "Type": "JSMap"
+            }
+        ]
+    },
+    {
+        "Name": "kMapIteratorClone",
+        "Args": [
+            {
+                "Name": "holder",
+                "Type": "JSMapIterator"
+            }
+        ]
+    },
+    {
+        "Name": "kGetWeakMapEntries",
+        "Args": [
+            {
+                "Name": "holder",
+                "Type": "JSWeakCollection"
+            },
+            {
+                "Name": "max_entries",
+                "Type": "Int32"
+            }
+        ]
+    },
+    {
+        "Name": "kWeakCollectionInitialize",
+        "Args": [
+            {
+                "Name": "weak_collection",
+                "Type": "JSWeakCollection"
+            }
+        ]
+    },
+    {
+        "Name": "kWeakCollectionDelete",
+        "Args": [
+            {
+                "Name": "weak_collection",
+                "Type": "JSWeakCollection"
+            },
+            {
+                    "Name": "key",
+                "Type": "Object"
+            },
+            {
+                "Name": "hash",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kWeakCollectionSet",
+        "Args": [
+            {
+                "Name": "weak_collection",
+                "Type": "JSWeakCollection"
+            },
+            {
+                    "Name": "key",
+                "Type": "Object"
+            },
+            {
+                "Name": "value",
+                "Type": "Object"
+            },
+            {
+                "Name": "hash",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kGetWeakSetValues",
+        "Args": [
+            {
+                "Name": "holder",
+                "Type": "JSWeakCollection"
+            },
+            {
+                "Name": "max_values",
+                "Type": "Int32"
+            }
+        ]
+    },
+    {
+        "Name": "kIsJSMap",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kIsJSSet",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kIsJSWeakMap",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kIsJSWeakSet",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kCompileLazy",
+        "Args": [
+            {
+                "Name": "function",
+                "Type": "JSFunction"
+            }
+        ]
+    },
+    {
+        "Name": "kCompileOptimized_Concurrent",
+        "Args": [
+            {
+                "Name": "function",
+                "Type": "JSFunction"
+            }
+        ]
+    },
+    {
+        "Name": "kCompileOptimized_NotConcurrent",
+        "Args": [
+            {
+                "Name": "function",
+                "Type": "JSFunction"
+            }
+        ]
+    },
+    {
+        "Name": "kEvictOptimizedCodeSlot",
+        "Args": [
+            {
+                "Name": "function",
+                "Type": "JSFunction"
+            }
+        ]
+    },
+    {
+        "Name": "kNotifyStubFailure",
+        "Args": []
+    },
+    {
+        "Name": "kNotifyDeoptimized",
+        "Args": [
+            {
+                "Name": "type_arg",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kCompileForOnStackReplacement",
+        "Args": [
+            {
+                "Name": "function",
+                "Type": "JSFunction"
+            }
+        ]
+    },
+    {
+        "Name": "kResolvePossiblyDirectEval",
+        "Args": [
+            {
+                "Name": "callee",
+                "Type": "Object"
+            },
+            {
+                "Name": "source",
+                "Type": "String"
+            },
+            {
+                "Name": "outer_info",
+                "Type": "SharedFunctionInfo"
+            },
+            {
+                "Name": "language_mode",
+                "Type": "LanguageMode"
+            },
+            {
+                "Name": "eval_scope_position",
+                "Type": "Smi"
+            },
+            {
+                "Name": "eval_position",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kInstantiateAsmJs",
+        "Args": [
+            {
+                "Name": "function",
+                "Type": "JSFunction"
+            },
+            {
+                "Name": "stdlib",
+                "Type": "JSReceiver"
+            },
+            {
+                "Name": "foreign",
+                "Type": "JSReceiver"
+            },
+            {
+                "Name": "memory",
+                "Type": "JSArrayBuffer"
+            }
+        ]
+    },
+    {
+        "Name": "kIsDate",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kDateCurrentTime",
+        "Args": []
+    },
+    {
+        "Name": "kThrowNotDateError",
+        "Args": []
+    },
+    {
+        "Name": "kHandleDebuggerStatement",
+        "Args": []
+    },
+    {
+        "Name": "kDebugBreakOnBytecode",
+        "Args": [
+            {
+                "Name": "value",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kSetDebugEventListener",
+        "Args": [
+            {
+                "Name": "callback",
+                "Type": "Object"
+            },
+            {
+                "Name": "data",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kScheduleBreak",
+        "Args": []
+    },
+    {
+        "Name": "kDebugGetInternalProperties",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kDebugGetPropertyDetails",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "JSObject"
+            },
+            {
+                "Name": "name_obj",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kDebugGetProperty",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "Object"
+            },
+            {
+                "Name": "name",
+                "Type": "Name"
+            }
+        ]
+    },
+    {
+        "Name": "kDebugPropertyKindFromDetails",
+        "Args": [
+            {
+                "Name": "details",
+                "Type": "PropertyDetails"
+            }
+        ]
+    },
+    {
+        "Name": "kDebugPropertyAttributesFromDetails",
+        "Args": [
+            {
+                "Name": "details",
+                "Type": "PropertyDetails"
+            }
+        ]
+    },
+    {
+        "Name": "kCheckExecutionState",
+        "Args": [
+            {
+                "Name": "break_id",
+                "Type": "Int32"
+            }
+        ]
+    },
+    {
+        "Name": "kGetFrameCount",
+        "Args": [
+            {
+                "Name": "break_id",
+                "Type": "Int32"
+            }
+        ]
+    },
+    {
+        "Name": "kGetFrameDetails",
+        "Args": [
+            {
+                "Name": "break_id",
+                "Type": "Int32"
+            },
+            {
+                "Name": "index",
+                "Type": "Int32"
+            }
+        ]
+    },
+    {
+        "Name": "kGetScopeCount",
+        "Args": [
+            {
+                "Name": "break_id",
+                "Type": "Int32"
+            },
+            {
+                "Name": "wrapped_id",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kGetScopeDetails",
+        "Args": [
+            {
+                "Name": "break_id",
+                "Type": "Int32"
+            },
+            {
+                "Name": "wrapped_id",
+                "Type": "Smi"
+            },
+            {
+                "Name": "inlined_jsframe_index",
+                "Type": "Int32"
+            },
+            {
+                "Name": "index",
+                "Type": "Int32"
+            }
+        ]
+    },
+    {
+        "Name": "kGetAllScopesDetails",
+        "Args": [
+            {
+                "Name": "break_id",
+                "Type": "Int32"
+            },
+            {
+                "Name": "wrapped_id",
+                "Type": "Smi"
+            },
+            {
+                "Name": "inlined_frame_index",
+                "Type": "Int32"
+            },
+            {
+                "Name": "flag",
+                "Type": "Boolean"
+            }
+        ]
+    },
+    {
+        "Name": "kGetFunctionScopeCount",
+        "Args": [
+            {
+                "Name": "function",
+                "Type": "JSReceiver"
+            }
+        ]
+    },
+    {
+        "Name": "kGetFunctionScopeDetails",
+        "Args": [
+            {
+                "Name": "fun",
+                "Type": "JSFunction"
+            },
+            {
+                "Name": "index",
+                "Type": "Int32"
+            }
+        ]
+    },
+    {
+        "Name": "kGetGeneratorScopeCount",
+        "Args": [
+            {
+                "Name": "gen",
+                "Type": "JSGeneratorObject"
+            }
+        ]
+    },
+    {
+        "Name": "kGetGeneratorScopeDetails",
+        "Args": [
+            {
+                "Name": "gen",
+                "Type": "JSGeneratorObject"
+            },
+            {
+                "Name": "index",
+                "Type": "Int32"
+            }
+        ]
+    },
+    {
+        "Name": "kSetScopeVariableValue",
+        "Args": [
+            {
+                "Name": "number_or_func",
+                "Type": "Object"
+            },
+            {
+                "Name": "wrapped_id",
+                "Type": "Smi"
+            },
+            {
+                "Name": "inlined_jsframe_index",
+                "Type": "Int32"
+            },
+            {
+                "Name": "index",
+                "Type": "Int32"
+            },
+            {
+                "Name": "variable_name",
+                "Type": "String"
+            },
+            {
+                "Name": "new_value",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kDebugPrintScopes",
+        "Args": []
+    },
+    {
+        "Name": "kSetBreakPointsActive",
+        "Args": [
+            {
+                "Name": "active",
+                "Type": "Boolean"
+            }
+        ]
+    },
+    {
+        "Name": "kGetBreakLocations",
+        "Args": [
+            {
+                "Name": "fun",
+                "Type": "JSFunction"
+            }
+        ]
+    },
+    {
+        "Name": "kSetFunctionBreakPoint",
+        "Args": [
+            {
+                "Name": "function",
+                "Type": "JSFunction"
+            },
+            {
+                "Name": "source_position",
+                "Type": "Int32"
+            },
+            {
+                "Name": "break_point_object_arg",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kSetScriptBreakPoint",
+        "Args": [
+            {
+                "Name": "wrapper",
+                "Type": "JSValue"
+            },
+            {
+                "Name": "source_position",
+                "Type": "Int32"
+            },
+            {
+                "Name": "break_point_object_arg",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kClearBreakPoint",
+        "Args": [
+            {
+                "Name": "break_point_object_arg",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kChangeBreakOnException",
+        "Args": [
+            {
+                "Name": "type_arg",
+                "Type": "Uint32"
+            },
+            {
+                "Name": "enable",
+                "Type": "Boolean"
+            }
+        ]
+    },
+    {
+        "Name": "kIsBreakOnException",
+        "Args": [
+            {
+                "Name": "type_arg",
+                "Type": "Uint32"
+            }
+        ]
+    },
+    {
+        "Name": "kPrepareStep",
+        "Args": [
+            {
+                "Name": "break_id",
+                "Type": "Int32"
+            },
+            {
+                "Name": "step_action",
+                "Type": "StepAction"
+            }
+        ]
+    },
+    {
+        "Name": "kClearStepping",
+        "Args": []
+    },
+    {
+        "Name": "kDebugEvaluate",
+        "Args": [
+            {
+                "Name": "break_id",
+                "Type": "Int32"
+            },
+            {
+                "Name": "wrapped_id",
+                "Type": "Smi"
+            },
+            {
+                "Name": "inlined_jsframe_index",
+                "Type": "Int32"
+            },
+            {
+                "Name": "source",
+                "Type": "String"
+            },
+            {
+                "Name": "throw_on_side_effect",
+                "Type": "Boolean"
+            }
+        ]
+    },
+    {
+        "Name": "kDebugEvaluateGlobal",
+        "Args": [
+            {
+                "Name": "break_id",
+                "Type": "Int32"
+            },
+            {
+                "Name": "source",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kDebugGetLoadedScripts",
+        "Args": []
+    },
+    {
+        "Name": "kDebugReferencedBy",
+        "Args": [
+            {
+                "Name": "target",
+                "Type": "JSObject"
+            },
+            {
+                "Name": "filter",
+                "Type": "Object"
+            },
+            {
+                "Name": "max_references",
+                "Type": "Int32"
+            }
+        ]
+    },
+    {
+        "Name": "kDebugConstructedBy",
+        "Args": [
+            {
+                "Name": "constructor",
+                "Type": "JSFunction"
+            },
+            {
+                "Name": "max_references",
+                "Type": "Int32"
+            }
+        ]
+    },
+    {
+        "Name": "kDebugGetPrototype",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kDebugSetScriptSource",
+        "Args": [
+            {
+                "Name": "script_wrapper",
+                "Type": "JSValue"
+            },
+            {
+                "Name": "source",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kFunctionGetInferredName",
+        "Args": [
+            {
+                "Name": "f",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kFunctionGetDebugName",
+        "Args": [
+            {
+                "Name": "function",
+                "Type": "JSReceiver"
+            }
+        ]
+    },
+    {
+        "Name": "kGetDebugContext",
+        "Args": []
+    },
+    {
+        "Name": "kCollectGarbage",
+        "Args": [
+            {
+                "Name": "exhaustive",
+                "Type": "Boolean"
+            }
+        ]
+    },
+    {
+        "Name": "kGetHeapUsage",
+        "Args": []
+    },
+    {
+        "Name": "kGetScript",
+        "Args": [
+            {
+                "Name": "script_name",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kScriptLineCount",
+        "Args": [
+            {
+                "Name": "script",
+                "Type": "JSValue"
+            }
+        ]
+    },
+    {
+        "Name": "kScriptLineStartPosition",
+        "Args": [
+            {
+                "Name": "script",
+                "Type": "JSValue"
+            },
+            {
+                "Name": "line",
+                "Type": "Int32"
+            }
+        ]
+    },
+    {
+        "Name": "kScriptLineEndPosition",
+        "Args": [
+            {
+                "Name": "script",
+                "Type": "JSValue"
+            },
+            {
+                "Name": "line",
+                "Type": "Int32"
+            }
+        ]
+    },
+    {
+        "Name": "kScriptLocationFromLine",
+        "Args": [
+            {
+                "Name": "script",
+                "Type": "JSValue"
+            },
+            {
+                "Name": "opt_line",
+                "Type": "Object"
+            },
+            {
+                "Name": "opt_column",
+                "Type": "Object"
+            },
+            {
+                "Name": "offset",
+                "Type": "Int32"
+            }
+        ]
+    },
+    {
+        "Name": "kScriptLocationFromLine2",
+        "Args": [
+            {
+                "Name": "scriptid",
+                "Type": "Int32"
+            },
+            {
+                "Name": "opt_line",
+                "Type": "Object"
+            },
+            {
+                "Name": "opt_column",
+                "Type": "Object"
+            },
+            {
+                "Name": "offset",
+                "Type": "Int32"
+            }
+        ]
+    },
+    {
+        "Name": "kScriptPositionInfo",
+        "Args": [
+            {
+                "Name": "script",
+                "Type": "JSValue"
+            },
+            {
+                "Name": "position",
+                "Type": "Int32"
+            },
+            {
+                "Name": "with_offset",
+                "Type": "Boolean"
+            }
+        ]
+    },
+    {
+        "Name": "kScriptPositionInfo2",
+        "Args": [
+            {
+                "Name": "scriptid",
+                "Type": "Int32"
+            },
+            {
+                "Name": "position",
+                "Type": "Int32"
+            },
+            {
+                "Name": "with_offset",
+                "Type": "Boolean"
+            }
+        ]
+    },
+    {
+        "Name": "kScriptSourceLine",
+        "Args": [
+            {
+                "Name": "script",
+                "Type": "JSValue"
+            },
+            {
+                "Name": "line",
+                "Type": "Int32"
+            }
+        ]
+    },
+    {
+        "Name": "kDebugOnFunctionCall",
+        "Args": [
+            {
+                "Name": "fun",
+                "Type": "JSFunction"
+            }
+        ]
+    },
+    {
+        "Name": "kDebugPrepareStepInSuspendedGenerator",
+        "Args": []
+    },
+    {
+        "Name": "kDebugRecordGenerator",
+        "Args": [
+            {
+                "Name": "generator",
+                "Type": "JSGeneratorObject"
+            }
+        ]
+    },
+    {
+        "Name": "kDebugPushPromise",
+        "Args": [
+            {
+                "Name": "promise",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kDebugPopPromise",
+        "Args": []
+    },
+    {
+        "Name": "kDebugPromiseReject",
+        "Args": [
+            {
+                "Name": "rejected_promise",
+                "Type": "JSPromise"
+            },
+            {
+                "Name": "value",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kDebugAsyncEventEnqueueRecurring",
+        "Args": [
+            {
+                "Name": "promise",
+                "Type": "JSPromise"
+            },
+            {
+                "Name": "status",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kDebugAsyncFunctionPromiseCreated",
+        "Args": [
+            {
+                "Name": "promise",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kDebugIsActive",
+        "Args": []
+    },
+    {
+        "Name": "kDebugBreakInOptimizedCode",
+        "Args": []
+    },
+    {
+        "Name": "kDebugCollectCoverage",
+        "Args": []
+    },
+    {
+        "Name": "kDebugTogglePreciseCoverage",
+        "Args": [
+            {
+                "Name": "enable",
+                "Type": "Boolean"
+            }
+        ]
+    },
+    {
+        "Name": "kDebugToggleBlockCoverage",
+        "Args": [
+            {
+                "Name": "enable",
+                "Type": "Boolean"
+            }
+        ]
+    },
+    {
+        "Name": "kIncBlockCounter",
+        "Args": [
+            {
+                "Name": "function",
+                "Type": "JSFunction"
+            },
+            {
+                "Name": "coverage_array_slot_index",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kErrorToString",
+        "Args": [
+            {
+                "Name": "recv",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kForInEnumerate",
+        "Args": [
+            {
+                "Name": "receiver",
+                "Type": "JSReceiver"
+            }
+        ]
+    },
+    {
+        "Name": "kForInFilter",
+        "Args": [
+            {
+                "Name": "receiver",
+                "Type": "JSReceiver"
+            },
+            {
+                    "Name": "key",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kForInHasProperty",
+        "Args": [
+            {
+                "Name": "receiver",
+                "Type": "JSReceiver"
+            },
+            {
+                    "Name": "key",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kInterpreterNewClosure",
+        "Args": [
+            {
+                "Name": "shared",
+                "Type": "SharedFunctionInfo"
+            },
+            {
+                "Name": "vector",
+                "Type": "FeedbackVector"
+            },
+            {
+                "Name": "index",
+                "Type": "Smi"
+            },
+            {
+                "Name": "pretenured_flag",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kFunctionGetName",
+        "Args": [
+            {
+                "Name": "function",
+                "Type": "JSReceiver"
+            }
+        ]
+    },
+    {
+        "Name": "kFunctionGetScript",
+        "Args": [
+            {
+                "Name": "function",
+                "Type": "JSReceiver"
+            }
+        ]
+    },
+    {
+        "Name": "kFunctionGetScriptId",
+        "Args": [
+            {
+                "Name": "function",
+                "Type": "JSReceiver"
+            }
+        ]
+    },
+    {
+        "Name": "kFunctionGetSourceCode",
+        "Args": [
+            {
+                "Name": "function",
+                "Type": "JSReceiver"
+            }
+        ]
+    },
+    {
+        "Name": "kFunctionGetScriptSourcePosition",
+        "Args": [
+            {
+                "Name": "fun",
+                "Type": "JSFunction"
+            }
+        ]
+    },
+    {
+        "Name": "kFunctionGetContextData",
+        "Args": [
+            {
+                "Name": "fun",
+                "Type": "JSFunction"
+            }
+        ]
+    },
+    {
+        "Name": "kFunctionSetLength",
+        "Args": [
+            {
+                "Name": "fun",
+                "Type": "JSFunction"
+            },
+            {
+                "Name": "length",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kFunctionSetPrototype",
+        "Args": [
+            {
+                "Name": "fun",
+                "Type": "JSFunction"
+            },
+            {
+                "Name": "value",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kFunctionIsAPIFunction",
+        "Args": [
+            {
+                "Name": "f",
+                "Type": "JSFunction"
+            }
+        ]
+    },
+    {
+        "Name": "kSetCode",
+        "Args": [
+            {
+                "Name": "target",
+                "Type": "JSFunction"
+            },
+            {
+                "Name": "source",
+                "Type": "JSFunction"
+            }
+        ]
+    },
+    {
+        "Name": "kSetNativeFlag",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kIsConstructor",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kSetForceInlineFlag",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kCall",
+        "Args": [
+            {
+                "Name": "target",
+                "Type": "Object"
+            },
+            {
+                "Name": "receiver",
+                "Type": "Object"
+            },
+			{
+				"Name": "..."
+			}
+        ]
+    },
+    {
+        "Name": "kConvertReceiver",
+        "Args": [
+            {
+                "Name": "receiver",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kIsFunction",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kFunctionToString",
+        "Args": [
+            {
+                "Name": "function",
+                "Type": "JSReceiver"
+            }
+        ]
+    },
+    {
+        "Name": "kCreateJSGeneratorObject",
+        "Args": [
+            {
+                "Name": "function",
+                "Type": "JSFunction"
+            },
+            {
+                "Name": "receiver",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kGeneratorClose",
+        "Args": [
+            {
+                "Name": "generator",
+                "Type": "JSGeneratorObject"
+            }
+        ]
+    },
+    {
+        "Name": "kGeneratorGetFunction",
+        "Args": [
+            {
+                "Name": "generator",
+                "Type": "JSGeneratorObject"
+            }
+        ]
+    },
+    {
+        "Name": "kGeneratorGetReceiver",
+        "Args": [
+            {
+                "Name": "generator",
+                "Type": "JSGeneratorObject"
+            }
+        ]
+    },
+    {
+        "Name": "kGeneratorGetContext",
+        "Args": [
+            {
+                "Name": "generator",
+                "Type": "JSGeneratorObject"
+            }
+        ]
+    },
+    {
+        "Name": "kGeneratorGetInputOrDebugPos",
+        "Args": [
+            {
+                "Name": "generator",
+                "Type": "JSGeneratorObject"
+            }
+        ]
+    },
+    {
+        "Name": "kAsyncGeneratorResolve",
+        "Args": [
+            {
+                "Name": "generator",
+                "Type": "JSGeneratorObject"
+            },
+            {
+                "Name": "value",
+                "Type": "Node*"
+            },
+            {
+                "Name": "done",
+                "Type": "Node*"
+            }
+        ]
+    },
+    {
+        "Name": "kAsyncGeneratorReject",
+        "Args": [
+            {
+                "Name": "generator",
+                "Type": "JSGeneratorObject"
+            },
+            {
+                "Name": "value",
+                "Type": "Node*"
+            }
+        ]
+    },
+    {
+        "Name": "kAsyncGeneratorYield",
+        "Args": [
+            {
+                "Name": "generator",
+                "Type": "JSGeneratorObject"
+            },
+            {
+                "Name": "value",
+                "Type": "Node*"
+            },
+            {
+                "Name": "is_caught",
+                "Type": "Node*"
+            }
+        ]
+    },
+    {
+        "Name": "kGeneratorGetContinuation",
+        "Args": [
+            {
+                "Name": "generator",
+                "Type": "JSGeneratorObject"
+            }
+        ]
+    },
+    {
+        "Name": "kGeneratorGetSourcePosition",
+        "Args": [
+            {
+                "Name": "generator",
+                "Type": "JSGeneratorObject"
+            }
+        ]
+    },
+    {
+        "Name": "kGeneratorGetResumeMode",
+        "Args": [
+            {
+                "Name": "generator",
+                "Type": "JSGeneratorObject"
+            }
+        ]
+    },
+    {
+        "Name": "kAsyncGeneratorHasCatchHandlerForPC",
+        "Args": [
+            {
+                "Name": "generator",
+                "Type": "JSGeneratorObject"
+            }
+        ]
+    },
+    {
+        "Name": "kCanonicalizeLanguageTag",
+        "Args": [
+            {
+                "Name": "locale_id_str",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kAvailableLocalesOf",
+        "Args": [
+            {
+                "Name": "service",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kGetDefaultICULocale",
+        "Args": []
+    },
+    {
+        "Name": "kIsInitializedIntlObject",
+        "Args": [
+            {
+                "Name": "input",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kIsInitializedIntlObjectOfType",
+        "Args": [
+            {
+                "Name": "input",
+                "Type": "Object"
+            },
+            {
+                "Name": "expected_type",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kMarkAsInitializedIntlObjectOfType",
+        "Args": [
+            {
+                "Name": "input",
+                "Type": "JSObject"
+            },
+            {
+                "Name": "type",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kCreateDateTimeFormat",
+        "Args": [
+            {
+                "Name": "locale",
+                "Type": "String"
+            },
+            {
+                "Name": "options",
+                "Type": "JSObject"
+            },
+            {
+                "Name": "resolved",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kInternalDateFormat",
+        "Args": [
+            {
+                "Name": "date_format_holder",
+                "Type": "JSObject"
+            },
+            {
+                "Name": "date",
+                "Type": "JSDate"
+            }
+        ]
+    },
+    {
+        "Name": "kInternalDateFormatToParts",
+        "Args": [
+            {
+                "Name": "date_format_holder",
+                "Type": "JSObject"
+            },
+            {
+                "Name": "date",
+                "Type": "JSDate"
+            }
+        ]
+    },
+    {
+        "Name": "kCreateNumberFormat",
+        "Args": [
+            {
+                "Name": "locale",
+                "Type": "String"
+            },
+            {
+                "Name": "options",
+                "Type": "JSObject"
+            },
+            {
+                "Name": "resolved",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kInternalNumberFormat",
+        "Args": [
+            {
+                "Name": "number_format_holder",
+                "Type": "JSObject"
+            },
+            {
+                "Name": "number",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kCurrencyDigits",
+        "Args": [
+            {
+                "Name": "currency",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kCreateCollator",
+        "Args": [
+            {
+                "Name": "locale",
+                "Type": "String"
+            },
+            {
+                "Name": "options",
+                "Type": "JSObject"
+            },
+            {
+                "Name": "resolved",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kInternalCompare",
+        "Args": [
+            {
+                "Name": "collator_holder",
+                "Type": "JSObject"
+            },
+            {
+                "Name": "string1",
+                "Type": "String"
+            },
+            {
+                "Name": "string2",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kCreatePluralRules",
+        "Args": [
+            {
+                "Name": "locale",
+                "Type": "String"
+            },
+            {
+                "Name": "options",
+                "Type": "JSObject"
+            },
+            {
+                "Name": "resolved",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kPluralRulesSelect",
+        "Args": [
+            {
+                "Name": "plural_rules_holder",
+                "Type": "JSObject"
+            },
+            {
+                "Name": "number",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kCreateBreakIterator",
+        "Args": [
+            {
+                "Name": "locale",
+                "Type": "String"
+            },
+            {
+                "Name": "options",
+                "Type": "JSObject"
+            },
+            {
+                "Name": "resolved",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kBreakIteratorAdoptText",
+        "Args": [
+            {
+                "Name": "break_iterator_holder",
+                "Type": "JSObject"
+            },
+            {
+                "Name": "text",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kBreakIteratorFirst",
+        "Args": [
+            {
+                "Name": "break_iterator_holder",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kBreakIteratorNext",
+        "Args": [
+            {
+                "Name": "break_iterator_holder",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kBreakIteratorCurrent",
+        "Args": [
+            {
+                "Name": "break_iterator_holder",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kBreakIteratorBreakType",
+        "Args": [
+            {
+                "Name": "break_iterator_holder",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kStringToLowerCaseIntl",
+        "Args": [
+            {
+                "Name": "s",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kStringToUpperCaseIntl",
+        "Args": [
+            {
+                "Name": "s",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kStringLocaleConvertCase",
+        "Args": [
+            {
+                "Name": "s",
+                "Type": "String"
+            },
+            {
+                "Name": "is_upper",
+                "Type": "Boolean"
+            },
+            {
+                "Name": "lang_arg",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kDateCacheVersion",
+        "Args": []
+    },
+    {
+        "Name": "kAllocateInNewSpace",
+        "Args": [
+            {
+                "Name": "size",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kAllocateInTargetSpace",
+        "Args": [
+            {
+                "Name": "size",
+                "Type": "Smi"
+            },
+            {
+                "Name": "flags",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kAllocateSeqOneByteString",
+        "Args": [
+            {
+                "Name": "length",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kAllocateSeqTwoByteString",
+        "Args": [
+            {
+                "Name": "length",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kCheckIsBootstrapping",
+        "Args": []
+    },
+    {
+        "Name": "kCreateAsyncFromSyncIterator",
+        "Args": [
+            {
+                "Name": "sync_iterator",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kCreateListFromArrayLike",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kGetAndResetRuntimeCallStats",
+        "Args": [
+            {
+                "Name": "..."
+            }
+        ]
+    },
+    {
+        "Name": "kExportFromRuntime",
+        "Args": [
+            {
+                "Name": "container",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kIncrementUseCounter",
+        "Args": [
+            {
+                "Name": "counter",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kIncrementUseCounterConstructorReturnNonUndefinedPrimitive",
+        "Args": []
+    },
+    {
+        "Name": "kInstallToContext",
+        "Args": [
+            {
+                "Name": "array",
+                "Type": "JSArray"
+            }
+        ]
+    },
+    {
+        "Name": "kInterrupt",
+        "Args": []
+    },
+    {
+        "Name": "kIS_VAR",
+        "Args": [
+            {
+                "Name": "var",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kNewReferenceError",
+        "Args": [
+            {
+                "Name": "template_index",
+                "Type": "Int32"
+            },
+            {
+                "Name": "arg0",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kNewSyntaxError",
+        "Args": [
+            {
+                "Name": "template_index",
+                "Type": "Int32"
+            },
+            {
+                "Name": "arg0",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kNewTypeError",
+        "Args": [
+            {
+                "Name": "template_index",
+                "Type": "Int32"
+            },
+            {
+                "Name": "arg0",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kOrdinaryHasInstance",
+        "Args": [
+            {
+                "Name": "callable",
+                "Type": "Object"
+            },
+            {
+                "Name": "object",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kPromoteScheduledException",
+        "Args": []
+    },
+    {
+        "Name": "kReThrow",
+        "Args": [
+            {
+                "Name": "exception",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kRunMicrotasks",
+        "Args": []
+    },
+    {
+        "Name": "kStackGuard",
+        "Args": []
+    },
+    {
+        "Name": "kThrow",
+        "Args": [
+            {
+                "Name": "exception",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kThrowApplyNonFunction",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kThrowCannotConvertToPrimitive",
+        "Args": []
+    },
+    {
+        "Name": "kThrowCalledNonCallable",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kThrowCalledOnNullOrUndefined",
+        "Args": [
+            {
+                "Name": "name",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kThrowConstructedNonConstructable",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kThrowConstructorReturnedNonObject",
+        "Args": []
+    },
+    {
+        "Name": "kThrowGeneratorRunning",
+        "Args": []
+    },
+    {
+        "Name": "kThrowIncompatibleMethodReceiver",
+        "Args": [
+            {
+                "Name": "arg0",
+                "Type": "Object"
+            },
+            {
+                "Name": "arg1",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kThrowInvalidHint",
+        "Args": [
+            {
+                "Name": "hint",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kThrowInvalidStringLength",
+        "Args": []
+    },
+    {
+        "Name": "kThrowInvalidTypedArrayAlignment",
+        "Args": [
+            {
+                "Name": "map",
+                "Type": "Map"
+            },
+            {
+                "Name": "problem_string",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kThrowIteratorResultNotAnObject",
+        "Args": [
+            {
+                "Name": "value",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kThrowThrowMethodMissing",
+        "Args": []
+    },
+    {
+        "Name": "kThrowSymbolIteratorInvalid",
+        "Args": []
+    },
+    {
+        "Name": "kThrowNonCallableInInstanceOfCheck",
+        "Args": []
+    },
+    {
+        "Name": "kThrowNonObjectInInstanceOfCheck",
+        "Args": []
+    },
+    {
+        "Name": "kThrowNotConstructor",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kThrowRangeError",
+        "Args": [
+            {
+                "Name": "message_id_smi",
+                "Type": "Smi"
+            },
+			{
+				"Name": "..."
+			}
+        ]
+    },
+    {
+        "Name": "kThrowReferenceError",
+        "Args": [
+            {
+                "Name": "name",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kThrowStackOverflow",
+        "Args": []
+    },
+    {
+        "Name": "kThrowSymbolAsyncIteratorInvalid",
+        "Args": []
+    },
+    {
+        "Name": "kThrowTypeError",
+        "Args": [
+            {
+                "Name": "message_id_smi",
+                "Type": "Smi"
+            },
+			{
+				"Name": "..."
+			}
+        ]
+    },
+    {
+        "Name": "kThrowUndefinedOrNullToObject",
+        "Args": [
+            {
+                "Name": "name",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kTypeof",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kUnwindAndFindExceptionHandler",
+        "Args": []
+    },
+    {
+        "Name": "kAllowDynamicFunction",
+        "Args": [
+            {
+                "Name": "target",
+                "Type": "JSFunction"
+            }
+        ]
+    },
+    {
+        "Name": "kCreateRegExpLiteral",
+        "Args": [
+            {
+                "Name": "closure",
+                "Type": "JSFunction"
+            },
+            {
+                "Name": "index",
+                "Type": "Smi"
+            },
+            {
+                "Name": "pattern",
+                "Type": "String"
+            },
+            {
+                "Name": "flags",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kCreateObjectLiteral",
+        "Args": [
+            {
+                "Name": "closure",
+                "Type": "JSFunction"
+            },
+            {
+                "Name": "literals_index",
+                "Type": "Smi"
+            },
+            {
+                "Name": "description",
+                "Type": "BoilerplateDescription"
+            },
+            {
+                "Name": "flags",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kCreateArrayLiteral",
+        "Args": [
+            {
+                "Name": "closure",
+                "Type": "JSFunction"
+            },
+            {
+                "Name": "literals_index",
+                "Type": "Smi"
+            },
+            {
+                "Name": "elements",
+                "Type": "ConstantElementsPair"
+            },
+            {
+                "Name": "flags",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kLiveEditFindSharedFunctionInfosForScript",
+        "Args": [
+            {
+                "Name": "script_value",
+                "Type": "JSValue"
+            }
+        ]
+    },
+    {
+        "Name": "kLiveEditGatherCompileInfo",
+        "Args": [
+            {
+                "Name": "script",
+                "Type": "JSValue"
+            },
+            {
+                "Name": "source",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kLiveEditReplaceScript",
+        "Args": [
+            {
+                "Name": "original_script_value",
+                "Type": "JSValue"
+            },
+            {
+                "Name": "new_source",
+                "Type": "String"
+            },
+            {
+                "Name": "old_script_name",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kLiveEditFunctionSourceUpdated",
+        "Args": [
+            {
+                "Name": "shared_info",
+                "Type": "JSArray"
+            },
+            {
+                "Name": "new_function_literal_id",
+                "Type": "Int32"
+            }
+        ]
+    },
+    {
+        "Name": "kLiveEditReplaceFunctionCode",
+        "Args": [
+            {
+                "Name": "new_compile_info",
+                "Type": "JSArray"
+            },
+            {
+                "Name": "shared_info",
+                "Type": "JSArray"
+            }
+        ]
+    },
+    {
+        "Name": "kLiveEditFixupScript",
+        "Args": [
+            {
+                "Name": "script_value",
+                "Type": "JSValue"
+            },
+            {
+                "Name": "max_function_literal_id",
+                "Type": "Int32"
+            }
+        ]
+    },
+    {
+        "Name": "kLiveEditFunctionSetScript",
+        "Args": [
+            {
+                "Name": "function_object",
+                "Type": "Object"
+            },
+            {
+                "Name": "script_object",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kLiveEditReplaceRefToNestedFunction",
+        "Args": [
+            {
+                "Name": "parent_wrapper",
+                "Type": "JSValue"
+            },
+            {
+                "Name": "orig_wrapper",
+                "Type": "JSValue"
+            },
+            {
+                "Name": "subst_wrapper",
+                "Type": "JSValue"
+            }
+        ]
+    },
+    {
+        "Name": "kLiveEditPatchFunctionPositions",
+        "Args": [
+            {
+                "Name": "shared_array",
+                "Type": "JSArray"
+            },
+            {
+                "Name": "position_change_array",
+                "Type": "JSArray"
+            }
+        ]
+    },
+    {
+        "Name": "kLiveEditCheckAndDropActivations",
+        "Args": [
+            {
+                "Name": "old_shared_array",
+                "Type": "JSArray"
+            },
+            {
+                "Name": "new_shared_array",
+                "Type": "JSArray"
+            },
+            {
+                "Name": "do_drop",
+                "Type": "Boolean"
+            }
+        ]
+    },
+    {
+        "Name": "kLiveEditCompareStrings",
+        "Args": [
+            {
+                "Name": "s1",
+                "Type": "String"
+            },
+            {
+                "Name": "s2",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kLiveEditRestartFrame",
+        "Args": [
+            {
+                "Name": "break_id",
+                "Type": "Int32"
+            },
+            {
+                "Name": "index",
+                "Type": "Int32"
+            }
+        ]
+    },
+    {
+        "Name": "kGenerateRandomNumbers",
+        "Args": []
+    },
+    {
+        "Name": "kDynamicImportCall",
+        "Args": [
+            {
+                "Name": "function",
+                "Type": "JSFunction"
+            },
+            {
+                "Name": "specifier",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kGetModuleNamespace",
+        "Args": [
+            {
+                "Name": "module_request",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kLoadModuleVariable",
+        "Args": [
+            {
+                "Name": "index",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kStoreModuleVariable",
+        "Args": [
+            {
+                "Name": "index",
+                "Type": "Smi"
+            },
+            {
+                "Name": "value",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kIsValidSmi",
+        "Args": [
+            {
+                "Name": "number",
+                "Type": "Int32"
+            }
+        ]
+    },
+    {
+        "Name": "kStringToNumber",
+        "Args": [
+            {
+                "Name": "subject",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kStringParseInt",
+        "Args": [
+            {
+                "Name": "string",
+                "Type": "Object"
+            },
+            {
+                "Name": "radix",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kStringParseFloat",
+        "Args": [
+            {
+                "Name": "subject",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kNumberToString",
+        "Args": [
+            {
+                "Name": "number",
+                "Type": "Number"
+            }
+        ]
+    },
+    {
+        "Name": "kNumberToStringSkipCache",
+        "Args": [
+            {
+                "Name": "number",
+                "Type": "Number"
+            }
+        ]
+    },
+    {
+        "Name": "kNumberToSmi",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kSmiLexicographicCompare",
+        "Args": [
+            {
+                "Name": "x_value",
+                "Type": "Smi"
+            },
+            {
+                "Name": "y_value",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kMaxSmi",
+        "Args": []
+    },
+    {
+        "Name": "kIsSmi",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kGetHoleNaNUpper",
+        "Args": []
+    },
+    {
+        "Name": "kGetHoleNaNLower",
+        "Args": []
+    },
+    {
+        "Name": "kAddDictionaryProperty",
+        "Args": [
+            {
+                "Name": "receiver",
+                "Type": "JSObject"
+            },
+            {
+                "Name": "name",
+                "Type": "Name"
+            },
+            {
+                "Name": "value",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kGetPrototype",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "JSReceiver"
+            }
+        ]
+    },
+    {
+        "Name": "kObjectKeys",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kObjectHasOwnProperty",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "Object"
+            },
+            {
+                "Name": "property",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kObjectCreate",
+        "Args": [
+            {
+                "Name": "prototype",
+                "Type": "Object"
+            },
+            {
+                "Name": "properties",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kInternalSetPrototype",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "JSReceiver"
+            },
+            {
+                "Name": "prototype",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kOptimizeObjectForAddingMultipleProperties",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "JSObject"
+            },
+            {
+                "Name": "properties",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kGetProperty",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "Object"
+            },
+            {
+                    "Name": "key",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kKeyedGetProperty",
+        "Args": [
+            {
+                "Name": "receiver_obj",
+                "Type": "Object"
+            },
+            {
+                    "Name": "key_obj",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kAddNamedProperty",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "JSObject"
+            },
+            {
+                "Name": "name",
+                "Type": "Name"
+            },
+            {
+                "Name": "value",
+                "Type": "Object"
+            },
+            {
+                "Name": "attrs",
+                "Type": "PropertyAttributes"
+            }
+        ]
+    },
+    {
+        "Name": "kSetProperty",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "Object"
+            },
+            {
+                    "Name": "key",
+                "Type": "Object"
+            },
+            {
+                "Name": "value",
+                "Type": "Object"
+            },
+            {
+                "Name": "language_mode",
+                "Type": "LanguageMode"
+            }
+        ]
+    },
+    {
+        "Name": "kAddElement",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "JSObject"
+            },
+            {
+                    "Name": "key",
+                "Type": "Object"
+            },
+            {
+                "Name": "value",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kAppendElement",
+        "Args": [
+            {
+                "Name": "array",
+                "Type": "JSArray"
+            },
+            {
+                "Name": "value",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kDeleteProperty",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "Object"
+            },
+            {
+                    "Name": "key",
+                "Type": "Object"
+            },
+            {
+                "Name": "language_mode",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kShrinkPropertyDictionary",
+        "Args": [
+            {
+                "Name": "receiver",
+                "Type": "JSReceiver"
+            }
+        ]
+    },
+    {
+        "Name": "kHasProperty",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "Object"
+            },
+            {
+                    "Name": "key",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kGetOwnPropertyKeys",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "JSReceiver"
+            },
+            {
+                "Name": "filter_value",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kGetInterceptorInfo",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kToFastProperties",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kAllocateHeapNumber",
+        "Args": []
+    },
+    {
+        "Name": "kNewObject",
+        "Args": [
+            {
+                "Name": "target",
+                "Type": "JSFunction"
+            },
+            {
+                "Name": "new_target",
+                "Type": "JSReceiver"
+            }
+        ]
+    },
+    {
+        "Name": "kFinalizeInstanceSize",
+        "Args": [
+            {
+                "Name": "initial_map",
+                "Type": "Map"
+            }
+        ]
+    },
+    {
+        "Name": "kLoadMutableDouble",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "JSObject"
+            },
+            {
+                "Name": "index",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kTryMigrateInstance",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kIsJSGlobalProxy",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kDefineAccessorPropertyUnchecked",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "JSObject"
+            },
+            {
+                "Name": "name",
+                "Type": "Name"
+            },
+            {
+                "Name": "getter",
+                "Type": "Object"
+            },
+            {
+                "Name": "setter",
+                "Type": "Object"
+            },
+            {
+                "Name": "attrs",
+                "Type": "PropertyAttributes"
+            }
+        ]
+    },
+    {
+        "Name": "kDefineDataPropertyInLiteral",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "JSObject"
+            },
+            {
+                "Name": "name",
+                "Type": "Name"
+            },
+            {
+                "Name": "value",
+                "Type": "Object"
+            },
+            {
+                "Name": "flag",
+                "Type": "Smi"
+            },
+            {
+                "Name": "vector",
+                "Type": "FeedbackVector"
+            },
+            {
+                "Name": "index",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kCollectTypeProfile",
+        "Args": [
+            {
+                "Name": "position",
+                "Type": "Smi"
+            },
+            {
+                "Name": "value",
+                "Type": "Object"
+            },
+            {
+                "Name": "vector",
+                "Type": "FeedbackVector"
+            }
+        ]
+    },
+    {
+        "Name": "kGetDataProperty",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "JSReceiver"
+            },
+            {
+                "Name": "name",
+                "Type": "Name"
+            }
+        ]
+    },
+    {
+        "Name": "kGetConstructorName",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kHasFastPackedElements",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "HeapObject"
+            }
+        ]
+    },
+    {
+        "Name": "kValueOf",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kIsJSReceiver",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kClassOf",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kCopyDataProperties",
+        "Args": [
+            {
+                "Name": "target",
+                "Type": "JSObject"
+            },
+            {
+                "Name": "source",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kCopyDataPropertiesWithExcludedProperties",
+        "Args": [
+            {
+                "Name": "source",
+                "Type": "Object"
+            },
+			{
+				"Name": "..."
+			}
+        ]
+    },
+    {
+        "Name": "kDefineGetterPropertyUnchecked",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "JSObject"
+            },
+            {
+                "Name": "name",
+                "Type": "Name"
+            },
+            {
+                "Name": "getter",
+                "Type": "JSFunction"
+            },
+            {
+                "Name": "attrs",
+                "Type": "PropertyAttributes"
+            }
+        ]
+    },
+    {
+        "Name": "kDefineSetterPropertyUnchecked",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "JSObject"
+            },
+            {
+                "Name": "name",
+                "Type": "Name"
+            },
+            {
+                "Name": "setter",
+                "Type": "JSFunction"
+            },
+            {
+                "Name": "attrs",
+                "Type": "PropertyAttributes"
+            }
+        ]
+    },
+    {
+        "Name": "kDefineMethodsInternal",
+        "Args": [
+            {
+                "Name": "target",
+                "Type": "JSObject"
+            },
+            {
+                "Name": "source_class",
+                "Type": "JSFunction"
+            },
+            {
+                "Name": "length",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kToObject",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kToPrimitive",
+        "Args": [
+            {
+                "Name": "input",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kToPrimitive_Number",
+        "Args": [
+            {
+                "Name": "input",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kToNumber",
+        "Args": [
+            {
+                "Name": "input",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kToInteger",
+        "Args": [
+            {
+                "Name": "input",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kToLength",
+        "Args": [
+            {
+                "Name": "input",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kToString",
+        "Args": [
+            {
+                "Name": "input",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kToName",
+        "Args": [
+            {
+                "Name": "input",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kSameValue",
+        "Args": [
+            {
+                "Name": "x",
+                "Type": "Object"
+            },
+            {
+                "Name": "y",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kSameValueZero",
+        "Args": [
+            {
+                "Name": "x",
+                "Type": "Object"
+            },
+            {
+                "Name": "y",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kCompare",
+        "Args": [
+            {
+                "Name": "x",
+                "Type": "Object"
+            },
+            {
+                "Name": "y",
+                "Type": "Object"
+            },
+            {
+                "Name": "ncr",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kHasInPrototypeChain",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "Object"
+            },
+            {
+                "Name": "prototype",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kCreateIterResultObject",
+        "Args": [
+            {
+                "Name": "value",
+                "Type": "Object"
+            },
+            {
+                "Name": "done",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kCreateDataProperty",
+        "Args": [
+            {
+                "Name": "o",
+                "Type": "JSReceiver"
+            },
+            {
+                    "Name": "key",
+                "Type": "Object"
+            },
+            {
+                "Name": "value",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kIterableToListCanBeElided",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "JSReceiver"
+            }
+        ]
+    },
+    {
+        "Name": "kMultiply",
+        "Args": [
+            {
+                "Name": "lhs",
+                "Type": "Object"
+            },
+            {
+                "Name": "rhs",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kDivide",
+        "Args": [
+            {
+                "Name": "lhs",
+                "Type": "Object"
+            },
+            {
+                "Name": "rhs",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kModulus",
+        "Args": [
+            {
+                "Name": "lhs",
+                "Type": "Object"
+            },
+            {
+                "Name": "rhs",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kAdd",
+        "Args": [
+            {
+                "Name": "lhs",
+                "Type": "Object"
+            },
+            {
+                "Name": "rhs",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kSubtract",
+        "Args": [
+            {
+                "Name": "lhs",
+                "Type": "Object"
+            },
+            {
+                "Name": "rhs",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kShiftLeft",
+        "Args": [
+            {
+                "Name": "lhs",
+                "Type": "Object"
+            },
+            {
+                "Name": "rhs",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kShiftRight",
+        "Args": [
+            {
+                "Name": "lhs",
+                "Type": "Object"
+            },
+            {
+                "Name": "rhs",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kShiftRightLogical",
+        "Args": [
+            {
+                "Name": "lhs",
+                "Type": "Object"
+            },
+            {
+                "Name": "rhs",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kBitwiseAnd",
+        "Args": [
+            {
+                "Name": "lhs",
+                "Type": "Object"
+            },
+            {
+                "Name": "rhs",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kBitwiseOr",
+        "Args": [
+            {
+                "Name": "lhs",
+                "Type": "Object"
+            },
+            {
+                "Name": "rhs",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kBitwiseXor",
+        "Args": [
+            {
+                "Name": "lhs",
+                "Type": "Object"
+            },
+            {
+                "Name": "rhs",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kEqual",
+        "Args": [
+            {
+                "Name": "x",
+                "Type": "Object"
+            },
+            {
+                "Name": "y",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kNotEqual",
+        "Args": [
+            {
+                "Name": "x",
+                "Type": "Object"
+            },
+            {
+                "Name": "y",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kStrictEqual",
+        "Args": [
+            {
+                "Name": "x",
+                "Type": "Object"
+            },
+            {
+                "Name": "y",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kStrictNotEqual",
+        "Args": [
+            {
+                "Name": "x",
+                "Type": "Object"
+            },
+            {
+                "Name": "y",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kLessThan",
+        "Args": [
+            {
+                "Name": "x",
+                "Type": "Object"
+            },
+            {
+                "Name": "y",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kGreaterThan",
+        "Args": [
+            {
+                "Name": "x",
+                "Type": "Object"
+            },
+            {
+                "Name": "y",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kLessThanOrEqual",
+        "Args": [
+            {
+                "Name": "x",
+                "Type": "Object"
+            },
+            {
+                "Name": "y",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kGreaterThanOrEqual",
+        "Args": [
+            {
+                "Name": "x",
+                "Type": "Object"
+            },
+            {
+                "Name": "y",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kInstanceOf",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "Object"
+            },
+            {
+                "Name": "callable",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kEnqueueMicrotask",
+        "Args": [
+            {
+                "Name": "microtask",
+                "Type": "JSFunction"
+            }
+        ]
+    },
+    {
+        "Name": "kEnqueuePromiseReactionJob",
+        "Args": [
+            {
+                "Name": "info",
+                "Type": "PromiseReactionJobInfo"
+            }
+        ]
+    },
+    {
+        "Name": "kEnqueuePromiseResolveThenableJob",
+        "Args": [
+            {
+                "Name": "info",
+                "Type": "PromiseResolveThenableJobInfo"
+            }
+        ]
+    },
+    {
+        "Name": "kPromiseHookInit",
+        "Args": [
+            {
+                "Name": "promise",
+                "Type": "JSPromise"
+            },
+            {
+                "Name": "parent",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kPromiseHookResolve",
+        "Args": [
+            {
+                "Name": "promise",
+                "Type": "JSPromise"
+            }
+        ]
+    },
+    {
+        "Name": "kPromiseHookBefore",
+        "Args": [
+            {
+                "Name": "promise",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kPromiseHookAfter",
+        "Args": [
+            {
+                "Name": "promise",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kPromiseMarkAsHandled",
+        "Args": [
+            {
+                "Name": "promise",
+                "Type": "JSPromise"
+            }
+        ]
+    },
+    {
+        "Name": "kPromiseRejectEventFromStack",
+        "Args": [
+            {
+                "Name": "promise",
+                "Type": "JSPromise"
+            },
+            {
+                "Name": "value",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kPromiseRevokeReject",
+        "Args": [
+            {
+                "Name": "promise",
+                "Type": "JSPromise"
+            }
+        ]
+    },
+    {
+        "Name": "kPromiseResult",
+        "Args": [
+            {
+                "Name": "promise",
+                "Type": "JSPromise"
+            }
+        ]
+    },
+    {
+        "Name": "kPromiseStatus",
+        "Args": [
+            {
+                "Name": "promise",
+                "Type": "JSPromise"
+            }
+        ]
+    },
+    {
+        "Name": "kReportPromiseReject",
+        "Args": [
+            {
+                "Name": "promise",
+                "Type": "JSPromise"
+            },
+            {
+                "Name": "value",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kIsJSProxy",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kJSProxyGetTarget",
+        "Args": [
+            {
+                "Name": "proxy",
+                "Type": "JSProxy"
+            }
+        ]
+    },
+    {
+        "Name": "kJSProxyGetHandler",
+        "Args": [
+            {
+                "Name": "proxy",
+                "Type": "JSProxy"
+            }
+        ]
+    },
+    {
+        "Name": "kJSProxyRevoke",
+        "Args": [
+            {
+                "Name": "proxy",
+                "Type": "JSProxy"
+            }
+        ]
+    },
+    {
+        "Name": "kGetPropertyWithReceiver",
+        "Args": [
+            {
+                "Name": "holder",
+                "Type": "JSReceiver"
+            },
+            {
+                "Name": "name",
+                "Type": "Name"
+            },
+            {
+                "Name": "receiver",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kCheckProxyGetTrapResult",
+        "Args": [
+            {
+                "Name": "name",
+                "Type": "Name"
+            },
+            {
+                "Name": "target",
+                "Type": "JSReceiver"
+            },
+            {
+                "Name": "trap_result",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kCheckProxyHasTrap",
+        "Args": [
+            {
+                "Name": "name",
+                "Type": "Name"
+            },
+            {
+                "Name": "target",
+                "Type": "JSReceiver"
+            }
+        ]
+    },
+    {
+        "Name": "kIsRegExp",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kRegExpCreate",
+        "Args": [
+            {
+                "Name": "source_object",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kRegExpExec",
+        "Args": [
+            {
+                "Name": "regexp",
+                "Type": "JSRegExp"
+            },
+            {
+                "Name": "subject",
+                "Type": "String"
+            },
+            {
+                "Name": "index",
+                "Type": "Int32"
+            },
+            {
+                "Name": "last_match_info",
+                "Type": "RegExpMatchInfo"
+            }
+        ]
+    },
+    {
+        "Name": "kRegExpExecMultiple",
+        "Args": [
+            {
+                "Name": "regexp",
+                "Type": "JSRegExp"
+            },
+            {
+                "Name": "subject",
+                "Type": "String"
+            },
+            {
+                "Name": "last_match_info",
+                "Type": "RegExpMatchInfo"
+            },
+            {
+                "Name": "result_array",
+                "Type": "JSArray"
+            }
+        ]
+    },
+    {
+        "Name": "kRegExpExecReThrow",
+        "Args": []
+    },
+    {
+        "Name": "kRegExpInitializeAndCompile",
+        "Args": [
+            {
+                "Name": "regexp",
+                "Type": "JSRegExp"
+            },
+            {
+                "Name": "source",
+                "Type": "String"
+            },
+            {
+                "Name": "flags",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kRegExpInternalReplace",
+        "Args": [
+            {
+                "Name": "regexp",
+                "Type": "JSRegExp"
+            },
+            {
+                "Name": "subject",
+                "Type": "String"
+            },
+            {
+                "Name": "replacement",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kRegExpReplace",
+        "Args": [
+            {
+                "Name": "recv",
+                "Type": "JSReceiver"
+            },
+            {
+                "Name": "string",
+                "Type": "String"
+            },
+            {
+                "Name": "replace_obj",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kRegExpSplit",
+        "Args": [
+            {
+                "Name": "recv",
+                "Type": "JSReceiver"
+            },
+            {
+                "Name": "string",
+                "Type": "String"
+            },
+            {
+                "Name": "limit_obj",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kStringReplaceGlobalRegExpWithString",
+        "Args": [
+            {
+                "Name": "subject",
+                "Type": "String"
+            },
+            {
+                "Name": "regexp",
+                "Type": "JSRegExp"
+            },
+            {
+                "Name": "replacement",
+                "Type": "String"
+            },
+            {
+                "Name": "last_match_info",
+                "Type": "RegExpMatchInfo"
+            }
+        ]
+    },
+    {
+        "Name": "kStringReplaceNonGlobalRegExpWithFunction",
+        "Args": [
+            {
+                "Name": "subject",
+                "Type": "String"
+            },
+            {
+                "Name": "regexp",
+                "Type": "JSRegExp"
+            },
+            {
+                "Name": "replace_obj",
+                "Type": "JSReceiver"
+            }
+        ]
+    },
+    {
+        "Name": "kStringSplit",
+        "Args": [
+            {
+                "Name": "subject",
+                "Type": "String"
+            },
+            {
+                "Name": "pattern",
+                "Type": "String"
+            },
+            {
+                "Name": "limit",
+                "Type": "Uint32"
+            }
+        ]
+    },
+    {
+        "Name": "kThrowConstAssignError",
+        "Args": []
+    },
+    {
+        "Name": "kDeclareGlobals",
+        "Args": [
+            {
+                "Name": "declarations",
+                "Type": "FixedArray"
+            },
+            {
+                "Name": "flags",
+                "Type": "Smi"
+            },
+            {
+                "Name": "feedback_vector",
+                "Type": "FeedbackVector"
+            }
+        ]
+    },
+    {
+        "Name": "kDeclareGlobalsForInterpreter",
+        "Args": [
+            {
+                "Name": "declarations",
+                "Type": "FixedArray"
+            },
+            {
+                "Name": "flags",
+                "Type": "Smi"
+            },
+            {
+                "Name": "closure",
+                "Type": "JSFunction"
+            }
+        ]
+    },
+    {
+        "Name": "kDeclareEvalFunction",
+        "Args": [
+            {
+                "Name": "name",
+                "Type": "String"
+            },
+            {
+                "Name": "value",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kDeclareEvalVar",
+        "Args": [
+            {
+                "Name": "name",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kNewSloppyArguments_Generic",
+        "Args": [
+            {
+                "Name": "callee",
+                "Type": "JSFunction"
+            }
+        ]
+    },
+    {
+        "Name": "kNewStrictArguments",
+        "Args": [
+            {
+                "Name": "callee",
+                "Type": "JSFunction"
+            }
+        ]
+    },
+    {
+        "Name": "kNewRestParameter",
+        "Args": [
+            {
+                "Name": "callee",
+                "Type": "JSFunction"
+            }
+        ]
+    },
+    {
+        "Name": "kNewSloppyArguments",
+        "Args": [
+            {
+                "Name": "callee",
+                "Type": "JSFunction"
+            },
+            {
+                "Name": "argument_getter",
+                "Type": "ParameterArguments"
+            },
+            {
+                "Name": "argc",
+                "Type": "Int32"
+            }
+        ]
+    },
+    {
+        "Name": "kNewArgumentsElements",
+        "Args": [
+            {
+                "Name": "frame",
+                "Type": "Object*"
+            },
+            {
+                "Name": "length",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kNewClosure",
+        "Args": [
+            {
+                "Name": "shared",
+                "Type": "SharedFunctionInfo"
+            },
+            {
+                "Name": "vector",
+                "Type": "FeedbackVector"
+            },
+            {
+                "Name": "index",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kNewClosure_Tenured",
+        "Args": [
+            {
+                "Name": "shared",
+                "Type": "SharedFunctionInfo"
+            },
+            {
+                "Name": "vector",
+                "Type": "FeedbackVector"
+            },
+            {
+                "Name": "index",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kNewScriptContext",
+        "Args": [
+            {
+                "Name": "function",
+                "Type": "JSFunction"
+            },
+            {
+                "Name": "scope_info",
+                "Type": "ScopeInfo"
+            }
+        ]
+    },
+    {
+        "Name": "kNewFunctionContext",
+        "Args": [
+            {
+                "Name": "function",
+                "Type": "JSFunction"
+            },
+            {
+                "Name": "scope_type",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kPushModuleContext",
+        "Args": [
+            {
+                "Name": "module",
+                "Type": "Module"
+            },
+            {
+                "Name": "function",
+                "Type": "JSFunction"
+            },
+            {
+                "Name": "scope_info",
+                "Type": "ScopeInfo"
+            }
+        ]
+    },
+    {
+        "Name": "kPushWithContext",
+        "Args": [
+            {
+                "Name": "extension_object",
+                "Type": "JSReceiver"
+            },
+            {
+                "Name": "scope_info",
+                "Type": "ScopeInfo"
+            },
+            {
+                "Name": "function",
+                "Type": "JSFunction"
+            }
+        ]
+    },
+    {
+        "Name": "kPushCatchContext",
+        "Args": [
+            {
+                "Name": "name",
+                "Type": "String"
+            },
+            {
+                "Name": "thrown_object",
+                "Type": "Object"
+            },
+            {
+                "Name": "scope_info",
+                "Type": "ScopeInfo"
+            },
+            {
+                "Name": "function",
+                "Type": "JSFunction"
+            }
+        ]
+    },
+    {
+        "Name": "kPushBlockContext",
+        "Args": [
+            {
+                "Name": "scope_info",
+                "Type": "ScopeInfo"
+            },
+            {
+                "Name": "function",
+                "Type": "JSFunction"
+            }
+        ]
+    },
+    {
+        "Name": "kDeleteLookupSlot",
+        "Args": [
+            {
+                "Name": "name",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kLoadLookupSlot",
+        "Args": [
+            {
+                "Name": "name",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kLoadLookupSlotInsideTypeof",
+        "Args": [
+            {
+                "Name": "name",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kStoreLookupSlot_Sloppy",
+        "Args": [
+            {
+                "Name": "name",
+                "Type": "String"
+            },
+            {
+                "Name": "value",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kStoreLookupSlot_SloppyHoisting",
+        "Args": [
+            {
+                "Name": "name",
+                "Type": "String"
+            },
+            {
+                "Name": "value",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kStoreLookupSlot_Strict",
+        "Args": [
+            {
+                "Name": "name",
+                "Type": "String"
+            },
+            {
+                "Name": "value",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kGetSubstitution",
+        "Args": [
+            {
+                "Name": "matched",
+                "Type": "String"
+            },
+            {
+                "Name": "subject",
+                "Type": "String"
+            },
+            {
+                "Name": "position",
+                "Type": "Smi"
+            },
+            {
+                "Name": "replacement",
+                "Type": "String"
+            },
+            {
+                "Name": "start_index",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kStringReplaceOneCharWithString",
+        "Args": [
+            {
+                "Name": "subject",
+                "Type": "String"
+            },
+            {
+                "Name": "search",
+                "Type": "String"
+            },
+            {
+                "Name": "replace",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kStringIncludes",
+        "Args": [
+            {
+                "Name": "receiver",
+                "Type": "Object"
+            },
+            {
+                "Name": "search",
+                "Type": "Object"
+            },
+            {
+                "Name": "position",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kStringIndexOf",
+        "Args": [
+            {
+                "Name": "receiver",
+                "Type": "Object"
+            },
+            {
+                "Name": "search",
+                "Type": "Object"
+            },
+            {
+                "Name": "position",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kStringIndexOfUnchecked",
+        "Args": [
+            {
+                "Name": "receiver",
+                "Type": "Object"
+            },
+            {
+                "Name": "search",
+                "Type": "Object"
+            },
+            {
+                "Name": "position",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kStringLastIndexOf",
+        "Args": [
+            {
+                "Name": "receiver",
+                "Type": "Object"
+            },
+            {
+                "Name": "position",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kSubString",
+        "Args": [
+            {
+                "Name": "string",
+                "Type": "String"
+            },
+            {
+                "Name": "from_number",
+                "Type": "Object"
+            },
+            {
+                "Name": "to_number",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kStringAdd",
+        "Args": [
+            {
+                "Name": "str1",
+                "Type": "String"
+            },
+            {
+                "Name": "str2",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kInternalizeString",
+        "Args": [
+            {
+                "Name": "string",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kStringCharCodeAtRT",
+        "Args": [
+            {
+                "Name": "subject",
+                "Type": "String"
+            },
+            {
+                "Name": "i",
+                "Type": "Uint32"
+            }
+        ]
+    },
+    {
+        "Name": "kStringCompare",
+        "Args": [
+            {
+                "Name": "x",
+                "Type": "String"
+            },
+            {
+                "Name": "y",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kStringBuilderConcat",
+        "Args": [
+            {
+                "Name": "array",
+                "Type": "JSArray"
+            },
+            {
+                "Name": "array_length",
+                "Type": "int32_t"
+            },
+            {
+                "Name": "special",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kStringBuilderJoin",
+        "Args": [
+            {
+                "Name": "array",
+                "Type": "JSArray"
+            },
+            {
+                "Name": "array_length",
+                "Type": "int32_t"
+            },
+            {
+                "Name": "separator",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kSparseJoinWithSeparator",
+        "Args": [
+            {
+                "Name": "elements_array",
+                "Type": "JSArray"
+            },
+            {
+                "Name": "array_length",
+                "Type": "Uint32"
+            },
+            {
+                "Name": "separator",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kStringToArray",
+        "Args": [
+            {
+                "Name": "s",
+                "Type": "String"
+            },
+            {
+                "Name": "limit",
+                "Type": "Uint32"
+            }
+        ]
+    },
+    {
+        "Name": "kStringLessThan",
+        "Args": [
+            {
+                "Name": "x",
+                "Type": "String"
+            },
+            {
+                "Name": "y",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kStringLessThanOrEqual",
+        "Args": [
+            {
+                "Name": "x",
+                "Type": "String"
+            },
+            {
+                "Name": "y",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kStringGreaterThan",
+        "Args": [
+            {
+                "Name": "x",
+                "Type": "String"
+            },
+            {
+                "Name": "y",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kStringGreaterThanOrEqual",
+        "Args": [
+            {
+                "Name": "x",
+                "Type": "String"
+            },
+            {
+                "Name": "y",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kStringEqual",
+        "Args": [
+            {
+                "Name": "x",
+                "Type": "String"
+            },
+            {
+                "Name": "y",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kStringNotEqual",
+        "Args": [
+            {
+                "Name": "x",
+                "Type": "String"
+            },
+            {
+                "Name": "y",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kFlattenString",
+        "Args": [
+            {
+                "Name": "str",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kStringCharFromCode",
+        "Args": [
+            {
+                "Name": "code",
+                "Type": "Uint32"
+            }
+        ]
+    },
+    {
+        "Name": "kStringCharCodeAt",
+        "Args": [
+            {
+                "Name": "subject",
+                "Type": "String"
+            },
+            {
+                "Name": "position",
+                "Type": "Uint32"
+            }
+        ]
+    },
+    {
+        "Name": "kStringMaxLength",
+        "Args": []
+    },
+    {
+        "Name": "kCreateSymbol",
+        "Args": [
+            {
+                "Name": "name",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kCreatePrivateSymbol",
+        "Args": [
+            {
+                "Name": "name",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kSymbolDescription",
+        "Args": [
+            {
+                "Name": "symbol",
+                "Type": "Symbol"
+            }
+        ]
+    },
+    {
+        "Name": "kSymbolDescriptiveString",
+        "Args": [
+            {
+                "Name": "symbol",
+                "Type": "Symbol"
+            }
+        ]
+    },
+    {
+        "Name": "kSymbolIsPrivate",
+        "Args": [
+            {
+                "Name": "symbol",
+                "Type": "Symbol"
+            }
+        ]
+    },
+    {
+        "Name": "kConstructDouble",
+        "Args": [
+            {
+                "Name": "hi",
+                "Type": "Uint32"
+            },
+            {
+                "Name": "lo",
+                "Type": "Uint32"
+            }
+        ]
+    },
+    {
+        "Name": "kConstructConsString",
+        "Args": [
+            {
+                "Name": "left",
+                "Type": "String"
+            },
+            {
+                "Name": "right",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kDeoptimizeFunction",
+        "Args": [
+            {
+                "Name": "function_object",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kDeoptimizeNow",
+        "Args": []
+    },
+    {
+        "Name": "kRunningInSimulator",
+        "Args": []
+    },
+    {
+        "Name": "kIsConcurrentRecompilationSupported",
+        "Args": []
+    },
+    {
+        "Name": "kOptimizeFunctionOnNextCall",
+        "Args": [
+            {
+                "Name": "function_object",
+                "Type": "Object"
+            },
+            {
+                "Name": "..."
+            }
+        ]
+    },
+    {
+        "Name": "kTypeProfile",
+        "Args": [
+            {
+                "Name": "function",
+                "Type": "JSFunction"
+            }
+        ]
+    },
+    {
+        "Name": "kOptimizeOsr",
+        "Args": [
+			{
+				"Name": "..."
+			}
+		]
+    },
+    {
+        "Name": "kNeverOptimizeFunction",
+        "Args": [
+            {
+                "Name": "function_object",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kGetOptimizationStatus",
+        "Args": [
+            {
+                "Name": "function_object",
+                "Type": "Object"
+            },
+            {
+                "Name": "..."
+            }
+        ]
+    },
+    {
+        "Name": "kUnblockConcurrentRecompilation",
+        "Args": []
+    },
+    {
+        "Name": "kGetDeoptCount",
+        "Args": [
+            {
+                "Name": "function",
+                "Type": "JSFunction"
+            }
+        ]
+    },
+    {
+        "Name": "kGetUndetectable",
+        "Args": []
+    },
+    {
+        "Name": "kGetCallable",
+        "Args": []
+    },
+    {
+        "Name": "kClearFunctionFeedback",
+        "Args": [
+            {
+                "Name": "function",
+                "Type": "JSFunction"
+            }
+        ]
+    },
+    {
+        "Name": "kCheckWasmWrapperElision",
+        "Args": [
+            {
+                "Name": "function",
+                "Type": "JSFunction"
+            },
+            {
+                "Name": "type",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kNotifyContextDisposed",
+        "Args": []
+    },
+    {
+        "Name": "kSetAllocationTimeout",
+        "Args": [
+            {
+                "Name": "interval",
+                "Type": "Int32"
+            },
+            {
+                "Name": "timeout",
+                "Type": "Int32"
+            },
+            {
+                "Name": "..."
+            }
+        ]
+    },
+    {
+        "Name": "kDebugPrint",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kDebugTrace",
+        "Args": []
+    },
+    {
+        "Name": "kDebugTrackRetainingPath",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "HeapObject"
+            }
+        ]
+    },
+    {
+        "Name": "kPrintWithNameForAssert",
+        "Args": [
+            {
+                "Name": "name",
+                "Type": "String"
+            },
+            {
+                "Name": "object",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kGetExceptionDetails",
+        "Args": [
+            {
+                "Name": "exception_obj",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kGlobalPrint",
+        "Args": [
+            {
+                "Name": "string",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kSystemBreak",
+        "Args": []
+    },
+    {
+        "Name": "kSetFlags",
+        "Args": [
+            {
+                "Name": "arg",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kAbort",
+        "Args": [
+            {
+                "Name": "message_id",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kAbortJS",
+        "Args": [
+            {
+                "Name": "message",
+                "Type": "String"
+            }
+        ]
+    },
+    {
+        "Name": "kNativeScriptsCount",
+        "Args": []
+    },
+    {
+        "Name": "kDisassembleFunction",
+        "Args": [
+            {
+                "Name": "func",
+                "Type": "JSFunction"
+            }
+        ]
+    },
+    {
+        "Name": "kTraceEnter",
+        "Args": []
+    },
+    {
+        "Name": "kTraceExit",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kHaveSameMap",
+        "Args": [
+            {
+                "Name": "obj1",
+                "Type": "JSObject"
+            },
+            {
+                "Name": "obj2",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kInNewSpace",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kHasSmiElements",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kHasObjectElements",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kHasSmiOrObjectElements",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kHasDoubleElements",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kHasHoleyElements",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kHasDictionaryElements",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kHasSloppyArgumentsElements",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kHasFixedTypedArrayElements",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kHasFastProperties",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kHasFixedUint8Elements",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kHasFixedInt8Elements",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kHasFixedUint16Elements",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kHasFixedInt16Elements",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kHasFixedUint32Elements",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kHasFixedInt32Elements",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kHasFixedFloat32Elements",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kHasFixedFloat64Elements",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kHasFixedUint8ClampedElements",
+        "Args": [
+            {
+                "Name": "obj",
+                "Type": "JSObject"
+            }
+        ]
+    },
+    {
+        "Name": "kSpeciesProtector",
+        "Args": []
+    },
+    {
+        "Name": "kSerializeWasmModule",
+        "Args": [
+            {
+                "Name": "module_obj",
+                "Type": "WasmModuleObject"
+            }
+        ]
+    },
+    {
+        "Name": "kDeserializeWasmModule",
+        "Args": [
+            {
+                "Name": "buffer",
+                "Type": "JSArrayBuffer"
+            },
+            {
+                "Name": "wire_bytes",
+                "Type": "JSArrayBuffer"
+            }
+        ]
+    },
+    {
+        "Name": "kIsAsmWasmCode",
+        "Args": [
+            {
+                "Name": "function",
+                "Type": "JSFunction"
+            }
+        ]
+    },
+    {
+        "Name": "kIsWasmCode",
+        "Args": [
+            {
+                "Name": "function",
+                "Type": "JSFunction"
+            }
+        ]
+    },
+    {
+        "Name": "kDisallowCodegenFromStrings",
+        "Args": []
+    },
+    {
+        "Name": "kValidateWasmInstancesChain",
+        "Args": [
+            {
+                "Name": "module_obj",
+                "Type": "WasmModuleObject"
+            },
+            {
+                "Name": "instance_count",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kValidateWasmModuleState",
+        "Args": [
+            {
+                "Name": "module_obj",
+                "Type": "WasmModuleObject"
+            }
+        ]
+    },
+    {
+        "Name": "kValidateWasmOrphanedInstance",
+        "Args": [
+            {
+                "Name": "instance",
+                "Type": "WasmInstanceObject"
+            }
+        ]
+    },
+    {
+        "Name": "kSetWasmCompileControls",
+        "Args": [
+            {
+                "Name": "block_size",
+                "Type": "Smi"
+            },
+            {
+                "Name": "allow_async",
+                "Type": "Boolean"
+            }
+        ]
+    },
+    {
+        "Name": "kSetWasmInstantiateControls",
+        "Args": []
+    },
+    {
+        "Name": "kHeapObjectVerify",
+        "Args": [
+            {
+                "Name": "object",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kWasmNumInterpretedCalls",
+        "Args": [
+            {
+                "Name": "instance",
+                "Type": "WasmInstanceObject"
+            }
+        ]
+    },
+    {
+        "Name": "kRedirectToWasmInterpreter",
+        "Args": [
+            {
+                "Name": "instance",
+                "Type": "WasmInstanceObject"
+            },
+            {
+                "Name": "function_index",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kArrayBufferGetByteLength",
+        "Args": [
+            {
+                "Name": "holder",
+                "Type": "JSArrayBuffer"
+            }
+        ]
+    },
+    {
+        "Name": "kArrayBufferNeuter",
+        "Args": [
+            {
+                "Name": "argument",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kTypedArrayCopyElements",
+        "Args": [
+            {
+                "Name": "destination",
+                "Type": "JSTypedArray"
+            },
+            {
+                "Name": "source",
+                "Type": "JSReceiver"
+            },
+            {
+                "Name": "length_obj",
+                "Type": "Number"
+            }
+        ]
+    },
+    {
+        "Name": "kArrayBufferViewGetByteLength",
+        "Args": [
+            {
+                "Name": "holder",
+                "Type": "JSArrayBufferView"
+            }
+        ]
+    },
+    {
+        "Name": "kArrayBufferViewGetByteOffset",
+        "Args": [
+            {
+                "Name": "holder",
+                "Type": "JSArrayBufferView"
+            }
+        ]
+    },
+    {
+        "Name": "kArrayBufferViewWasNeutered",
+        "Args": [
+            {
+                "Name": "array",
+                "Type": "JSTypedArray"
+            }
+        ]
+    },
+    {
+        "Name": "kTypedArrayGetLength",
+        "Args": [
+            {
+                "Name": "holder",
+                "Type": "JSTypedArray"
+            }
+        ]
+    },
+    {
+        "Name": "kTypedArrayGetBuffer",
+        "Args": [
+            {
+                "Name": "holder",
+                "Type": "JSTypedArray"
+            }
+        ]
+    },
+    {
+        "Name": "kTypedArraySetFromArrayLike",
+        "Args": [
+            {
+                "Name": "target",
+                "Type": "JSTypedArray"
+            },
+            {
+                "Name": "source",
+                "Type": "Object"
+            },
+            {
+                "Name": "source_length",
+                "Type": "Int32"
+            },
+            {
+                "Name": "offset",
+                "Type": "Int32"
+            }
+        ]
+    },
+    {
+        "Name": "kTypedArraySetFromOverlapping",
+        "Args": [
+            {
+                "Name": "target",
+                "Type": "JSTypedArray"
+            },
+            {
+                "Name": "source",
+                "Type": "JSTypedArray"
+            },
+            {
+                "Name": "offset",
+                "Type": "Int32"
+            }
+        ]
+    },
+    {
+        "Name": "kTypedArraySetFastCases",
+        "Args": [
+            {
+                "Name": "target",
+                "Type": "JSTypedArray"
+            },
+            {
+                "Name": "source",
+                "Type": "JSTypedArray"
+            },
+            {
+                "Name": "offset_obj",
+                "Type": "Number"
+            }
+        ]
+    },
+    {
+        "Name": "kTypedArraySortFast",
+        "Args": [
+            {
+                "Name": "target_obj",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kTypedArrayMaxSizeInHeap",
+        "Args": []
+    },
+    {
+        "Name": "kIsTypedArray",
+        "Args": [
+            {
+                "Name": "array",
+                "Type": "JSTypedArray"
+            }
+        ]
+    },
+    {
+        "Name": "kIsSharedTypedArray",
+        "Args": [
+            {
+                "Name": "array",
+                "Type": "JSTypedArray"
+            }
+        ]
+    },
+    {
+        "Name": "kIsSharedIntegerTypedArray",
+        "Args": [
+            {
+                "Name": "array",
+                "Type": "JSTypedArray"
+            }
+        ]
+    },
+    {
+        "Name": "kIsSharedInteger32TypedArray",
+        "Args": [
+            {
+                "Name": "array",
+                "Type": "JSTypedArray"
+            }
+        ]
+    },
+    {
+        "Name": "kTypedArraySpeciesCreateByLength",
+        "Args": [
+            {
+                "Name": "exemplar",
+                "Type": "JSTypedArray"
+            },
+            {
+                "Name": "length",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kWasmGrowMemory",
+        "Args": [
+            {
+                "Name": "delta_pages",
+                "Type": "Uint32"
+            }
+        ]
+    },
+    {
+        "Name": "kWasmMemorySize",
+        "Args": []
+    },
+    {
+        "Name": "kThrowWasmError",
+        "Args": [
+            {
+                "Name": "message_id",
+                "Type": "Smi"
+            },
+            {
+                "Name": "byte_offset",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kThrowWasmErrorFromTrapIf",
+        "Args": [
+            {
+                "Name": "message_id",
+                "Type": "Smi"
+            }
+        ]
+    },
+    {
+        "Name": "kThrowWasmStackOverflow",
+        "Args": []
+    },
+    {
+        "Name": "kWasmThrowTypeError",
+        "Args": []
+    },
+    {
+        "Name": "kWasmThrow",
+        "Args": [
+            {
+                "Name": "tag",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kWasmRethrow",
+        "Args": []
+    },
+    {
+        "Name": "kWasmGetExceptionTag",
+        "Args": [
+            {
+                "Name": "exception",
+                "Type": "Object*"
+            }
+        ]
+    },
+    {
+        "Name": "kWasmSetCaughtExceptionValue",
+        "Args": [
+            {
+                "Name": "exception",
+                "Type": "Object*"
+            }
+        ]
+    },
+    {
+        "Name": "kWasmRunInterpreter",
+        "Args": [
+            {
+                "Name": "instance",
+                "Type": "WasmInstanceObject"
+            },
+            {
+                "Name": "func_index",
+                "Type": "Int32"
+            },
+            {
+                "Name": "arg_buffer_obj",
+                "Type": "Object"
+            }
+        ]
+    },
+    {
+        "Name": "kWasmStackGuard",
+        "Args": []
+    },
+    {
+        "Name": "kSetThreadInWasm",
+        "Args": []
+    },
+    {
+        "Name": "kClearThreadInWasm",
+        "Args": []
+    },
+    {
+        "Name": "kWasmCompileLazy",
+        "Args": []
+    }
+]

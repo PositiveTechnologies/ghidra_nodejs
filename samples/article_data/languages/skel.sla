@@ -1,0 +1,1933 @@
+<sleigh version="2" bigendian="false" align="1" uniqbase="0xd0">
+<spaces defaultspace="ram">
+<space_other name="OTHER" index="1" bigendian="false" delay="0" size="8" physical="false"/>
+<space_unique name="unique" index="2" bigendian="false" delay="0" size="4" physical="true"/>
+<space name="ram" index="3" bigendian="false" delay="1" size="4" physical="true"/>
+<space name="register" index="4" bigendian="false" delay="0" size="4" physical="true"/>
+</spaces>
+<symbol_table scopesize="19" symbolsize="313">
+<scope id="0x0" parent="0x0"/>
+<scope id="0x1" parent="0x0"/>
+<scope id="0x2" parent="0x0"/>
+<scope id="0x3" parent="0x0"/>
+<scope id="0x4" parent="0x0"/>
+<scope id="0x5" parent="0x0"/>
+<scope id="0x6" parent="0x0"/>
+<scope id="0x7" parent="0x0"/>
+<scope id="0x8" parent="0x0"/>
+<scope id="0x9" parent="0x0"/>
+<scope id="0xa" parent="0x0"/>
+<scope id="0xb" parent="0x0"/>
+<scope id="0xc" parent="0x0"/>
+<scope id="0xd" parent="0x0"/>
+<scope id="0xe" parent="0x0"/>
+<scope id="0xf" parent="0x0"/>
+<scope id="0x10" parent="0x0"/>
+<scope id="0x11" parent="0x0"/>
+<scope id="0x12" parent="0x0"/>
+<subtable_sym_head name="instruction" id="0x0" scope="0x0"/>
+<start_sym_head name="inst_start" id="0x1" scope="0x0"/>
+<end_sym_head name="inst_next" id="0x2" scope="0x0"/>
+<varnode_sym_head name="a0" id="0x3" scope="0x0"/>
+<varnode_sym_head name="a1" id="0x4" scope="0x0"/>
+<varnode_sym_head name="a2" id="0x5" scope="0x0"/>
+<varnode_sym_head name="a3" id="0x6" scope="0x0"/>
+<varnode_sym_head name="a4" id="0x7" scope="0x0"/>
+<varnode_sym_head name="a5" id="0x8" scope="0x0"/>
+<varnode_sym_head name="a6" id="0x9" scope="0x0"/>
+<varnode_sym_head name="a7" id="0xa" scope="0x0"/>
+<varnode_sym_head name="a8" id="0xb" scope="0x0"/>
+<varnode_sym_head name="a9" id="0xc" scope="0x0"/>
+<varnode_sym_head name="a10" id="0xd" scope="0x0"/>
+<varnode_sym_head name="a11" id="0xe" scope="0x0"/>
+<varnode_sym_head name="a12" id="0xf" scope="0x0"/>
+<varnode_sym_head name="a13" id="0x10" scope="0x0"/>
+<varnode_sym_head name="a14" id="0x11" scope="0x0"/>
+<varnode_sym_head name="a15" id="0x12" scope="0x0"/>
+<varnode_sym_head name="a16" id="0x13" scope="0x0"/>
+<varnode_sym_head name="a17" id="0x14" scope="0x0"/>
+<varnode_sym_head name="a18" id="0x15" scope="0x0"/>
+<varnode_sym_head name="a19" id="0x16" scope="0x0"/>
+<varnode_sym_head name="a20" id="0x17" scope="0x0"/>
+<varnode_sym_head name="a21" id="0x18" scope="0x0"/>
+<varnode_sym_head name="a22" id="0x19" scope="0x0"/>
+<varnode_sym_head name="a23" id="0x1a" scope="0x0"/>
+<varnode_sym_head name="a24" id="0x1b" scope="0x0"/>
+<varnode_sym_head name="a25" id="0x1c" scope="0x0"/>
+<varnode_sym_head name="a26" id="0x1d" scope="0x0"/>
+<varnode_sym_head name="a27" id="0x1e" scope="0x0"/>
+<varnode_sym_head name="a28" id="0x1f" scope="0x0"/>
+<varnode_sym_head name="a29" id="0x20" scope="0x0"/>
+<varnode_sym_head name="a30" id="0x21" scope="0x0"/>
+<varnode_sym_head name="a31" id="0x22" scope="0x0"/>
+<varnode_sym_head name="a32" id="0x23" scope="0x0"/>
+<varnode_sym_head name="a33" id="0x24" scope="0x0"/>
+<varnode_sym_head name="a34" id="0x25" scope="0x0"/>
+<varnode_sym_head name="a35" id="0x26" scope="0x0"/>
+<varnode_sym_head name="a36" id="0x27" scope="0x0"/>
+<varnode_sym_head name="a37" id="0x28" scope="0x0"/>
+<varnode_sym_head name="a38" id="0x29" scope="0x0"/>
+<varnode_sym_head name="a39" id="0x2a" scope="0x0"/>
+<varnode_sym_head name="a40" id="0x2b" scope="0x0"/>
+<varnode_sym_head name="a41" id="0x2c" scope="0x0"/>
+<varnode_sym_head name="a42" id="0x2d" scope="0x0"/>
+<varnode_sym_head name="a43" id="0x2e" scope="0x0"/>
+<varnode_sym_head name="a44" id="0x2f" scope="0x0"/>
+<varnode_sym_head name="a45" id="0x30" scope="0x0"/>
+<varnode_sym_head name="a46" id="0x31" scope="0x0"/>
+<varnode_sym_head name="a47" id="0x32" scope="0x0"/>
+<varnode_sym_head name="a48" id="0x33" scope="0x0"/>
+<varnode_sym_head name="a49" id="0x34" scope="0x0"/>
+<varnode_sym_head name="a50" id="0x35" scope="0x0"/>
+<varnode_sym_head name="a51" id="0x36" scope="0x0"/>
+<varnode_sym_head name="a52" id="0x37" scope="0x0"/>
+<varnode_sym_head name="a53" id="0x38" scope="0x0"/>
+<varnode_sym_head name="a54" id="0x39" scope="0x0"/>
+<varnode_sym_head name="a55" id="0x3a" scope="0x0"/>
+<varnode_sym_head name="a56" id="0x3b" scope="0x0"/>
+<varnode_sym_head name="a57" id="0x3c" scope="0x0"/>
+<varnode_sym_head name="a58" id="0x3d" scope="0x0"/>
+<varnode_sym_head name="a59" id="0x3e" scope="0x0"/>
+<varnode_sym_head name="a60" id="0x3f" scope="0x0"/>
+<varnode_sym_head name="a61" id="0x40" scope="0x0"/>
+<varnode_sym_head name="a62" id="0x41" scope="0x0"/>
+<varnode_sym_head name="a63" id="0x42" scope="0x0"/>
+<varnode_sym_head name="a64" id="0x43" scope="0x0"/>
+<varnode_sym_head name="a65" id="0x44" scope="0x0"/>
+<varnode_sym_head name="a66" id="0x45" scope="0x0"/>
+<varnode_sym_head name="a67" id="0x46" scope="0x0"/>
+<varnode_sym_head name="a68" id="0x47" scope="0x0"/>
+<varnode_sym_head name="a69" id="0x48" scope="0x0"/>
+<varnode_sym_head name="a70" id="0x49" scope="0x0"/>
+<varnode_sym_head name="a71" id="0x4a" scope="0x0"/>
+<varnode_sym_head name="a72" id="0x4b" scope="0x0"/>
+<varnode_sym_head name="a73" id="0x4c" scope="0x0"/>
+<varnode_sym_head name="a74" id="0x4d" scope="0x0"/>
+<varnode_sym_head name="a75" id="0x4e" scope="0x0"/>
+<varnode_sym_head name="a76" id="0x4f" scope="0x0"/>
+<varnode_sym_head name="a77" id="0x50" scope="0x0"/>
+<varnode_sym_head name="a78" id="0x51" scope="0x0"/>
+<varnode_sym_head name="a79" id="0x52" scope="0x0"/>
+<varnode_sym_head name="a80" id="0x53" scope="0x0"/>
+<varnode_sym_head name="a81" id="0x54" scope="0x0"/>
+<varnode_sym_head name="a82" id="0x55" scope="0x0"/>
+<varnode_sym_head name="a83" id="0x56" scope="0x0"/>
+<varnode_sym_head name="a84" id="0x57" scope="0x0"/>
+<varnode_sym_head name="a85" id="0x58" scope="0x0"/>
+<varnode_sym_head name="a86" id="0x59" scope="0x0"/>
+<varnode_sym_head name="a87" id="0x5a" scope="0x0"/>
+<varnode_sym_head name="a88" id="0x5b" scope="0x0"/>
+<varnode_sym_head name="a89" id="0x5c" scope="0x0"/>
+<varnode_sym_head name="a90" id="0x5d" scope="0x0"/>
+<varnode_sym_head name="a91" id="0x5e" scope="0x0"/>
+<varnode_sym_head name="a92" id="0x5f" scope="0x0"/>
+<varnode_sym_head name="a93" id="0x60" scope="0x0"/>
+<varnode_sym_head name="a94" id="0x61" scope="0x0"/>
+<varnode_sym_head name="a95" id="0x62" scope="0x0"/>
+<varnode_sym_head name="a96" id="0x63" scope="0x0"/>
+<varnode_sym_head name="a97" id="0x64" scope="0x0"/>
+<varnode_sym_head name="a98" id="0x65" scope="0x0"/>
+<varnode_sym_head name="a99" id="0x66" scope="0x0"/>
+<varnode_sym_head name="a100" id="0x67" scope="0x0"/>
+<varnode_sym_head name="a101" id="0x68" scope="0x0"/>
+<varnode_sym_head name="a102" id="0x69" scope="0x0"/>
+<varnode_sym_head name="a103" id="0x6a" scope="0x0"/>
+<varnode_sym_head name="a104" id="0x6b" scope="0x0"/>
+<varnode_sym_head name="a105" id="0x6c" scope="0x0"/>
+<varnode_sym_head name="a106" id="0x6d" scope="0x0"/>
+<varnode_sym_head name="a107" id="0x6e" scope="0x0"/>
+<varnode_sym_head name="a108" id="0x6f" scope="0x0"/>
+<varnode_sym_head name="a109" id="0x70" scope="0x0"/>
+<varnode_sym_head name="a110" id="0x71" scope="0x0"/>
+<varnode_sym_head name="a111" id="0x72" scope="0x0"/>
+<varnode_sym_head name="a112" id="0x73" scope="0x0"/>
+<varnode_sym_head name="a113" id="0x74" scope="0x0"/>
+<varnode_sym_head name="a114" id="0x75" scope="0x0"/>
+<varnode_sym_head name="a115" id="0x76" scope="0x0"/>
+<varnode_sym_head name="a116" id="0x77" scope="0x0"/>
+<varnode_sym_head name="a117" id="0x78" scope="0x0"/>
+<varnode_sym_head name="a118" id="0x79" scope="0x0"/>
+<varnode_sym_head name="a119" id="0x7a" scope="0x0"/>
+<varnode_sym_head name="a120" id="0x7b" scope="0x0"/>
+<varnode_sym_head name="a121" id="0x7c" scope="0x0"/>
+<varnode_sym_head name="a122" id="0x7d" scope="0x0"/>
+<varnode_sym_head name="a123" id="0x7e" scope="0x0"/>
+<varnode_sym_head name="a124" id="0x7f" scope="0x0"/>
+<varnode_sym_head name="a125" id="0x80" scope="0x0"/>
+<varnode_sym_head name="r0" id="0x81" scope="0x0"/>
+<varnode_sym_head name="r1" id="0x82" scope="0x0"/>
+<varnode_sym_head name="r2" id="0x83" scope="0x0"/>
+<varnode_sym_head name="r3" id="0x84" scope="0x0"/>
+<varnode_sym_head name="r4" id="0x85" scope="0x0"/>
+<varnode_sym_head name="r5" id="0x86" scope="0x0"/>
+<varnode_sym_head name="r6" id="0x87" scope="0x0"/>
+<varnode_sym_head name="r7" id="0x88" scope="0x0"/>
+<varnode_sym_head name="r8" id="0x89" scope="0x0"/>
+<varnode_sym_head name="r9" id="0x8a" scope="0x0"/>
+<varnode_sym_head name="r10" id="0x8b" scope="0x0"/>
+<varnode_sym_head name="r11" id="0x8c" scope="0x0"/>
+<varnode_sym_head name="r12" id="0x8d" scope="0x0"/>
+<varnode_sym_head name="r13" id="0x8e" scope="0x0"/>
+<varnode_sym_head name="r14" id="0x8f" scope="0x0"/>
+<varnode_sym_head name="r15" id="0x90" scope="0x0"/>
+<varnode_sym_head name="r16" id="0x91" scope="0x0"/>
+<varnode_sym_head name="r17" id="0x92" scope="0x0"/>
+<varnode_sym_head name="r18" id="0x93" scope="0x0"/>
+<varnode_sym_head name="r19" id="0x94" scope="0x0"/>
+<varnode_sym_head name="r20" id="0x95" scope="0x0"/>
+<varnode_sym_head name="r21" id="0x96" scope="0x0"/>
+<varnode_sym_head name="r22" id="0x97" scope="0x0"/>
+<varnode_sym_head name="r23" id="0x98" scope="0x0"/>
+<varnode_sym_head name="r24" id="0x99" scope="0x0"/>
+<varnode_sym_head name="r25" id="0x9a" scope="0x0"/>
+<varnode_sym_head name="r26" id="0x9b" scope="0x0"/>
+<varnode_sym_head name="r27" id="0x9c" scope="0x0"/>
+<varnode_sym_head name="r28" id="0x9d" scope="0x0"/>
+<varnode_sym_head name="r29" id="0x9e" scope="0x0"/>
+<varnode_sym_head name="r30" id="0x9f" scope="0x0"/>
+<varnode_sym_head name="r31" id="0xa0" scope="0x0"/>
+<varnode_sym_head name="r32" id="0xa1" scope="0x0"/>
+<varnode_sym_head name="r33" id="0xa2" scope="0x0"/>
+<varnode_sym_head name="r34" id="0xa3" scope="0x0"/>
+<varnode_sym_head name="r35" id="0xa4" scope="0x0"/>
+<varnode_sym_head name="r36" id="0xa5" scope="0x0"/>
+<varnode_sym_head name="r37" id="0xa6" scope="0x0"/>
+<varnode_sym_head name="r38" id="0xa7" scope="0x0"/>
+<varnode_sym_head name="r39" id="0xa8" scope="0x0"/>
+<varnode_sym_head name="r40" id="0xa9" scope="0x0"/>
+<varnode_sym_head name="r41" id="0xaa" scope="0x0"/>
+<varnode_sym_head name="r42" id="0xab" scope="0x0"/>
+<varnode_sym_head name="r43" id="0xac" scope="0x0"/>
+<varnode_sym_head name="r44" id="0xad" scope="0x0"/>
+<varnode_sym_head name="r45" id="0xae" scope="0x0"/>
+<varnode_sym_head name="r46" id="0xaf" scope="0x0"/>
+<varnode_sym_head name="r47" id="0xb0" scope="0x0"/>
+<varnode_sym_head name="r48" id="0xb1" scope="0x0"/>
+<varnode_sym_head name="r49" id="0xb2" scope="0x0"/>
+<varnode_sym_head name="r50" id="0xb3" scope="0x0"/>
+<varnode_sym_head name="r51" id="0xb4" scope="0x0"/>
+<varnode_sym_head name="r52" id="0xb5" scope="0x0"/>
+<varnode_sym_head name="r53" id="0xb6" scope="0x0"/>
+<varnode_sym_head name="r54" id="0xb7" scope="0x0"/>
+<varnode_sym_head name="r55" id="0xb8" scope="0x0"/>
+<varnode_sym_head name="r56" id="0xb9" scope="0x0"/>
+<varnode_sym_head name="r57" id="0xba" scope="0x0"/>
+<varnode_sym_head name="r58" id="0xbb" scope="0x0"/>
+<varnode_sym_head name="r59" id="0xbc" scope="0x0"/>
+<varnode_sym_head name="r60" id="0xbd" scope="0x0"/>
+<varnode_sym_head name="r61" id="0xbe" scope="0x0"/>
+<varnode_sym_head name="r62" id="0xbf" scope="0x0"/>
+<varnode_sym_head name="r63" id="0xc0" scope="0x0"/>
+<varnode_sym_head name="r64" id="0xc1" scope="0x0"/>
+<varnode_sym_head name="r65" id="0xc2" scope="0x0"/>
+<varnode_sym_head name="r66" id="0xc3" scope="0x0"/>
+<varnode_sym_head name="r67" id="0xc4" scope="0x0"/>
+<varnode_sym_head name="r68" id="0xc5" scope="0x0"/>
+<varnode_sym_head name="r69" id="0xc6" scope="0x0"/>
+<varnode_sym_head name="r70" id="0xc7" scope="0x0"/>
+<varnode_sym_head name="r71" id="0xc8" scope="0x0"/>
+<varnode_sym_head name="r72" id="0xc9" scope="0x0"/>
+<varnode_sym_head name="r73" id="0xca" scope="0x0"/>
+<varnode_sym_head name="r74" id="0xcb" scope="0x0"/>
+<varnode_sym_head name="r75" id="0xcc" scope="0x0"/>
+<varnode_sym_head name="r76" id="0xcd" scope="0x0"/>
+<varnode_sym_head name="r77" id="0xce" scope="0x0"/>
+<varnode_sym_head name="r78" id="0xcf" scope="0x0"/>
+<varnode_sym_head name="r79" id="0xd0" scope="0x0"/>
+<varnode_sym_head name="r80" id="0xd1" scope="0x0"/>
+<varnode_sym_head name="r81" id="0xd2" scope="0x0"/>
+<varnode_sym_head name="r82" id="0xd3" scope="0x0"/>
+<varnode_sym_head name="r83" id="0xd4" scope="0x0"/>
+<varnode_sym_head name="r84" id="0xd5" scope="0x0"/>
+<varnode_sym_head name="r85" id="0xd6" scope="0x0"/>
+<varnode_sym_head name="r86" id="0xd7" scope="0x0"/>
+<varnode_sym_head name="r87" id="0xd8" scope="0x0"/>
+<varnode_sym_head name="r88" id="0xd9" scope="0x0"/>
+<varnode_sym_head name="r89" id="0xda" scope="0x0"/>
+<varnode_sym_head name="r90" id="0xdb" scope="0x0"/>
+<varnode_sym_head name="r91" id="0xdc" scope="0x0"/>
+<varnode_sym_head name="r92" id="0xdd" scope="0x0"/>
+<varnode_sym_head name="r93" id="0xde" scope="0x0"/>
+<varnode_sym_head name="r94" id="0xdf" scope="0x0"/>
+<varnode_sym_head name="r95" id="0xe0" scope="0x0"/>
+<varnode_sym_head name="r96" id="0xe1" scope="0x0"/>
+<varnode_sym_head name="r97" id="0xe2" scope="0x0"/>
+<varnode_sym_head name="r98" id="0xe3" scope="0x0"/>
+<varnode_sym_head name="r99" id="0xe4" scope="0x0"/>
+<varnode_sym_head name="r100" id="0xe5" scope="0x0"/>
+<varnode_sym_head name="r101" id="0xe6" scope="0x0"/>
+<varnode_sym_head name="r102" id="0xe7" scope="0x0"/>
+<varnode_sym_head name="r103" id="0xe8" scope="0x0"/>
+<varnode_sym_head name="r104" id="0xe9" scope="0x0"/>
+<varnode_sym_head name="r105" id="0xea" scope="0x0"/>
+<varnode_sym_head name="r106" id="0xeb" scope="0x0"/>
+<varnode_sym_head name="r107" id="0xec" scope="0x0"/>
+<varnode_sym_head name="r108" id="0xed" scope="0x0"/>
+<varnode_sym_head name="r109" id="0xee" scope="0x0"/>
+<varnode_sym_head name="r110" id="0xef" scope="0x0"/>
+<varnode_sym_head name="r111" id="0xf0" scope="0x0"/>
+<varnode_sym_head name="r112" id="0xf1" scope="0x0"/>
+<varnode_sym_head name="r113" id="0xf2" scope="0x0"/>
+<varnode_sym_head name="r114" id="0xf3" scope="0x0"/>
+<varnode_sym_head name="r115" id="0xf4" scope="0x0"/>
+<varnode_sym_head name="r116" id="0xf5" scope="0x0"/>
+<varnode_sym_head name="r117" id="0xf6" scope="0x0"/>
+<varnode_sym_head name="r118" id="0xf7" scope="0x0"/>
+<varnode_sym_head name="r119" id="0xf8" scope="0x0"/>
+<varnode_sym_head name="r120" id="0xf9" scope="0x0"/>
+<varnode_sym_head name="r121" id="0xfa" scope="0x0"/>
+<varnode_sym_head name="r122" id="0xfb" scope="0x0"/>
+<varnode_sym_head name="r123" id="0xfc" scope="0x0"/>
+<varnode_sym_head name="range_size" id="0xfd" scope="0x0"/>
+<varnode_sym_head name="acc" id="0xfe" scope="0x0"/>
+<varnode_sym_head name="sp" id="0xff" scope="0x0"/>
+<varnode_sym_head name="pc" id="0x100" scope="0x0"/>
+<varnode_sym_head name="fp" id="0x101" scope="0x0"/>
+<varnode_sym_head name="_context" id="0x102" scope="0x0"/>
+<varnode_sym_head name="_closure" id="0x103" scope="0x0"/>
+<varnode_sym_head name="True" id="0x104" scope="0x0"/>
+<varnode_sym_head name="False" id="0x105" scope="0x0"/>
+<varnode_sym_head name="Undefined" id="0x106" scope="0x0"/>
+<varnode_sym_head name="TheHole" id="0x107" scope="0x0"/>
+<varnode_sym_head name="Null" id="0x108" scope="0x0"/>
+<varnode_sym_head name="JSReceiver" id="0x109" scope="0x0"/>
+<value_sym_head name="op" id="0x10a" scope="0x0"/>
+<value_sym_head name="kImm" id="0x10b" scope="0x0"/>
+<value_sym_head name="kIdx" id="0x10c" scope="0x0"/>
+<value_sym_head name="kIdx_2" id="0x10d" scope="0x0"/>
+<value_sym_head name="kUImm" id="0x10e" scope="0x0"/>
+<value_sym_head name="kFlag8" id="0x10f" scope="0x0"/>
+<value_sym_head name="kIntrinsicId" id="0x110" scope="0x0"/>
+<varlist_sym_head name="kReg" id="0x111" scope="0x0"/>
+<operand_sym_head name="kImm" id="0x112" scope="0x1"/>
+<operand_sym_head name="kImm" id="0x113" scope="0x2"/>
+<operand_sym_head name="kIdx" id="0x114" scope="0x2"/>
+<subtable_sym_head name="src" id="0x115" scope="0x0"/>
+<operand_sym_head name="kReg" id="0x116" scope="0x3"/>
+<operand_sym_head name="src" id="0x117" scope="0x4"/>
+<operand_sym_head name="kIdx" id="0x118" scope="0x4"/>
+<subtable_sym_head name="dst" id="0x119" scope="0x0"/>
+<operand_sym_head name="kReg" id="0x11a" scope="0x5"/>
+<operand_sym_head name="src" id="0x11b" scope="0x6"/>
+<operand_sym_head name="dst" id="0x11c" scope="0x7"/>
+<subtable_sym_head name="dest" id="0x11d" scope="0x0"/>
+<operand_sym_head name="rel" id="0x11e" scope="0x8"/>
+<operand_sym_head name="kUImm" id="0x11f" scope="0x8"/>
+<operand_sym_head name="dest" id="0x120" scope="0x9"/>
+<operand_sym_head name="dest" id="0x121" scope="0xa"/>
+<operand_sym_head name="src" id="0x122" scope="0xb"/>
+<operand_sym_head name="kIdx" id="0x123" scope="0xb"/>
+<subtable_sym_head name="callable" id="0x124" scope="0x0"/>
+<operand_sym_head name="kReg" id="0x125" scope="0xc"/>
+<subtable_sym_head name="receiver" id="0x126" scope="0x0"/>
+<operand_sym_head name="kReg" id="0x127" scope="0xd"/>
+<subtable_sym_head name="arg1" id="0x128" scope="0x0"/>
+<operand_sym_head name="kReg" id="0x129" scope="0xe"/>
+<subtable_sym_head name="arg2" id="0x12a" scope="0x0"/>
+<operand_sym_head name="kReg" id="0x12b" scope="0xf"/>
+<operand_sym_head name="callable" id="0x12c" scope="0x10"/>
+<operand_sym_head name="receiver" id="0x12d" scope="0x10"/>
+<operand_sym_head name="arg1" id="0x12e" scope="0x10"/>
+<operand_sym_head name="arg2" id="0x12f" scope="0x10"/>
+<operand_sym_head name="kIdx" id="0x130" scope="0x10"/>
+<operand_sym_head name="callable" id="0x131" scope="0x11"/>
+<operand_sym_head name="arg1" id="0x132" scope="0x11"/>
+<operand_sym_head name="kIdx" id="0x133" scope="0x11"/>
+<userop_head name="TypeOf" id="0x134" scope="0x0"/>
+<userop_head name="StackCheck" id="0x135" scope="0x0"/>
+<userop_head name="GetGlobal" id="0x136" scope="0x0"/>
+<operand_sym_head name="kIdx" id="0x137" scope="0x12"/>
+<operand_sym_head name="kIdx_2" id="0x138" scope="0x12"/>
+<subtable_sym name="instruction" id="0x0" scope="0x0" numct="16">
+<constructor parent="0x0" first="1" length="1" line="57">
+<print piece="Illegal"/>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="60">
+<print piece="Nop"/>
+<construct_tpl>
+<null/></construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="75">
+<oper id="0x112"/>
+<print piece="LdaSmi"/>
+<print piece=" "/>
+<print piece="["/>
+<opprint id="0"/>
+<print piece="]"/>
+<construct_tpl>
+<null/><op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x84"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="3" line="82">
+<oper id="0x113"/>
+<oper id="0x114"/>
+<print piece="AddSmi"/>
+<print piece=" "/>
+<print piece="["/>
+<opprint id="0"/>
+<print piece="],"/>
+<print piece=" "/>
+<print piece="["/>
+<opprint id="1"/>
+<print piece="]"/>
+<construct_tpl>
+<null/><op_tpl code="INT_ADD"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x84"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x84"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="91">
+<print piece="Return"/>
+<construct_tpl>
+<null/><op_tpl code="RETURN"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x84"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="3" line="129">
+<oper id="0x117"/>
+<oper id="0x118"/>
+<print piece="Mul"/>
+<print piece=" "/>
+<opprint id="0"/>
+<print piece=","/>
+<print piece=" "/>
+<print piece="["/>
+<opprint id="1"/>
+<print piece="]"/>
+<construct_tpl>
+<null/><op_tpl code="BUILD"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_MULT"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x84"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x84"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="135">
+<oper id="0x11b"/>
+<print piece="Ldar"/>
+<print piece=" "/>
+<opprint id="0"/>
+<construct_tpl>
+<null/><op_tpl code="BUILD"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x84"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="138">
+<oper id="0x11c"/>
+<print piece="Star"/>
+<print piece=" "/>
+<opprint id="0"/>
+<construct_tpl>
+<null/><op_tpl code="BUILD"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x84"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="163">
+<oper id="0x120"/>
+<print piece="Jump"/>
+<print piece=" "/>
+<print piece="["/>
+<opprint id="0"/>
+<print piece="]"/>
+<construct_tpl>
+<null/><op_tpl code="BUILD"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="BRANCH"><null/>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="2" line="171">
+<oper id="0x121"/>
+<print piece="JumpIfFalse"/>
+<print piece=" "/>
+<print piece="["/>
+<opprint id="0"/>
+<print piece="]"/>
+<construct_tpl>
+<null/><op_tpl code="BUILD"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_EQUAL"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x30"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x84"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x2024"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="CBRANCH"><null/>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x30"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="3" line="179">
+<oper id="0x122"/>
+<oper id="0x123"/>
+<print piece="TestGreaterThan"/>
+<print piece=" "/>
+<opprint id="0"/>
+<print piece=","/>
+<print piece=" "/>
+<print piece="["/>
+<opprint id="1"/>
+<print piece="]"/>
+<construct_tpl labels="1">
+<null/><op_tpl code="BUILD"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SLESS"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x40"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x84"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="CBRANCH"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="relative" val="0x0"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x40"/><const_tpl type="real" val="0x1"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x84"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x2024"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="BRANCH"><null/>
+<varnode_tpl><const_tpl type="curspace"/><const_tpl type="next"/><const_tpl type="curspace_size"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="LABEL"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x84"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x2020"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="6" line="197">
+<oper id="0x12c"/>
+<oper id="0x12d"/>
+<oper id="0x12e"/>
+<oper id="0x12f"/>
+<oper id="0x130"/>
+<print piece="CallProperty2"/>
+<print piece=" "/>
+<opprint id="0"/>
+<print piece=","/>
+<print piece=" "/>
+<opprint id="1"/>
+<print piece=","/>
+<print piece=" "/>
+<opprint id="2"/>
+<print piece=","/>
+<print piece=" "/>
+<opprint id="3"/>
+<print piece=","/>
+<print piece=" "/>
+<print piece="["/>
+<opprint id="4"/>
+<print piece="]"/>
+<construct_tpl>
+<null/><op_tpl code="BUILD"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x3"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="BUILD"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x2"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="BUILD"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="BUILD"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x50"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x14000"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x60"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x14004"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x14004"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="2" s="space"/><const_tpl type="handle" val="2" s="offset"/><const_tpl type="handle" val="2" s="size"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x14000"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="3" s="space"/><const_tpl type="handle" val="3" s="offset"/><const_tpl type="handle" val="3" s="size"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="CALLIND"><null/>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="handle" val="1" s="space"/><const_tpl type="handle" val="1" s="offset"/><const_tpl type="handle" val="1" s="size"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x84"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x14000"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x50"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x14004"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x60"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="4" line="219">
+<oper id="0x131"/>
+<oper id="0x132"/>
+<oper id="0x133"/>
+<print piece="CallUndefinedReceiver1"/>
+<print piece=" "/>
+<opprint id="0"/>
+<print piece=","/>
+<print piece=" "/>
+<opprint id="1"/>
+<print piece=","/>
+<print piece=" "/>
+<print piece="["/>
+<opprint id="2"/>
+<print piece="]"/>
+<construct_tpl>
+<null/><op_tpl code="BUILD"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="BUILD"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_SUB"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x88"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x88"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x4"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="STORE"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="spaceid" name="ram"/><const_tpl type="real" val="0x8"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x88"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x14000"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="COPY"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x14000"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="1" s="space"/><const_tpl type="handle" val="1" s="offset"/><const_tpl type="handle" val="1" s="size"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="CALLIND"><null/>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="handle" val="0" s="size"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="LOAD"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x14000"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="spaceid" name="ram"/><const_tpl type="real" val="0x8"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x88"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+<op_tpl code="INT_ADD"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x88"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x88"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x4"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="229">
+<print piece="TypeOf"/>
+<construct_tpl>
+<null/><op_tpl code="CALLOTHER"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x84"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x84"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="1" line="232">
+<print piece="StackCheck"/>
+<construct_tpl>
+<null/><op_tpl code="CALLOTHER"><null/>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x1"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<constructor parent="0x0" first="1" length="3" line="235">
+<oper id="0x137"/>
+<oper id="0x138"/>
+<print piece="LdaGlobal"/>
+<print piece=" "/>
+<print piece="["/>
+<opprint id="0"/>
+<print piece="],"/>
+<print piece=" "/>
+<print piece="["/>
+<opprint id="1"/>
+<print piece="]"/>
+<construct_tpl>
+<null/><op_tpl code="CALLOTHER"><varnode_tpl><const_tpl type="spaceid" name="register"/><const_tpl type="real" val="0x84"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+<varnode_tpl><const_tpl type="spaceid" name="const"/><const_tpl type="real" val="0x2"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+<varnode_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="real" val="0x4"/></varnode_tpl>
+</op_tpl>
+</construct_tpl>
+</constructor>
+<decision number="16" context="false" start="1" size="6">
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="2">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0x3000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="9">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0x86000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="15">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0xa000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="14">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0x91000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="4">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0x95000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="6">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0x1d000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="7">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0x1e000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="0">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0xa7000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="1">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0xa8000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="5">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0x2d000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="3">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0x36000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="13">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0x45000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="11">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0x4d000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="12">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0x50000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="10">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0x5c000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="1" context="false" start="0" size="0">
+<pair id="8">
+<instruct_pat>
+<pat_block offset="0" nonzero="1">
+  <mask_word mask="0xff000000" val="0x78000000"/>
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+<decision number="0" context="false" start="0" size="0">
+</decision>
+</decision>
+</subtable_sym>
+<start_sym name="inst_start" id="0x1" scope="0x0"/>
+<end_sym name="inst_next" id="0x2" scope="0x0"/>
+<varnode_sym name="a0" id="0x3" scope="0x0" space="register" offset="0x14000" size="4">
+</varnode_sym>
+<varnode_sym name="a1" id="0x4" scope="0x0" space="register" offset="0x14004" size="4">
+</varnode_sym>
+<varnode_sym name="a2" id="0x5" scope="0x0" space="register" offset="0x14008" size="4">
+</varnode_sym>
+<varnode_sym name="a3" id="0x6" scope="0x0" space="register" offset="0x1400c" size="4">
+</varnode_sym>
+<varnode_sym name="a4" id="0x7" scope="0x0" space="register" offset="0x14010" size="4">
+</varnode_sym>
+<varnode_sym name="a5" id="0x8" scope="0x0" space="register" offset="0x14014" size="4">
+</varnode_sym>
+<varnode_sym name="a6" id="0x9" scope="0x0" space="register" offset="0x14018" size="4">
+</varnode_sym>
+<varnode_sym name="a7" id="0xa" scope="0x0" space="register" offset="0x1401c" size="4">
+</varnode_sym>
+<varnode_sym name="a8" id="0xb" scope="0x0" space="register" offset="0x14020" size="4">
+</varnode_sym>
+<varnode_sym name="a9" id="0xc" scope="0x0" space="register" offset="0x14024" size="4">
+</varnode_sym>
+<varnode_sym name="a10" id="0xd" scope="0x0" space="register" offset="0x14028" size="4">
+</varnode_sym>
+<varnode_sym name="a11" id="0xe" scope="0x0" space="register" offset="0x1402c" size="4">
+</varnode_sym>
+<varnode_sym name="a12" id="0xf" scope="0x0" space="register" offset="0x14030" size="4">
+</varnode_sym>
+<varnode_sym name="a13" id="0x10" scope="0x0" space="register" offset="0x14034" size="4">
+</varnode_sym>
+<varnode_sym name="a14" id="0x11" scope="0x0" space="register" offset="0x14038" size="4">
+</varnode_sym>
+<varnode_sym name="a15" id="0x12" scope="0x0" space="register" offset="0x1403c" size="4">
+</varnode_sym>
+<varnode_sym name="a16" id="0x13" scope="0x0" space="register" offset="0x14040" size="4">
+</varnode_sym>
+<varnode_sym name="a17" id="0x14" scope="0x0" space="register" offset="0x14044" size="4">
+</varnode_sym>
+<varnode_sym name="a18" id="0x15" scope="0x0" space="register" offset="0x14048" size="4">
+</varnode_sym>
+<varnode_sym name="a19" id="0x16" scope="0x0" space="register" offset="0x1404c" size="4">
+</varnode_sym>
+<varnode_sym name="a20" id="0x17" scope="0x0" space="register" offset="0x14050" size="4">
+</varnode_sym>
+<varnode_sym name="a21" id="0x18" scope="0x0" space="register" offset="0x14054" size="4">
+</varnode_sym>
+<varnode_sym name="a22" id="0x19" scope="0x0" space="register" offset="0x14058" size="4">
+</varnode_sym>
+<varnode_sym name="a23" id="0x1a" scope="0x0" space="register" offset="0x1405c" size="4">
+</varnode_sym>
+<varnode_sym name="a24" id="0x1b" scope="0x0" space="register" offset="0x14060" size="4">
+</varnode_sym>
+<varnode_sym name="a25" id="0x1c" scope="0x0" space="register" offset="0x14064" size="4">
+</varnode_sym>
+<varnode_sym name="a26" id="0x1d" scope="0x0" space="register" offset="0x14068" size="4">
+</varnode_sym>
+<varnode_sym name="a27" id="0x1e" scope="0x0" space="register" offset="0x1406c" size="4">
+</varnode_sym>
+<varnode_sym name="a28" id="0x1f" scope="0x0" space="register" offset="0x14070" size="4">
+</varnode_sym>
+<varnode_sym name="a29" id="0x20" scope="0x0" space="register" offset="0x14074" size="4">
+</varnode_sym>
+<varnode_sym name="a30" id="0x21" scope="0x0" space="register" offset="0x14078" size="4">
+</varnode_sym>
+<varnode_sym name="a31" id="0x22" scope="0x0" space="register" offset="0x1407c" size="4">
+</varnode_sym>
+<varnode_sym name="a32" id="0x23" scope="0x0" space="register" offset="0x14080" size="4">
+</varnode_sym>
+<varnode_sym name="a33" id="0x24" scope="0x0" space="register" offset="0x14084" size="4">
+</varnode_sym>
+<varnode_sym name="a34" id="0x25" scope="0x0" space="register" offset="0x14088" size="4">
+</varnode_sym>
+<varnode_sym name="a35" id="0x26" scope="0x0" space="register" offset="0x1408c" size="4">
+</varnode_sym>
+<varnode_sym name="a36" id="0x27" scope="0x0" space="register" offset="0x14090" size="4">
+</varnode_sym>
+<varnode_sym name="a37" id="0x28" scope="0x0" space="register" offset="0x14094" size="4">
+</varnode_sym>
+<varnode_sym name="a38" id="0x29" scope="0x0" space="register" offset="0x14098" size="4">
+</varnode_sym>
+<varnode_sym name="a39" id="0x2a" scope="0x0" space="register" offset="0x1409c" size="4">
+</varnode_sym>
+<varnode_sym name="a40" id="0x2b" scope="0x0" space="register" offset="0x140a0" size="4">
+</varnode_sym>
+<varnode_sym name="a41" id="0x2c" scope="0x0" space="register" offset="0x140a4" size="4">
+</varnode_sym>
+<varnode_sym name="a42" id="0x2d" scope="0x0" space="register" offset="0x140a8" size="4">
+</varnode_sym>
+<varnode_sym name="a43" id="0x2e" scope="0x0" space="register" offset="0x140ac" size="4">
+</varnode_sym>
+<varnode_sym name="a44" id="0x2f" scope="0x0" space="register" offset="0x140b0" size="4">
+</varnode_sym>
+<varnode_sym name="a45" id="0x30" scope="0x0" space="register" offset="0x140b4" size="4">
+</varnode_sym>
+<varnode_sym name="a46" id="0x31" scope="0x0" space="register" offset="0x140b8" size="4">
+</varnode_sym>
+<varnode_sym name="a47" id="0x32" scope="0x0" space="register" offset="0x140bc" size="4">
+</varnode_sym>
+<varnode_sym name="a48" id="0x33" scope="0x0" space="register" offset="0x140c0" size="4">
+</varnode_sym>
+<varnode_sym name="a49" id="0x34" scope="0x0" space="register" offset="0x140c4" size="4">
+</varnode_sym>
+<varnode_sym name="a50" id="0x35" scope="0x0" space="register" offset="0x140c8" size="4">
+</varnode_sym>
+<varnode_sym name="a51" id="0x36" scope="0x0" space="register" offset="0x140cc" size="4">
+</varnode_sym>
+<varnode_sym name="a52" id="0x37" scope="0x0" space="register" offset="0x140d0" size="4">
+</varnode_sym>
+<varnode_sym name="a53" id="0x38" scope="0x0" space="register" offset="0x140d4" size="4">
+</varnode_sym>
+<varnode_sym name="a54" id="0x39" scope="0x0" space="register" offset="0x140d8" size="4">
+</varnode_sym>
+<varnode_sym name="a55" id="0x3a" scope="0x0" space="register" offset="0x140dc" size="4">
+</varnode_sym>
+<varnode_sym name="a56" id="0x3b" scope="0x0" space="register" offset="0x140e0" size="4">
+</varnode_sym>
+<varnode_sym name="a57" id="0x3c" scope="0x0" space="register" offset="0x140e4" size="4">
+</varnode_sym>
+<varnode_sym name="a58" id="0x3d" scope="0x0" space="register" offset="0x140e8" size="4">
+</varnode_sym>
+<varnode_sym name="a59" id="0x3e" scope="0x0" space="register" offset="0x140ec" size="4">
+</varnode_sym>
+<varnode_sym name="a60" id="0x3f" scope="0x0" space="register" offset="0x140f0" size="4">
+</varnode_sym>
+<varnode_sym name="a61" id="0x40" scope="0x0" space="register" offset="0x140f4" size="4">
+</varnode_sym>
+<varnode_sym name="a62" id="0x41" scope="0x0" space="register" offset="0x140f8" size="4">
+</varnode_sym>
+<varnode_sym name="a63" id="0x42" scope="0x0" space="register" offset="0x140fc" size="4">
+</varnode_sym>
+<varnode_sym name="a64" id="0x43" scope="0x0" space="register" offset="0x14100" size="4">
+</varnode_sym>
+<varnode_sym name="a65" id="0x44" scope="0x0" space="register" offset="0x14104" size="4">
+</varnode_sym>
+<varnode_sym name="a66" id="0x45" scope="0x0" space="register" offset="0x14108" size="4">
+</varnode_sym>
+<varnode_sym name="a67" id="0x46" scope="0x0" space="register" offset="0x1410c" size="4">
+</varnode_sym>
+<varnode_sym name="a68" id="0x47" scope="0x0" space="register" offset="0x14110" size="4">
+</varnode_sym>
+<varnode_sym name="a69" id="0x48" scope="0x0" space="register" offset="0x14114" size="4">
+</varnode_sym>
+<varnode_sym name="a70" id="0x49" scope="0x0" space="register" offset="0x14118" size="4">
+</varnode_sym>
+<varnode_sym name="a71" id="0x4a" scope="0x0" space="register" offset="0x1411c" size="4">
+</varnode_sym>
+<varnode_sym name="a72" id="0x4b" scope="0x0" space="register" offset="0x14120" size="4">
+</varnode_sym>
+<varnode_sym name="a73" id="0x4c" scope="0x0" space="register" offset="0x14124" size="4">
+</varnode_sym>
+<varnode_sym name="a74" id="0x4d" scope="0x0" space="register" offset="0x14128" size="4">
+</varnode_sym>
+<varnode_sym name="a75" id="0x4e" scope="0x0" space="register" offset="0x1412c" size="4">
+</varnode_sym>
+<varnode_sym name="a76" id="0x4f" scope="0x0" space="register" offset="0x14130" size="4">
+</varnode_sym>
+<varnode_sym name="a77" id="0x50" scope="0x0" space="register" offset="0x14134" size="4">
+</varnode_sym>
+<varnode_sym name="a78" id="0x51" scope="0x0" space="register" offset="0x14138" size="4">
+</varnode_sym>
+<varnode_sym name="a79" id="0x52" scope="0x0" space="register" offset="0x1413c" size="4">
+</varnode_sym>
+<varnode_sym name="a80" id="0x53" scope="0x0" space="register" offset="0x14140" size="4">
+</varnode_sym>
+<varnode_sym name="a81" id="0x54" scope="0x0" space="register" offset="0x14144" size="4">
+</varnode_sym>
+<varnode_sym name="a82" id="0x55" scope="0x0" space="register" offset="0x14148" size="4">
+</varnode_sym>
+<varnode_sym name="a83" id="0x56" scope="0x0" space="register" offset="0x1414c" size="4">
+</varnode_sym>
+<varnode_sym name="a84" id="0x57" scope="0x0" space="register" offset="0x14150" size="4">
+</varnode_sym>
+<varnode_sym name="a85" id="0x58" scope="0x0" space="register" offset="0x14154" size="4">
+</varnode_sym>
+<varnode_sym name="a86" id="0x59" scope="0x0" space="register" offset="0x14158" size="4">
+</varnode_sym>
+<varnode_sym name="a87" id="0x5a" scope="0x0" space="register" offset="0x1415c" size="4">
+</varnode_sym>
+<varnode_sym name="a88" id="0x5b" scope="0x0" space="register" offset="0x14160" size="4">
+</varnode_sym>
+<varnode_sym name="a89" id="0x5c" scope="0x0" space="register" offset="0x14164" size="4">
+</varnode_sym>
+<varnode_sym name="a90" id="0x5d" scope="0x0" space="register" offset="0x14168" size="4">
+</varnode_sym>
+<varnode_sym name="a91" id="0x5e" scope="0x0" space="register" offset="0x1416c" size="4">
+</varnode_sym>
+<varnode_sym name="a92" id="0x5f" scope="0x0" space="register" offset="0x14170" size="4">
+</varnode_sym>
+<varnode_sym name="a93" id="0x60" scope="0x0" space="register" offset="0x14174" size="4">
+</varnode_sym>
+<varnode_sym name="a94" id="0x61" scope="0x0" space="register" offset="0x14178" size="4">
+</varnode_sym>
+<varnode_sym name="a95" id="0x62" scope="0x0" space="register" offset="0x1417c" size="4">
+</varnode_sym>
+<varnode_sym name="a96" id="0x63" scope="0x0" space="register" offset="0x14180" size="4">
+</varnode_sym>
+<varnode_sym name="a97" id="0x64" scope="0x0" space="register" offset="0x14184" size="4">
+</varnode_sym>
+<varnode_sym name="a98" id="0x65" scope="0x0" space="register" offset="0x14188" size="4">
+</varnode_sym>
+<varnode_sym name="a99" id="0x66" scope="0x0" space="register" offset="0x1418c" size="4">
+</varnode_sym>
+<varnode_sym name="a100" id="0x67" scope="0x0" space="register" offset="0x14190" size="4">
+</varnode_sym>
+<varnode_sym name="a101" id="0x68" scope="0x0" space="register" offset="0x14194" size="4">
+</varnode_sym>
+<varnode_sym name="a102" id="0x69" scope="0x0" space="register" offset="0x14198" size="4">
+</varnode_sym>
+<varnode_sym name="a103" id="0x6a" scope="0x0" space="register" offset="0x1419c" size="4">
+</varnode_sym>
+<varnode_sym name="a104" id="0x6b" scope="0x0" space="register" offset="0x141a0" size="4">
+</varnode_sym>
+<varnode_sym name="a105" id="0x6c" scope="0x0" space="register" offset="0x141a4" size="4">
+</varnode_sym>
+<varnode_sym name="a106" id="0x6d" scope="0x0" space="register" offset="0x141a8" size="4">
+</varnode_sym>
+<varnode_sym name="a107" id="0x6e" scope="0x0" space="register" offset="0x141ac" size="4">
+</varnode_sym>
+<varnode_sym name="a108" id="0x6f" scope="0x0" space="register" offset="0x141b0" size="4">
+</varnode_sym>
+<varnode_sym name="a109" id="0x70" scope="0x0" space="register" offset="0x141b4" size="4">
+</varnode_sym>
+<varnode_sym name="a110" id="0x71" scope="0x0" space="register" offset="0x141b8" size="4">
+</varnode_sym>
+<varnode_sym name="a111" id="0x72" scope="0x0" space="register" offset="0x141bc" size="4">
+</varnode_sym>
+<varnode_sym name="a112" id="0x73" scope="0x0" space="register" offset="0x141c0" size="4">
+</varnode_sym>
+<varnode_sym name="a113" id="0x74" scope="0x0" space="register" offset="0x141c4" size="4">
+</varnode_sym>
+<varnode_sym name="a114" id="0x75" scope="0x0" space="register" offset="0x141c8" size="4">
+</varnode_sym>
+<varnode_sym name="a115" id="0x76" scope="0x0" space="register" offset="0x141cc" size="4">
+</varnode_sym>
+<varnode_sym name="a116" id="0x77" scope="0x0" space="register" offset="0x141d0" size="4">
+</varnode_sym>
+<varnode_sym name="a117" id="0x78" scope="0x0" space="register" offset="0x141d4" size="4">
+</varnode_sym>
+<varnode_sym name="a118" id="0x79" scope="0x0" space="register" offset="0x141d8" size="4">
+</varnode_sym>
+<varnode_sym name="a119" id="0x7a" scope="0x0" space="register" offset="0x141dc" size="4">
+</varnode_sym>
+<varnode_sym name="a120" id="0x7b" scope="0x0" space="register" offset="0x141e0" size="4">
+</varnode_sym>
+<varnode_sym name="a121" id="0x7c" scope="0x0" space="register" offset="0x141e4" size="4">
+</varnode_sym>
+<varnode_sym name="a122" id="0x7d" scope="0x0" space="register" offset="0x141e8" size="4">
+</varnode_sym>
+<varnode_sym name="a123" id="0x7e" scope="0x0" space="register" offset="0x141ec" size="4">
+</varnode_sym>
+<varnode_sym name="a124" id="0x7f" scope="0x0" space="register" offset="0x141f0" size="4">
+</varnode_sym>
+<varnode_sym name="a125" id="0x80" scope="0x0" space="register" offset="0x141f4" size="4">
+</varnode_sym>
+<varnode_sym name="r0" id="0x81" scope="0x0" space="register" offset="0x3000" size="4">
+</varnode_sym>
+<varnode_sym name="r1" id="0x82" scope="0x0" space="register" offset="0x3004" size="4">
+</varnode_sym>
+<varnode_sym name="r2" id="0x83" scope="0x0" space="register" offset="0x3008" size="4">
+</varnode_sym>
+<varnode_sym name="r3" id="0x84" scope="0x0" space="register" offset="0x300c" size="4">
+</varnode_sym>
+<varnode_sym name="r4" id="0x85" scope="0x0" space="register" offset="0x3010" size="4">
+</varnode_sym>
+<varnode_sym name="r5" id="0x86" scope="0x0" space="register" offset="0x3014" size="4">
+</varnode_sym>
+<varnode_sym name="r6" id="0x87" scope="0x0" space="register" offset="0x3018" size="4">
+</varnode_sym>
+<varnode_sym name="r7" id="0x88" scope="0x0" space="register" offset="0x301c" size="4">
+</varnode_sym>
+<varnode_sym name="r8" id="0x89" scope="0x0" space="register" offset="0x3020" size="4">
+</varnode_sym>
+<varnode_sym name="r9" id="0x8a" scope="0x0" space="register" offset="0x3024" size="4">
+</varnode_sym>
+<varnode_sym name="r10" id="0x8b" scope="0x0" space="register" offset="0x3028" size="4">
+</varnode_sym>
+<varnode_sym name="r11" id="0x8c" scope="0x0" space="register" offset="0x302c" size="4">
+</varnode_sym>
+<varnode_sym name="r12" id="0x8d" scope="0x0" space="register" offset="0x3030" size="4">
+</varnode_sym>
+<varnode_sym name="r13" id="0x8e" scope="0x0" space="register" offset="0x3034" size="4">
+</varnode_sym>
+<varnode_sym name="r14" id="0x8f" scope="0x0" space="register" offset="0x3038" size="4">
+</varnode_sym>
+<varnode_sym name="r15" id="0x90" scope="0x0" space="register" offset="0x303c" size="4">
+</varnode_sym>
+<varnode_sym name="r16" id="0x91" scope="0x0" space="register" offset="0x3040" size="4">
+</varnode_sym>
+<varnode_sym name="r17" id="0x92" scope="0x0" space="register" offset="0x3044" size="4">
+</varnode_sym>
+<varnode_sym name="r18" id="0x93" scope="0x0" space="register" offset="0x3048" size="4">
+</varnode_sym>
+<varnode_sym name="r19" id="0x94" scope="0x0" space="register" offset="0x304c" size="4">
+</varnode_sym>
+<varnode_sym name="r20" id="0x95" scope="0x0" space="register" offset="0x3050" size="4">
+</varnode_sym>
+<varnode_sym name="r21" id="0x96" scope="0x0" space="register" offset="0x3054" size="4">
+</varnode_sym>
+<varnode_sym name="r22" id="0x97" scope="0x0" space="register" offset="0x3058" size="4">
+</varnode_sym>
+<varnode_sym name="r23" id="0x98" scope="0x0" space="register" offset="0x305c" size="4">
+</varnode_sym>
+<varnode_sym name="r24" id="0x99" scope="0x0" space="register" offset="0x3060" size="4">
+</varnode_sym>
+<varnode_sym name="r25" id="0x9a" scope="0x0" space="register" offset="0x3064" size="4">
+</varnode_sym>
+<varnode_sym name="r26" id="0x9b" scope="0x0" space="register" offset="0x3068" size="4">
+</varnode_sym>
+<varnode_sym name="r27" id="0x9c" scope="0x0" space="register" offset="0x306c" size="4">
+</varnode_sym>
+<varnode_sym name="r28" id="0x9d" scope="0x0" space="register" offset="0x3070" size="4">
+</varnode_sym>
+<varnode_sym name="r29" id="0x9e" scope="0x0" space="register" offset="0x3074" size="4">
+</varnode_sym>
+<varnode_sym name="r30" id="0x9f" scope="0x0" space="register" offset="0x3078" size="4">
+</varnode_sym>
+<varnode_sym name="r31" id="0xa0" scope="0x0" space="register" offset="0x307c" size="4">
+</varnode_sym>
+<varnode_sym name="r32" id="0xa1" scope="0x0" space="register" offset="0x3080" size="4">
+</varnode_sym>
+<varnode_sym name="r33" id="0xa2" scope="0x0" space="register" offset="0x3084" size="4">
+</varnode_sym>
+<varnode_sym name="r34" id="0xa3" scope="0x0" space="register" offset="0x3088" size="4">
+</varnode_sym>
+<varnode_sym name="r35" id="0xa4" scope="0x0" space="register" offset="0x308c" size="4">
+</varnode_sym>
+<varnode_sym name="r36" id="0xa5" scope="0x0" space="register" offset="0x3090" size="4">
+</varnode_sym>
+<varnode_sym name="r37" id="0xa6" scope="0x0" space="register" offset="0x3094" size="4">
+</varnode_sym>
+<varnode_sym name="r38" id="0xa7" scope="0x0" space="register" offset="0x3098" size="4">
+</varnode_sym>
+<varnode_sym name="r39" id="0xa8" scope="0x0" space="register" offset="0x309c" size="4">
+</varnode_sym>
+<varnode_sym name="r40" id="0xa9" scope="0x0" space="register" offset="0x30a0" size="4">
+</varnode_sym>
+<varnode_sym name="r41" id="0xaa" scope="0x0" space="register" offset="0x30a4" size="4">
+</varnode_sym>
+<varnode_sym name="r42" id="0xab" scope="0x0" space="register" offset="0x30a8" size="4">
+</varnode_sym>
+<varnode_sym name="r43" id="0xac" scope="0x0" space="register" offset="0x30ac" size="4">
+</varnode_sym>
+<varnode_sym name="r44" id="0xad" scope="0x0" space="register" offset="0x30b0" size="4">
+</varnode_sym>
+<varnode_sym name="r45" id="0xae" scope="0x0" space="register" offset="0x30b4" size="4">
+</varnode_sym>
+<varnode_sym name="r46" id="0xaf" scope="0x0" space="register" offset="0x30b8" size="4">
+</varnode_sym>
+<varnode_sym name="r47" id="0xb0" scope="0x0" space="register" offset="0x30bc" size="4">
+</varnode_sym>
+<varnode_sym name="r48" id="0xb1" scope="0x0" space="register" offset="0x30c0" size="4">
+</varnode_sym>
+<varnode_sym name="r49" id="0xb2" scope="0x0" space="register" offset="0x30c4" size="4">
+</varnode_sym>
+<varnode_sym name="r50" id="0xb3" scope="0x0" space="register" offset="0x30c8" size="4">
+</varnode_sym>
+<varnode_sym name="r51" id="0xb4" scope="0x0" space="register" offset="0x30cc" size="4">
+</varnode_sym>
+<varnode_sym name="r52" id="0xb5" scope="0x0" space="register" offset="0x30d0" size="4">
+</varnode_sym>
+<varnode_sym name="r53" id="0xb6" scope="0x0" space="register" offset="0x30d4" size="4">
+</varnode_sym>
+<varnode_sym name="r54" id="0xb7" scope="0x0" space="register" offset="0x30d8" size="4">
+</varnode_sym>
+<varnode_sym name="r55" id="0xb8" scope="0x0" space="register" offset="0x30dc" size="4">
+</varnode_sym>
+<varnode_sym name="r56" id="0xb9" scope="0x0" space="register" offset="0x30e0" size="4">
+</varnode_sym>
+<varnode_sym name="r57" id="0xba" scope="0x0" space="register" offset="0x30e4" size="4">
+</varnode_sym>
+<varnode_sym name="r58" id="0xbb" scope="0x0" space="register" offset="0x30e8" size="4">
+</varnode_sym>
+<varnode_sym name="r59" id="0xbc" scope="0x0" space="register" offset="0x30ec" size="4">
+</varnode_sym>
+<varnode_sym name="r60" id="0xbd" scope="0x0" space="register" offset="0x30f0" size="4">
+</varnode_sym>
+<varnode_sym name="r61" id="0xbe" scope="0x0" space="register" offset="0x30f4" size="4">
+</varnode_sym>
+<varnode_sym name="r62" id="0xbf" scope="0x0" space="register" offset="0x30f8" size="4">
+</varnode_sym>
+<varnode_sym name="r63" id="0xc0" scope="0x0" space="register" offset="0x30fc" size="4">
+</varnode_sym>
+<varnode_sym name="r64" id="0xc1" scope="0x0" space="register" offset="0x3100" size="4">
+</varnode_sym>
+<varnode_sym name="r65" id="0xc2" scope="0x0" space="register" offset="0x3104" size="4">
+</varnode_sym>
+<varnode_sym name="r66" id="0xc3" scope="0x0" space="register" offset="0x3108" size="4">
+</varnode_sym>
+<varnode_sym name="r67" id="0xc4" scope="0x0" space="register" offset="0x310c" size="4">
+</varnode_sym>
+<varnode_sym name="r68" id="0xc5" scope="0x0" space="register" offset="0x3110" size="4">
+</varnode_sym>
+<varnode_sym name="r69" id="0xc6" scope="0x0" space="register" offset="0x3114" size="4">
+</varnode_sym>
+<varnode_sym name="r70" id="0xc7" scope="0x0" space="register" offset="0x3118" size="4">
+</varnode_sym>
+<varnode_sym name="r71" id="0xc8" scope="0x0" space="register" offset="0x311c" size="4">
+</varnode_sym>
+<varnode_sym name="r72" id="0xc9" scope="0x0" space="register" offset="0x3120" size="4">
+</varnode_sym>
+<varnode_sym name="r73" id="0xca" scope="0x0" space="register" offset="0x3124" size="4">
+</varnode_sym>
+<varnode_sym name="r74" id="0xcb" scope="0x0" space="register" offset="0x3128" size="4">
+</varnode_sym>
+<varnode_sym name="r75" id="0xcc" scope="0x0" space="register" offset="0x312c" size="4">
+</varnode_sym>
+<varnode_sym name="r76" id="0xcd" scope="0x0" space="register" offset="0x3130" size="4">
+</varnode_sym>
+<varnode_sym name="r77" id="0xce" scope="0x0" space="register" offset="0x3134" size="4">
+</varnode_sym>
+<varnode_sym name="r78" id="0xcf" scope="0x0" space="register" offset="0x3138" size="4">
+</varnode_sym>
+<varnode_sym name="r79" id="0xd0" scope="0x0" space="register" offset="0x313c" size="4">
+</varnode_sym>
+<varnode_sym name="r80" id="0xd1" scope="0x0" space="register" offset="0x3140" size="4">
+</varnode_sym>
+<varnode_sym name="r81" id="0xd2" scope="0x0" space="register" offset="0x3144" size="4">
+</varnode_sym>
+<varnode_sym name="r82" id="0xd3" scope="0x0" space="register" offset="0x3148" size="4">
+</varnode_sym>
+<varnode_sym name="r83" id="0xd4" scope="0x0" space="register" offset="0x314c" size="4">
+</varnode_sym>
+<varnode_sym name="r84" id="0xd5" scope="0x0" space="register" offset="0x3150" size="4">
+</varnode_sym>
+<varnode_sym name="r85" id="0xd6" scope="0x0" space="register" offset="0x3154" size="4">
+</varnode_sym>
+<varnode_sym name="r86" id="0xd7" scope="0x0" space="register" offset="0x3158" size="4">
+</varnode_sym>
+<varnode_sym name="r87" id="0xd8" scope="0x0" space="register" offset="0x315c" size="4">
+</varnode_sym>
+<varnode_sym name="r88" id="0xd9" scope="0x0" space="register" offset="0x3160" size="4">
+</varnode_sym>
+<varnode_sym name="r89" id="0xda" scope="0x0" space="register" offset="0x3164" size="4">
+</varnode_sym>
+<varnode_sym name="r90" id="0xdb" scope="0x0" space="register" offset="0x3168" size="4">
+</varnode_sym>
+<varnode_sym name="r91" id="0xdc" scope="0x0" space="register" offset="0x316c" size="4">
+</varnode_sym>
+<varnode_sym name="r92" id="0xdd" scope="0x0" space="register" offset="0x3170" size="4">
+</varnode_sym>
+<varnode_sym name="r93" id="0xde" scope="0x0" space="register" offset="0x3174" size="4">
+</varnode_sym>
+<varnode_sym name="r94" id="0xdf" scope="0x0" space="register" offset="0x3178" size="4">
+</varnode_sym>
+<varnode_sym name="r95" id="0xe0" scope="0x0" space="register" offset="0x317c" size="4">
+</varnode_sym>
+<varnode_sym name="r96" id="0xe1" scope="0x0" space="register" offset="0x3180" size="4">
+</varnode_sym>
+<varnode_sym name="r97" id="0xe2" scope="0x0" space="register" offset="0x3184" size="4">
+</varnode_sym>
+<varnode_sym name="r98" id="0xe3" scope="0x0" space="register" offset="0x3188" size="4">
+</varnode_sym>
+<varnode_sym name="r99" id="0xe4" scope="0x0" space="register" offset="0x318c" size="4">
+</varnode_sym>
+<varnode_sym name="r100" id="0xe5" scope="0x0" space="register" offset="0x3190" size="4">
+</varnode_sym>
+<varnode_sym name="r101" id="0xe6" scope="0x0" space="register" offset="0x3194" size="4">
+</varnode_sym>
+<varnode_sym name="r102" id="0xe7" scope="0x0" space="register" offset="0x3198" size="4">
+</varnode_sym>
+<varnode_sym name="r103" id="0xe8" scope="0x0" space="register" offset="0x319c" size="4">
+</varnode_sym>
+<varnode_sym name="r104" id="0xe9" scope="0x0" space="register" offset="0x31a0" size="4">
+</varnode_sym>
+<varnode_sym name="r105" id="0xea" scope="0x0" space="register" offset="0x31a4" size="4">
+</varnode_sym>
+<varnode_sym name="r106" id="0xeb" scope="0x0" space="register" offset="0x31a8" size="4">
+</varnode_sym>
+<varnode_sym name="r107" id="0xec" scope="0x0" space="register" offset="0x31ac" size="4">
+</varnode_sym>
+<varnode_sym name="r108" id="0xed" scope="0x0" space="register" offset="0x31b0" size="4">
+</varnode_sym>
+<varnode_sym name="r109" id="0xee" scope="0x0" space="register" offset="0x31b4" size="4">
+</varnode_sym>
+<varnode_sym name="r110" id="0xef" scope="0x0" space="register" offset="0x31b8" size="4">
+</varnode_sym>
+<varnode_sym name="r111" id="0xf0" scope="0x0" space="register" offset="0x31bc" size="4">
+</varnode_sym>
+<varnode_sym name="r112" id="0xf1" scope="0x0" space="register" offset="0x31c0" size="4">
+</varnode_sym>
+<varnode_sym name="r113" id="0xf2" scope="0x0" space="register" offset="0x31c4" size="4">
+</varnode_sym>
+<varnode_sym name="r114" id="0xf3" scope="0x0" space="register" offset="0x31c8" size="4">
+</varnode_sym>
+<varnode_sym name="r115" id="0xf4" scope="0x0" space="register" offset="0x31cc" size="4">
+</varnode_sym>
+<varnode_sym name="r116" id="0xf5" scope="0x0" space="register" offset="0x31d0" size="4">
+</varnode_sym>
+<varnode_sym name="r117" id="0xf6" scope="0x0" space="register" offset="0x31d4" size="4">
+</varnode_sym>
+<varnode_sym name="r118" id="0xf7" scope="0x0" space="register" offset="0x31d8" size="4">
+</varnode_sym>
+<varnode_sym name="r119" id="0xf8" scope="0x0" space="register" offset="0x31dc" size="4">
+</varnode_sym>
+<varnode_sym name="r120" id="0xf9" scope="0x0" space="register" offset="0x31e0" size="4">
+</varnode_sym>
+<varnode_sym name="r121" id="0xfa" scope="0x0" space="register" offset="0x31e4" size="4">
+</varnode_sym>
+<varnode_sym name="r122" id="0xfb" scope="0x0" space="register" offset="0x31e8" size="4">
+</varnode_sym>
+<varnode_sym name="r123" id="0xfc" scope="0x0" space="register" offset="0x31ec" size="4">
+</varnode_sym>
+<varnode_sym name="range_size" id="0xfd" scope="0x0" space="register" offset="0x80" size="4">
+</varnode_sym>
+<varnode_sym name="acc" id="0xfe" scope="0x0" space="register" offset="0x84" size="4">
+</varnode_sym>
+<varnode_sym name="sp" id="0xff" scope="0x0" space="register" offset="0x88" size="4">
+</varnode_sym>
+<varnode_sym name="pc" id="0x100" scope="0x0" space="register" offset="0x2000" size="4">
+</varnode_sym>
+<varnode_sym name="fp" id="0x101" scope="0x0" space="register" offset="0x2004" size="4">
+</varnode_sym>
+<varnode_sym name="_context" id="0x102" scope="0x0" space="register" offset="0x2008" size="4">
+</varnode_sym>
+<varnode_sym name="_closure" id="0x103" scope="0x0" space="register" offset="0x200c" size="4">
+</varnode_sym>
+<varnode_sym name="True" id="0x104" scope="0x0" space="register" offset="0x2020" size="4">
+</varnode_sym>
+<varnode_sym name="False" id="0x105" scope="0x0" space="register" offset="0x2024" size="4">
+</varnode_sym>
+<varnode_sym name="Undefined" id="0x106" scope="0x0" space="register" offset="0x2028" size="4">
+</varnode_sym>
+<varnode_sym name="TheHole" id="0x107" scope="0x0" space="register" offset="0x202c" size="4">
+</varnode_sym>
+<varnode_sym name="Null" id="0x108" scope="0x0" space="register" offset="0x2030" size="4">
+</varnode_sym>
+<varnode_sym name="JSReceiver" id="0x109" scope="0x0" space="register" offset="0x2034" size="4">
+</varnode_sym>
+<value_sym name="op" id="0x10a" scope="0x0">
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="7" bytestart="0" byteend="0" shift="0"/>
+</value_sym>
+<value_sym name="kImm" id="0x10b" scope="0x0">
+<tokenfield bigendian="false" signbit="true" bitstart="0" bitend="7" bytestart="0" byteend="0" shift="0"/>
+</value_sym>
+<value_sym name="kIdx" id="0x10c" scope="0x0">
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="7" bytestart="0" byteend="0" shift="0"/>
+</value_sym>
+<value_sym name="kIdx_2" id="0x10d" scope="0x0">
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="7" bytestart="0" byteend="0" shift="0"/>
+</value_sym>
+<value_sym name="kUImm" id="0x10e" scope="0x0">
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="7" bytestart="0" byteend="0" shift="0"/>
+</value_sym>
+<value_sym name="kFlag8" id="0x10f" scope="0x0">
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="7" bytestart="0" byteend="0" shift="0"/>
+</value_sym>
+<value_sym name="kIntrinsicId" id="0x110" scope="0x0">
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="7" bytestart="0" byteend="0" shift="0"/>
+</value_sym>
+<varlist_sym name="kReg" id="0x111" scope="0x0">
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="7" bytestart="0" byteend="0" shift="0"/>
+<null/>
+<null/>
+<var id="0x3"/>
+<var id="0x4"/>
+<var id="0x5"/>
+<var id="0x6"/>
+<var id="0x7"/>
+<var id="0x8"/>
+<var id="0x9"/>
+<var id="0xa"/>
+<var id="0xb"/>
+<var id="0xc"/>
+<var id="0xd"/>
+<var id="0xe"/>
+<var id="0xf"/>
+<var id="0x10"/>
+<var id="0x11"/>
+<var id="0x12"/>
+<var id="0x13"/>
+<var id="0x14"/>
+<var id="0x15"/>
+<var id="0x16"/>
+<var id="0x17"/>
+<var id="0x18"/>
+<var id="0x19"/>
+<var id="0x1a"/>
+<var id="0x1b"/>
+<var id="0x1c"/>
+<var id="0x1d"/>
+<var id="0x1e"/>
+<var id="0x1f"/>
+<var id="0x20"/>
+<var id="0x21"/>
+<var id="0x22"/>
+<var id="0x23"/>
+<var id="0x24"/>
+<var id="0x25"/>
+<var id="0x26"/>
+<var id="0x27"/>
+<var id="0x28"/>
+<var id="0x29"/>
+<var id="0x2a"/>
+<var id="0x2b"/>
+<var id="0x2c"/>
+<var id="0x2d"/>
+<var id="0x2e"/>
+<var id="0x2f"/>
+<var id="0x30"/>
+<var id="0x31"/>
+<var id="0x32"/>
+<var id="0x33"/>
+<var id="0x34"/>
+<var id="0x35"/>
+<var id="0x36"/>
+<var id="0x37"/>
+<var id="0x38"/>
+<var id="0x39"/>
+<var id="0x3a"/>
+<var id="0x3b"/>
+<var id="0x3c"/>
+<var id="0x3d"/>
+<var id="0x3e"/>
+<var id="0x3f"/>
+<var id="0x40"/>
+<var id="0x41"/>
+<var id="0x42"/>
+<var id="0x43"/>
+<var id="0x44"/>
+<var id="0x45"/>
+<var id="0x46"/>
+<var id="0x47"/>
+<var id="0x48"/>
+<var id="0x49"/>
+<var id="0x4a"/>
+<var id="0x4b"/>
+<var id="0x4c"/>
+<var id="0x4d"/>
+<var id="0x4e"/>
+<var id="0x4f"/>
+<var id="0x50"/>
+<var id="0x51"/>
+<var id="0x52"/>
+<var id="0x53"/>
+<var id="0x54"/>
+<var id="0x55"/>
+<var id="0x56"/>
+<var id="0x57"/>
+<var id="0x58"/>
+<var id="0x59"/>
+<var id="0x5a"/>
+<var id="0x5b"/>
+<var id="0x5c"/>
+<var id="0x5d"/>
+<var id="0x5e"/>
+<var id="0x5f"/>
+<var id="0x60"/>
+<var id="0x61"/>
+<var id="0x62"/>
+<var id="0x63"/>
+<var id="0x64"/>
+<var id="0x65"/>
+<var id="0x66"/>
+<var id="0x67"/>
+<var id="0x68"/>
+<var id="0x69"/>
+<var id="0x6a"/>
+<var id="0x6b"/>
+<var id="0x6c"/>
+<var id="0x6d"/>
+<var id="0x6e"/>
+<var id="0x6f"/>
+<var id="0x70"/>
+<var id="0x71"/>
+<var id="0x72"/>
+<var id="0x73"/>
+<var id="0x74"/>
+<var id="0x75"/>
+<var id="0x76"/>
+<var id="0x77"/>
+<var id="0x78"/>
+<var id="0x79"/>
+<var id="0x7a"/>
+<var id="0x7b"/>
+<var id="0x7c"/>
+<var id="0x7d"/>
+<var id="0x7e"/>
+<var id="0x7f"/>
+<var id="0x80"/>
+<var id="0xfc"/>
+<var id="0xfb"/>
+<var id="0xfa"/>
+<var id="0xf9"/>
+<var id="0xf8"/>
+<var id="0xf7"/>
+<var id="0xf6"/>
+<var id="0xf5"/>
+<var id="0xf4"/>
+<var id="0xf3"/>
+<var id="0xf2"/>
+<var id="0xf1"/>
+<var id="0xf0"/>
+<var id="0xef"/>
+<var id="0xee"/>
+<var id="0xed"/>
+<var id="0xec"/>
+<var id="0xeb"/>
+<var id="0xea"/>
+<var id="0xe9"/>
+<var id="0xe8"/>
+<var id="0xe7"/>
+<var id="0xe6"/>
+<var id="0xe5"/>
+<var id="0xe4"/>
+<var id="0xe3"/>
+<var id="0xe2"/>
+<var id="0xe1"/>
+<var id="0xe0"/>
+<var id="0xdf"/>
+<var id="0xde"/>
+<var id="0xdd"/>
+<var id="0xdc"/>
+<var id="0xdb"/>
+<var id="0xda"/>
+<var id="0xd9"/>
+<var id="0xd8"/>
+<var id="0xd7"/>
+<var id="0xd6"/>
+<var id="0xd5"/>
+<var id="0xd4"/>
+<var id="0xd3"/>
+<var id="0xd2"/>
+<var id="0xd1"/>
+<var id="0xd0"/>
+<var id="0xcf"/>
+<var id="0xce"/>
+<var id="0xcd"/>
+<var id="0xcc"/>
+<var id="0xcb"/>
+<var id="0xca"/>
+<var id="0xc9"/>
+<var id="0xc8"/>
+<var id="0xc7"/>
+<var id="0xc6"/>
+<var id="0xc5"/>
+<var id="0xc4"/>
+<var id="0xc3"/>
+<var id="0xc2"/>
+<var id="0xc1"/>
+<var id="0xc0"/>
+<var id="0xbf"/>
+<var id="0xbe"/>
+<var id="0xbd"/>
+<var id="0xbc"/>
+<var id="0xbb"/>
+<var id="0xba"/>
+<var id="0xb9"/>
+<var id="0xb8"/>
+<var id="0xb7"/>
+<var id="0xb6"/>
+<var id="0xb5"/>
+<var id="0xb4"/>
+<var id="0xb3"/>
+<var id="0xb2"/>
+<var id="0xb1"/>
+<var id="0xb0"/>
+<var id="0xaf"/>
+<var id="0xae"/>
+<var id="0xad"/>
+<var id="0xac"/>
+<var id="0xab"/>
+<var id="0xaa"/>
+<var id="0xa9"/>
+<var id="0xa8"/>
+<var id="0xa7"/>
+<var id="0xa6"/>
+<var id="0xa5"/>
+<var id="0xa4"/>
+<var id="0xa3"/>
+<var id="0xa2"/>
+<var id="0xa1"/>
+<var id="0xa0"/>
+<var id="0x9f"/>
+<var id="0x9e"/>
+<var id="0x9d"/>
+<var id="0x9c"/>
+<var id="0x9b"/>
+<var id="0x9a"/>
+<var id="0x99"/>
+<var id="0x98"/>
+<var id="0x97"/>
+<var id="0x96"/>
+<var id="0x95"/>
+<var id="0x94"/>
+<var id="0x93"/>
+<var id="0x92"/>
+<var id="0x91"/>
+<var id="0x90"/>
+<var id="0x8f"/>
+<var id="0x8e"/>
+<var id="0x8d"/>
+<var id="0x8c"/>
+<var id="0x8b"/>
+<var id="0x8a"/>
+<var id="0x89"/>
+<var id="0x88"/>
+<var id="0x87"/>
+<var id="0x86"/>
+<var id="0x85"/>
+<var id="0x84"/>
+<var id="0x83"/>
+<var id="0x82"/>
+<var id="0x81"/>
+<var id="0x100"/>
+<var id="0x101"/>
+<var id="0x103"/>
+<var id="0x102"/>
+</varlist_sym>
+<operand_sym name="kImm" id="0x112" scope="0x1" off="1" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0x2"/>
+<tokenfield bigendian="false" signbit="true" bitstart="0" bitend="7" bytestart="0" byteend="0" shift="0"/>
+</operand_sym>
+<operand_sym name="kImm" id="0x113" scope="0x2" off="1" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0x3"/>
+<tokenfield bigendian="false" signbit="true" bitstart="0" bitend="7" bytestart="0" byteend="0" shift="0"/>
+</operand_sym>
+<operand_sym name="kIdx" id="0x114" scope="0x2" off="2" base="-1" minlen="1" index="1">
+<operand_exp index="1" table="0x0" ct="0x3"/>
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="7" bytestart="0" byteend="0" shift="0"/>
+</operand_sym>
+<subtable_sym name="src" id="0x115" scope="0x0" numct="1">
+<constructor parent="0x115" first="1" length="1" line="122">
+<oper id="0x116"/>
+<opprint id="0"/>
+<construct_tpl>
+<handle_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="size"/><const_tpl type="real" val="0x0"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x0"/></handle_tpl>
+</construct_tpl>
+</constructor>
+<decision number="1" context="false" start="0" size="0">
+<pair id="0">
+<instruct_pat>
+<pat_block offset="0" nonzero="0">
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</subtable_sym>
+<operand_sym name="kReg" id="0x116" scope="0x3" subsym="0x111" off="0" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x115" ct="0x0"/>
+</operand_sym>
+<operand_sym name="src" id="0x117" scope="0x4" subsym="0x115" off="1" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0x5"/>
+</operand_sym>
+<operand_sym name="kIdx" id="0x118" scope="0x4" off="2" base="-1" minlen="1" index="1">
+<operand_exp index="1" table="0x0" ct="0x5"/>
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="7" bytestart="0" byteend="0" shift="0"/>
+</operand_sym>
+<subtable_sym name="dst" id="0x119" scope="0x0" numct="1">
+<constructor parent="0x119" first="1" length="1" line="133">
+<oper id="0x11a"/>
+<opprint id="0"/>
+<construct_tpl>
+<handle_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="size"/><const_tpl type="real" val="0x0"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x0"/></handle_tpl>
+</construct_tpl>
+</constructor>
+<decision number="1" context="false" start="0" size="0">
+<pair id="0">
+<instruct_pat>
+<pat_block offset="0" nonzero="0">
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</subtable_sym>
+<operand_sym name="kReg" id="0x11a" scope="0x5" subsym="0x111" off="0" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x119" ct="0x0"/>
+</operand_sym>
+<operand_sym name="src" id="0x11b" scope="0x6" subsym="0x115" off="1" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0x6"/>
+</operand_sym>
+<operand_sym name="dst" id="0x11c" scope="0x7" subsym="0x119" off="1" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0x7"/>
+</operand_sym>
+<subtable_sym name="dest" id="0x11d" scope="0x0" numct="1">
+<constructor parent="0x11d" first="1" length="1" line="156">
+<oper id="0x11f"/>
+<oper id="0x11e"/>
+<opprint id="1"/>
+<construct_tpl>
+<handle_tpl><const_tpl type="spaceid" name="ram"/><const_tpl type="real" val="0x4"/><const_tpl type="handle" val="1" s="space"/><const_tpl type="handle" val="1" s="offset"/><const_tpl type="real" val="0x0"/><const_tpl type="spaceid" name="unique"/><const_tpl type="real" val="0x20"/></handle_tpl>
+</construct_tpl>
+</constructor>
+<decision number="1" context="false" start="0" size="0">
+<pair id="0">
+<instruct_pat>
+<pat_block offset="0" nonzero="0">
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</subtable_sym>
+<operand_sym name="rel" id="0x11e" scope="0x8" off="0" base="-1" minlen="0" index="1">
+<operand_exp index="1" table="0x11d" ct="0x0"/>
+<plus_exp>
+<start_exp/><operand_exp index="0" table="0x11d" ct="0x0"/>
+</plus_exp>
+</operand_sym>
+<operand_sym name="kUImm" id="0x11f" scope="0x8" off="0" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x11d" ct="0x0"/>
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="7" bytestart="0" byteend="0" shift="0"/>
+</operand_sym>
+<operand_sym name="dest" id="0x120" scope="0x9" subsym="0x11d" off="1" base="-1" minlen="1" code="true" index="0">
+<operand_exp index="0" table="0x0" ct="0x8"/>
+</operand_sym>
+<operand_sym name="dest" id="0x121" scope="0xa" subsym="0x11d" off="1" base="-1" minlen="1" code="true" index="0">
+<operand_exp index="0" table="0x0" ct="0x9"/>
+</operand_sym>
+<operand_sym name="src" id="0x122" scope="0xb" subsym="0x115" off="1" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0xa"/>
+</operand_sym>
+<operand_sym name="kIdx" id="0x123" scope="0xb" off="2" base="-1" minlen="1" index="1">
+<operand_exp index="1" table="0x0" ct="0xa"/>
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="7" bytestart="0" byteend="0" shift="0"/>
+</operand_sym>
+<subtable_sym name="callable" id="0x124" scope="0x0" numct="1">
+<constructor parent="0x124" first="1" length="1" line="186">
+<oper id="0x125"/>
+<opprint id="0"/>
+<construct_tpl>
+<handle_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="size"/><const_tpl type="real" val="0x0"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x0"/></handle_tpl>
+</construct_tpl>
+</constructor>
+<decision number="1" context="false" start="0" size="0">
+<pair id="0">
+<instruct_pat>
+<pat_block offset="0" nonzero="0">
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</subtable_sym>
+<operand_sym name="kReg" id="0x125" scope="0xc" subsym="0x111" off="0" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x124" ct="0x0"/>
+</operand_sym>
+<subtable_sym name="receiver" id="0x126" scope="0x0" numct="1">
+<constructor parent="0x126" first="1" length="1" line="187">
+<oper id="0x127"/>
+<opprint id="0"/>
+<construct_tpl>
+<handle_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="size"/><const_tpl type="real" val="0x0"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x0"/></handle_tpl>
+</construct_tpl>
+</constructor>
+<decision number="1" context="false" start="0" size="0">
+<pair id="0">
+<instruct_pat>
+<pat_block offset="0" nonzero="0">
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</subtable_sym>
+<operand_sym name="kReg" id="0x127" scope="0xd" subsym="0x111" off="0" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x126" ct="0x0"/>
+</operand_sym>
+<subtable_sym name="arg1" id="0x128" scope="0x0" numct="1">
+<constructor parent="0x128" first="1" length="1" line="188">
+<oper id="0x129"/>
+<opprint id="0"/>
+<construct_tpl>
+<handle_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="size"/><const_tpl type="real" val="0x0"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x0"/></handle_tpl>
+</construct_tpl>
+</constructor>
+<decision number="1" context="false" start="0" size="0">
+<pair id="0">
+<instruct_pat>
+<pat_block offset="0" nonzero="0">
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</subtable_sym>
+<operand_sym name="kReg" id="0x129" scope="0xe" subsym="0x111" off="0" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x128" ct="0x0"/>
+</operand_sym>
+<subtable_sym name="arg2" id="0x12a" scope="0x0" numct="1">
+<constructor parent="0x12a" first="1" length="1" line="189">
+<oper id="0x12b"/>
+<opprint id="0"/>
+<construct_tpl>
+<handle_tpl><const_tpl type="handle" val="0" s="space"/><const_tpl type="handle" val="0" s="size"/><const_tpl type="real" val="0x0"/><const_tpl type="handle" val="0" s="offset"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x0"/><const_tpl type="real" val="0x0"/></handle_tpl>
+</construct_tpl>
+</constructor>
+<decision number="1" context="false" start="0" size="0">
+<pair id="0">
+<instruct_pat>
+<pat_block offset="0" nonzero="0">
+</pat_block>
+</instruct_pat>
+</pair>
+</decision>
+</subtable_sym>
+<operand_sym name="kReg" id="0x12b" scope="0xf" subsym="0x111" off="0" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x12a" ct="0x0"/>
+</operand_sym>
+<operand_sym name="callable" id="0x12c" scope="0x10" subsym="0x124" off="1" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0xb"/>
+</operand_sym>
+<operand_sym name="receiver" id="0x12d" scope="0x10" subsym="0x126" off="2" base="-1" minlen="1" index="1">
+<operand_exp index="1" table="0x0" ct="0xb"/>
+</operand_sym>
+<operand_sym name="arg1" id="0x12e" scope="0x10" subsym="0x128" off="3" base="-1" minlen="1" index="2">
+<operand_exp index="2" table="0x0" ct="0xb"/>
+</operand_sym>
+<operand_sym name="arg2" id="0x12f" scope="0x10" subsym="0x12a" off="4" base="-1" minlen="1" index="3">
+<operand_exp index="3" table="0x0" ct="0xb"/>
+</operand_sym>
+<operand_sym name="kIdx" id="0x130" scope="0x10" off="5" base="-1" minlen="1" index="4">
+<operand_exp index="4" table="0x0" ct="0xb"/>
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="7" bytestart="0" byteend="0" shift="0"/>
+</operand_sym>
+<operand_sym name="callable" id="0x131" scope="0x11" subsym="0x124" off="1" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0xc"/>
+</operand_sym>
+<operand_sym name="arg1" id="0x132" scope="0x11" subsym="0x128" off="2" base="-1" minlen="1" index="1">
+<operand_exp index="1" table="0x0" ct="0xc"/>
+</operand_sym>
+<operand_sym name="kIdx" id="0x133" scope="0x11" off="3" base="-1" minlen="1" index="2">
+<operand_exp index="2" table="0x0" ct="0xc"/>
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="7" bytestart="0" byteend="0" shift="0"/>
+</operand_sym>
+<userop name="TypeOf" id="0x134" scope="0x0" index="0"/>
+<userop name="StackCheck" id="0x135" scope="0x0" index="1"/>
+<userop name="GetGlobal" id="0x136" scope="0x0" index="2"/>
+<operand_sym name="kIdx" id="0x137" scope="0x12" off="1" base="-1" minlen="1" index="0">
+<operand_exp index="0" table="0x0" ct="0xf"/>
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="7" bytestart="0" byteend="0" shift="0"/>
+</operand_sym>
+<operand_sym name="kIdx_2" id="0x138" scope="0x12" off="2" base="-1" minlen="1" index="1">
+<operand_exp index="1" table="0x0" ct="0xf"/>
+<tokenfield bigendian="false" signbit="false" bitstart="0" bitend="7" bytestart="0" byteend="0" shift="0"/>
+</operand_sym>
+</symbol_table>
+</sleigh>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<processor_spec>
+  <programcounter register="pc"/>
+  <properties>
+  	<property key="pcodeInjectLibraryClass" value="v8_bytecode.V8_PcodeInjectLibrary"/>
+  </properties>
+</processor_spec>

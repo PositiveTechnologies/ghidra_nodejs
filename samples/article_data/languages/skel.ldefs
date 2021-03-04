@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<language_definitions>
+  <language processor="V8 bytecode"
+            endian="little"
+            size="32"
+            variant="default"
+            version="1.0"
+            slafile="skel.sla"
+            processorspec="skel.pspec"
+            id="V8:LE:32:default">
+    <description>V8</description>
+    <compiler name="default" spec="skel.cspec" id="default"/>
+  </language>
+</language_definitions>
+
+
