@@ -1,1 +1,0 @@
-# ghidra_nodejs
